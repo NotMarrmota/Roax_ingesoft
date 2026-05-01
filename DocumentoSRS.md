@@ -8,11 +8,12 @@
 
 ## INTEGRANTES
 
-- <NOMBRE COMPLETO INTEGRANTE 1>
-- <NOMBRE COMPLETO INTEGRANTE 2>
-- <NOMBRE COMPLETO INTEGRANTE 3>
-- <NOMBRE COMPLETO INTEGRANTE 4>
-- <NOMBRE COMPLETO INTEGRANTE 5>
+- David Altaminaro Altamirano
+- Mariana Carmona Galvez
+- Santiago Campo
+- David Santiago García
+- Mario Andrés Romero Rivera
+- Andrés Vinasco
 
 ---
 
@@ -72,7 +73,13 @@ Las funcionalidades que este sistema ofrece son las referentes al módulo de con
 <DESCRIPCIÓN DE LOS REQUISITOS DE ALTO NIVEL>
 
 **Ejemplo:**  
-**Registro de usuarios:** El sistema debe permitir que cualquier persona interesada se registre mediante una identificación válida. Se verificará la autenticidad del documento mediante un servicio externo.
+- RF1. El sistema debe mostrar al usuario las campañas cuyo desempeño se encuentre por debajo de un umbral definido.
+   
+   RF1.1. El sistema debe calcular el desempeño de cada campaña utilizando métricas cuantificables definidas (por ejemplo: tasa de conversión, CTR, ROI) y compararlas contra un umbral configurado.
+   
+   RF1.2 El sistema debe permitir al usuario definir y modificar los umbrales de desempeño mediante valores numéricos o porcentuales para cada métrica.
+   
+   RF1.3 El sistema debe permitir al usuario seleccionar las métricas que serán utilizadas para evaluar el desempeño de las campañas.
 
 ### 1.4 Subespecificación por subsistemas
 
