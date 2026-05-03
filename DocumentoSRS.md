@@ -23,23 +23,40 @@
    1.4 Subespecificación por subsistemas
    1.5 Tabla de asignación a subsistemas
 2. PESTLE
-3. RF1: Agente Conversacional
+3. RF13: Agente Conversacional
+
    3.1 Historias de usuario
+
    3.2 Casos de uso
+
    3.3 Formatos Bicolumnares
-4. RF2: Recomendaciones Inteligentes
+
+4. RF14: Recomendaciones Inteligentes
+
    4.1 Historias de usuario
+
    4.2 Casos de uso
+
    4.3 Formatos Bicolumnares
-5. RF3: Gestión de Alertas
+
+5. RF15: Gestión de Alertas
+
    5.1 Historias de usuario
+
    5.2 Casos de uso
+
    5.3 Formatos Bicolumnares
-6. RF4: Retroalimentación y Aprendizaje
+
+6. RF16: Retroalimentación y Aprendizaje
+
    6.1 Historias de usuario
+
    6.2 Casos de uso
+
    6.3 Formatos Bicolumnares
+
 7. Backlog
+
 8. MockUp
 ------
 
@@ -65,7 +82,7 @@ Dentro de este refactor se definen cuatro retos técnicos. El presente proyecto 
 
 Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emprendedor o marca que invierte en promedio entre 1.500 y 2.000 dólares mensuales en publicidad digital, que opera en múltiples plataformas simultáneamente, y que ya ha desarrollado una desconfianza hacia las recomendaciones automáticas de Meta, debido a que estas priorizan el gasto publicitario por encima de la rentabilidad real del negocio.
 
-## **1.3 Requisitos **
+##**1.3 Requisitos**
 
 | **RF** | **Descripción** |
 | --- | --- |
@@ -198,68 +215,148 @@ El análisis PESTLE se aplica a los requerimientos funcionales que toman decisio
 
 ## **3.1 Historias de Usuario**
 
-| **Título de la Historia de Usuario** | **Interacción con el agente de IA** |
+| **Campo** | **Descripción** |
 | --- | --- |
+| **Título** | Interacción con el agente de IA |
 | **Yo, como** | usuario de ROAX (emprendedor o gestor de e-commerce) |
 | **Quiero** | comunicarme con un agente de IA mediante voz o texto que me muestre su avatar en pantalla |
 | **Para** | entender mis métricas y recomendaciones sin necesidad de interpretar dashboards complejos |
-| **Criterios de Aceptación (Gherkin)** | |
-| **Scenario 1** | Given el usuario accede a la plataforma ROAX When el agente se carga en la interfaz Then el sistema muestra el avatar visual del agente en una ventana fija y reproduce un saludo por voz |
-| **Scenario 2** | Given el usuario envía un mensaje de texto al agente When el LLM procesa la consulta Then el agente responde en lenguaje natural en menos de 3 segundos con texto y voz simultáneos |
-| **Scenario 3** | Given el usuario desea desactivar el audio When hace clic en el botón de configuración de voz Then el agente continúa respondiendo solo con texto sin reproducir audio |
-| **Prioridad** | Alta |
-| **Dependencias** | Integración con API de Meta, Shopify y Dropi (RF2) |
+|
 
+**Scenario 1**
+
+| | |
+| --- | --- |
+| **Given** | el usuario accede a la plataforma ROAX |
+| **When** | el agente se carga en la interfaz |
+| **Then** | el sistema muestra el avatar visual del agente en una ventana fija y reproduce un saludo por voz |
+
+**Scenario 2**
+
+| | |
+| --- | --- |
+| **Given** | el usuario envía un mensaje de texto al agente |
+| **When** | el LLM procesa la consulta |
+| **Then** | el agente responde en lenguaje natural en menos de 3 segundos con texto y voz simultáneos |
+
+**Scenario 3**
+
+| | |
+| --- | --- |
+| **Given** | el usuario desea desactivar el audio |
+| **When** | hace clic en el botón de configuración de voz |
+| **Then** | el agente continúa respondiendo solo con texto sin reproducir audio |
+
+---
 
 # **4. RF14 — Recomendaciones Inteligentes (REC)**
 
 ## **4.1 Historias de Usuario**
 
-| **Título de la Historia de Usuario** | **Recibir y actuar sobre recomendaciones de campañas** |
+| **Campo** | **Descripción** |
 | --- | --- |
+| **Título** | Recibir y actuar sobre recomendaciones de campañas |
 | **Yo, como** | usuario de ROAX con campañas activas en Meta Ads |
 | **Quiero** | recibir recomendaciones claras sobre qué hacer con mis campañas, con su justificación y estimación de impacto |
 | **Para** | tomar decisiones informadas sin necesidad de ser experto en métricas publicitarias |
-| **Criterios de Aceptación (Gherkin)** | |
-| **Scenario 1** | Given el sistema detecta una campaña con CPA superior al umbral rentable When genera la recomendación Then muestra una tarjeta con la acción sugerida, la explicación en lenguaje simple y la estimación de impacto en pesos |
-| **Scenario 2** | Given el usuario revisa una recomendación When hace clic en Aplicar Then el sistema ejecuta la acción, registra el timestamp y comienza el seguimiento de impacto real |
-| **Scenario 3** | Given el usuario hace clic en Rechazar When selecciona un motivo opcional Then el sistema registra el rechazo y ajusta el modelo para no repetir ese tipo de recomendación en contextos similares |
-| **Prioridad** | Alta |
-| **Dependencias** | RF1 (Agente Conversacional), RF4 (Retroalimentación) |
 
+
+**Scenario 1**
+
+| | |
+| --- | --- |
+| **Given** | el sistema detecta una campaña con CPA superior al umbral rentable |
+| **When** | genera la recomendación |
+| **Then** | muestra una tarjeta con la acción sugerida, la explicación en lenguaje simple y la estimación de impacto en pesos |
+
+**Scenario 2**
+
+| | |
+| --- | --- |
+| **Given** | el usuario revisa una recomendación |
+| **When** | hace clic en Aplicar |
+| **Then** | el sistema ejecuta la acción, registra el timestamp y comienza el seguimiento de impacto real |
+
+**Scenario 3**
+
+| | |
+| --- | --- |
+| **Given** | el usuario hace clic en Rechazar |
+| **When** | selecciona un motivo opcional |
+| **Then** | el sistema registra el rechazo y ajusta el modelo para no repetir ese tipo de recomendación en contextos similares |
+
+---
 
 # **5. RF15 — Gestión de Alertas (ALR)**
 
 ## **5.1 Historias de Usuario**
 
-| **Título de la Historia de Usuario** | **Recibir alertas críticas sin saturación** |
+| **Campo** | **Descripción** |
 | --- | --- |
+| **Título** | Recibir alertas críticas sin saturación |
 | **Yo, como** | usuario de ROAX que tiene campañas activas mientras duerme o está fuera del computador |
 | **Quiero** | recibir alertas inteligentes y priorizadas sobre situaciones críticas de mis campañas en tiempo real |
 | **Para** | actuar rápido ante problemas sin ahogarme en notificaciones irrelevantes |
-| **Criterios de Aceptación (Gherkin)** | |
-| **Scenario 1** | Given el sistema detecta que una campaña gastó el 80% del presupuesto diario sin generar conversiones When evalúa el impacto económico Then envía una alerta crítica al usuario con la situación, el impacto estimado y las opciones de acción |
-| **Scenario 2** | Given el usuario tiene múltiples campañas con indicadores fuera de rango simultáneamente When el sistema evalúa el conjunto Then agrupa las alertas por nivel de criticidad y presenta máximo 3 alertas críticas en la sesión |
-| **Scenario 3** | Given el usuario quiere configurar sus preferencias When accede a la sección de notificaciones Then puede definir canales, horarios y nivel mínimo de criticidad para ser alertado |
-| **Prioridad** | Alta |
-| **Dependencias** | RF2 (Recomendaciones), RF1 (Agente) |
 
+
+**Scenario 1**
+
+| | |
+| --- | --- |
+| **Given** | el sistema detecta que una campaña gastó el 80% del presupuesto diario sin generar conversiones |
+| **When** | evalúa el impacto económico |
+| **Then** | envía una alerta crítica al usuario con la situación, el impacto estimado y las opciones de acción |
+
+**Scenario 2**
+
+| | |
+| --- | --- |
+| **Given** | el usuario tiene múltiples campañas con indicadores fuera de rango simultáneamente |
+| **When** | el sistema evalúa el conjunto |
+| **Then** | agrupa las alertas por nivel de criticidad y presenta máximo 3 alertas críticas en la sesión |
+
+**Scenario 3**
+
+| | |
+| --- | --- |
+| **Given** | el usuario quiere configurar sus preferencias |
+| **When** | accede a la sección de notificaciones |
+| **Then** | puede definir canales, horarios y nivel mínimo de criticidad para ser alertado |
+
+---
 
 # **6. RF16 — Retroalimentación y Aprendizaje (RFA)**
 
 ## **6.1 Historias de Usuario**
 
-| **Título de la Historia de Usuario** | **Construir confianza progresiva con el agente** |
+| **Campo** | **Descripción** |
 | --- | --- |
+| **Título** | Construir confianza progresiva con el agente |
 | **Yo, como** | usuario de ROAX que ha comenzado a usar las recomendaciones del sistema |
 | **Quiero** | ver cómo el sistema aprende de mis decisiones y mejora sus sugerencias con el tiempo, y poder delegar gradualmente más autonomía al agente |
 | **Para** | confiar en el sistema lo suficiente para permitirle actuar automáticamente en mi nombre cuando esté fuera |
-| **Criterios de Aceptación (Gherkin)** | |
-| **Scenario 1** | Given el usuario aplicó 5 recomendaciones consecutivas con resultados positivos When el sistema calcula el nivel de confianza Then muestra al usuario un indicador de confianza acumulada y le sugiere activar el modo semi-automatizado |
-| **Scenario 2** | Given el usuario rechaza repetidamente recomendaciones de un tipo específico When el modelo de aprendizaje procesa el patrón Then el sistema deja de generar ese tipo de recomendación y ajusta su estrategia |
-| **Scenario 3** | Given el usuario activa el modo de automatización completa When el sistema ejecuta una acción automáticamente Then notifica al usuario qué acción tomó, por qué, y le ofrece la opción de revertirla en las próximas 24 horas |
-| **Prioridad** | Alta |
-| **Dependencias** | RF1, RF2, RF3 |
 
 
+**Scenario 1**
 
+| | |
+| --- | --- |
+| **Given** | el usuario aplicó 5 recomendaciones consecutivas con resultados positivos |
+| **When** | el sistema calcula el nivel de confianza |
+| **Then** | muestra al usuario un indicador de confianza acumulada y le sugiere activar el modo semi-automatizado |
+
+**Scenario 2**
+
+| | |
+| --- | --- |
+| **Given** | el usuario rechaza repetidamente recomendaciones de un tipo específico |
+| **When** | el modelo de aprendizaje procesa el patrón |
+| **Then** | el sistema deja de generar ese tipo de recomendación y ajusta su estrategia |
+
+**Scenario 3**
+
+| | |
+| --- | --- |
+| **Given** | el usuario activa el modo de automatización completa |
+| **When** | el sistema ejecuta una acción automáticamente |
+| **Then** | notifica al usuario qué acción tomó, por qué, y le ofrece la opción de revertirla en las próximas 24 horas |
