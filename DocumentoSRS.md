@@ -72,19 +72,29 @@ Las funcionalidades que este sistema ofrece son las referentes al módulo de con
 
 <DESCRIPCIÓN DE LOS REQUISITOS DE ALTO NIVEL>
 
-## RF1. El sistema debe mostrar al usuario las campañas cuyo desempeño se encuentre por debajo de un umbral definido.
+#### RF1. El sistema debe mostrar al usuario las campañas cuyo desempeño se encuentre por debajo de un umbral definido.
    
-- RF1.1. El sistema debe calcular el desempeño de cada campaña utilizando métricas cuantificables definidas (por ejemplo: tasa de conversión, CTR, ROI) y compararlas contra un umbral configurado.
+- **RF1.1.** El sistema debe calcular el desempeño de cada campaña utilizando métricas cuantificables definidas (por ejemplo: tasa de conversión, CTR, ROI) y compararlas contra un umbral configurado.
    
-- RF1.2 El sistema debe permitir al usuario definir y modificar los umbrales de desempeño mediante valores numéricos o porcentuales para cada métrica.
+- **RF1.2** El sistema debe permitir al usuario definir y modificar los umbrales de desempeño mediante valores numéricos o porcentuales para cada métrica.
    
 - RF1.3 El sistema debe permitir al usuario seleccionar las métricas que serán utilizadas para evaluar el desempeño de las campañas.
 
-## RF2. El sistema generará recomendaciones inteligentes basadas en losresultados del negocio
+#### RF3. El sistema debe medir y aprender del impacto de las decisiones tomadas
+- **RF3.1** El sistema debe registrar las acciones tomadas por el usuario o ejecutadas automáticamente a partir de recomendaciones.
+  
+- **RF3.2** El sistema debe evaluar el impacto de dichas acciones en métricas clave del negocio (por ejemplo: ventas, ROAS, conversiones).
+  
+- **RF3.3** El sistema debe ajustar futuras recomendaciones basándose en los resultados obtenidos previamente, mejorando su precisión con el tiempo.
+
+#### RF2. El sistema generará recomendaciones inteligentes basadas en losresultados del negocio
 - **RF 2.1** El asistente sugerirá cambios en el dinero invertido diariamente en cada campaña publicitaria. Esto lo hará analizando si la inversión actual está generando ventas reales o si se está perdiendo dinero.
+  
 - **RF 2.2** El sistema de recomendaciones propondrá cambiar las imágenes o videos que no están funcionando por anuncios nuevos creados con la inteligencia artificial de la plataforma. El sistema elegirá los diseños que tienen más probabilidades de atraer clientes basándose en los gustos del público y en las ventas que ya se han logrado anteriormente.
+  
 - **RF 2.3** La pantalla de alertas incluirá un botón para aplicar las mejoras sugeridas al instante y sin complicaciones. Al presionarlo, el sistema realizará los cambios automáticamente en las cuentas de publicidad y ventas del usuario, ahorrando tiempo y asegurando que las decisiones se tomen rápido.
-## RF4. El sistema debe construir confianza progresiva en las recomendaciones generadas por IA
+  
+#### RF4. El sistema debe construir confianza progresiva en las recomendaciones generadas por IA
 
 - **RF4.1** El sistema debe presentar las recomendaciones acompañadas de una justificación explicable, indicando qué métricas del negocio motivaron la sugerencia (por ejemplo: "Se recomienda pausar esta campaña porque su ROAS lleva 3 días por debajo de tu umbral configurado y ha generado pérdida neta de $X").
 
