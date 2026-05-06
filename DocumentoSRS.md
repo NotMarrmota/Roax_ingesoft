@@ -9,7 +9,7 @@
 - Melisa Gomez Gomez
 - Samuel Alejandro Estupiñan Gonzales
 - Nicolas Ordoñez Cosio
-- Juan Camilo Borrero Flores
+- Juan Camilo Borrero Florez
 - Juan Pablo Urbina Ladino
 - Matius Montealegre Padilla
 
@@ -18,10 +18,15 @@
  
 1. Especificación de Requerimientos
    1.1 Descripción general
+
    1.2 Contexto del proyecto
+
    1.3 Requisitos 
+
    1.4 Subespecificación por subsistemas
+
    1.5 Tabla de asignación a subsistemas
+   
 2. PESTLE
 3. RF13: Agente Conversacional
 
