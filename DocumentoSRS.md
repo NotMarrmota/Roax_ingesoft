@@ -182,7 +182,7 @@ Análisis PESTLE
 
 Como usuario de la plataforma, quiero identificar fácilmente las campañas con bajo rendimiento para poder tomar decisiones rápidas y evitar pérdidas de dinero
 
-## Criterios de Aceptación (Formato Gherkin)
+## Criterios de Aceptación
 ### Scenario: Visualización correcta de campañas con bajo rendimiento
 - Given que existen campañas con métricas por debajo del umbral definido
 
@@ -214,16 +214,16 @@ Como usuario de la plataforma, quiero identificar fácilmente las campañas con 
 
 ### 4.1 Historias de usuario
 
-# Historia de Usuario 2
+# Historia de Usuario 1
 
-**ID:** HU2  
+**ID:** HU1  
 **Título:** Aplicación rápida de recomendaciones
 
 ## Historia
 
 Como usuario de la plataforma, quiero aplicar automáticamente las recomendaciones sugeridas por el sistema para optimizar mis campañas sin tener que realizar ajustes manuales.
 
-## Criterios de Aceptación (Formato Gherkin)
+## Criterios de Aceptación
 
 ### Scenario: Aplicación exitosa de una recomendación
 
@@ -269,15 +269,81 @@ Como usuario de la plataforma, quiero aplicar automáticamente las recomendacion
 
 ### 5.1 Historias de usuario
 
-**Nombre de la historia:**
+# Historia de Usuario 1
 
-**Descripción:**  Como [tipo de usuario] quiero [objetivo] para [beneficio].
+**ID:** HU1  
+**Título:** Registro de acciones tomadas sobre campañas
 
-**Criterios de aceptación:**
+## Historia
+Como usuario de la plataforma, quiero que el sistema registre las acciones realizadas manual o automáticamente sobre mis campañas para poder analizar posteriormente su impacto en el negocio.
 
-- Criterio 1
-- Criterio 2
-- Criterio 3
+---
+## Criterios de Aceptación 
+
+### Scenario: Registro exitoso de acción manual
+-Given que el usuario modifica manualmente una campaña
+
+-When la acción es confirmada
+
+-Then el sistema registra la acción realizada
+
+-And almacena la fecha, campaña afectada y tipo de acción
+
+
+### Scenario: Registro de acción automática
+-Given que el sistema ejecuta una recomendación automática
+
+-When la acción es aplicada sobre una campaña
+
+-Then el sistema registra la acción automaticamente
+
+-And la asocia al análisis correspondiente
+
+### Scenario: Registro fallido de acción manual por datos incompletos
+
+-Given que el usuario modifica una campaña
+
+-And la información de la acción no contiene datos válidos de la campaña afectada
+
+-When la acción es confirmada
+
+-Then el sistema no registra la acción aplicada
+
+-And muestra un mensaje que la modificación es erronea o inválida
+
+
+---
+**ID:** HU2 
+**Título:** Consulta de información histórica
+
+## Historia
+
+Como usuario de la plataforma, quiero consultar información histórica diaria y mensual para identificar tendencias y cambios en el comportamiento de mis campañas.
+
+---
+
+## Criterios de Aceptación 
+
+### Scenario: Consulta de historial diario
+
+
+-Given que existen registros históricos almacenados
+
+-When el usuario selecciona una campaña y un rango de fechas
+
+-Then el sistema muestra el comportamiento histórico diario
+
+### Scenario: Consulta de historial mensual
+
+
+-Given que existen datos históricos mensuales
+
+-When el usuario consulta el resumen histórico
+
+-Then el sistema presenta tendencias mensuales de rendimiento
+
+
+---
 
 **Prioridad:** Alta / Media / Baja
 
