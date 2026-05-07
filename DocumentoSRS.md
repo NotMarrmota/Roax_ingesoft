@@ -80,13 +80,6 @@ Las funcionalidades que este sistema ofrece son las referentes al módulo de con
    
 - RF1.3 El sistema debe permitir al usuario seleccionar las métricas que serán utilizadas para evaluar el desempeño de las campañas.
 
-#### RF3. El sistema debe medir y aprender del impacto de las decisiones tomadas
-- **RF3.1** El sistema debe registrar las acciones tomadas por el usuario o ejecutadas automáticamente a partir de recomendaciones.
-  
-- **RF3.2** El sistema debe evaluar el impacto de dichas acciones en métricas clave del negocio (por ejemplo: ventas, ROAS, conversiones).
-  
-- **RF3.3** El sistema debe ajustar futuras recomendaciones basándose en los resultados obtenidos previamente, mejorando su precisión con el tiempo.
-
 #### RF2. El sistema generará recomendaciones inteligentes basadas en losresultados del negocio
 - **RF 2.1** El asistente sugerirá cambios en el dinero invertido diariamente en cada campaña publicitaria. Esto lo hará analizando si la inversión actual está generando ventas reales o si se está perdiendo dinero.
   
