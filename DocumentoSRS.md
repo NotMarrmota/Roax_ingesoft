@@ -173,14 +173,26 @@ Análisis PESTLE
 
 ### 3.1 Historias de usuario
 
-**Nombre de la historia:**
+# Historia de Usuario 1
 
-**Descripción:** Como [tipo de usuario] quiero [objetivo] para [beneficio].
+**ID:** HU1  
+**Título:** Visualización de campañas con bajo rendimiento
 
-**Criterios de aceptación:**
-- Criterio 1
-- Criterio 2
-- Criterio 3
+## Historia
+
+Como usuario de la plataforma, quiero identificar fácilmente las campañas con bajo rendimiento para poder tomar decisiones rápidas y evitar pérdidas de dinero
+
+## Criterios de Aceptación (Formato Gherkin)
+### Scenario: Visualización correcta de campañas con bajo rendimiento
+- Given que existen campañas con métricas por debajo del umbral definido
+
+- And que el usuario ha configurado previamente los umbrales de desempeño
+
+- When el usuario accede al módulo de campañas
+
+- Then el sistema muestra únicamente las campañas que están por debajo del umbral
+
+- And presenta las métricas clave asociadas (ROAS, CTR, conversiones)
 
 **Prioridad:** Alta / Media / Baja
 
@@ -202,15 +214,40 @@ Análisis PESTLE
 
 ### 4.1 Historias de usuario
 
-**Nombre de la historia:**
+# Historia de Usuario 2
 
-**Descripción:** Como [tipo de usuario] quiero [objetivo] para [beneficio].
+**ID:** HU2  
+**Título:** Aplicación rápida de recomendaciones
 
-**Criterios de aceptación:**
+## Historia
 
-- Criterio 1
-- Criterio 2
-- Criterio 3
+Como usuario de la plataforma, quiero aplicar automáticamente las recomendaciones sugeridas por el sistema para optimizar mis campañas sin tener que realizar ajustes manuales.
+
+## Criterios de Aceptación (Formato Gherkin)
+
+### Scenario: Aplicación exitosa de una recomendación
+
+-Given que el sistema ha generado una recomendación para una campaña
+
+-And que la cuenta del usuario está correctamente integrada con las plataformas externas
+
+-When el usuario hace clic en el botón de aplicar recomendación
+
+-Then el sistema ejecuta automáticamente los cambios sugeridos
+
+-And actualiza la configuración de la campaña en la plataforma externa
+
+### Scenario: Error al aplicar recomendación por falta de integración
+
+-Given que el sistema ha generado una recomendación para una campaña
+
+-And que la cuenta del usuario no está correctamente integrada con la plataforma externa
+
+-When el usuario intenta aplicar la recomendación
+
+-Then el sistema no ejecuta ningún cambio
+
+-And muestra un mensaje de error indicando el problema de integración
 
 **Prioridad:** Alta / Media / Baja
 
