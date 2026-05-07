@@ -244,6 +244,7 @@ Como usuario de la plataforma, quiero aplicar automáticamente las recomendacion
 
 -Then el sistema ejecuta automáticamente los cambios sugeridos
 
+
 -And actualiza la configuración de la campaña en la plataforma externa
 
 ### Scenario: Error al aplicar recomendación por falta de integración
@@ -263,6 +264,41 @@ Como usuario de la plataforma, quiero aplicar automáticamente las recomendacion
 **Dependencias:**
 
 ---
+Historia de Usuario 2
+
+ID: HU2
+##Titulo## Recomendación automática de inversión publicitaria
+
+Como usuario de la plataforma, quiero que el sistema detecte anuncios poco efectivos y genere nuevas imágenes o videos utilizando inteligencia artificial para atraer más clientes y mejorar las ventas.
+
+## Criterios de Aceptación
+Scenario: Generación válida de nuevo anuncio
+
+-Given que el sistema detecta un anuncio con bajo rendimiento
+
+-And que existen datos históricos de preferencias y ventas
+
+-When el sistema inicia el proceso de optimización
+
+-Then el sistema genera nuevas imágenes o videos automáticamente
+
+-And presenta las nuevas propuestas publicitarias al usuario
+
+## Scenario: Generación inválida por error en la inteligencia artificial
+
+-Given que el sistema intenta generar un nuevo anuncio
+
+-And que el servicio de inteligencia artificial presenta una falla
+
+-When el usuario solicita la generación del anuncio
+
+-Then el sistema no crea contenido publicitario
+
+-And muestra un mensaje de error indicando que no fue posible generar el anuncio
+
+Prioridad: Alta
+
+Dependencias: Servicio de inteligencia artificial e integración con base de datos de campañas
 
 ### 4.2 Casos de uso
 
