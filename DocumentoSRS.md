@@ -209,6 +209,150 @@ Como usuario de la plataforma, quiero identificar fácilmente las campañas con 
 
 ---
 
+# Historia de Usuario 2
+
+**ID:** HU2  
+**Título:** Configuración de métricas prioritarias
+
+## Historia
+
+Como especialista en marketing, quiero seleccionar qué métricas tienen mayor prioridad en la evaluación para adaptar el análisis a mis objetivos comerciales.
+
+## Criterios de Aceptación
+
+### Scenario: Selección exitosa de métricas prioritarias
+
+- Given que el usuario accede a la configuración de evaluación de campañas
+
+- When selecciona las métricas prioritarias para el análisis
+
+- Then el sistema guarda la configuración seleccionada
+
+- And utiliza dichas métricas en futuras evaluaciones de desempeño
+
+### Scenario: Intento de guardar configuración sin métricas
+
+- Given que el usuario accede a la configuración de métricas
+
+- And no selecciona ninguna métrica
+
+- When intenta guardar la configuración
+
+- Then el sistema no permite continuar
+
+- And muestra un mensaje indicando que debe seleccionar al menos una métrica
+
+**Prioridad:** Alta
+
+**Dependencias:** RF1.3
+
+---
+
+# Historia de Usuario 3
+
+**ID:** HU3  
+**Título:** Visualización comparativa contra umbrales
+
+## Historia
+
+Como usuario, quiero visualizar el valor actual de cada métrica junto al umbral configurado para entender rápidamente por qué una campaña fue clasificada como deficiente.
+
+## Criterios de Aceptación
+
+### Scenario: Comparación correcta de métricas y umbrales
+
+- Given que existen campañas evaluadas por el sistema
+
+- And que el usuario ha configurado previamente umbrales de desempeño
+
+- When el usuario consulta el análisis de una campaña
+
+- Then el sistema muestra el valor actual de cada métrica
+
+- And presenta el umbral correspondiente
+
+- And resalta visualmente las métricas que incumplen el umbral configurado
+
+**Prioridad:** Alta
+
+**Dependencias:** RF1.1, RF1.2
+
+---
+
+# Historia de Usuario 4
+
+**ID:** HU4  
+**Título:** Configuración de umbrales por tipo de campaña
+
+## Historia
+
+Como usuario, quiero configurar umbrales distintos según el tipo de campaña para evaluar correctamente estrategias con objetivos diferentes.
+
+## Criterios de Aceptación
+
+### Scenario: Configuración exitosa de umbrales diferenciados
+
+- Given que existen distintos tipos de campañas registradas
+
+- When el usuario define umbrales específicos para cada tipo
+
+- Then el sistema almacena la configuración de manera independiente
+
+- And utiliza el umbral correspondiente durante la evaluación
+
+### Scenario: Configuración inválida de umbrales
+
+- Given que el usuario intenta ingresar un umbral inválido
+
+- When el valor ingresado es negativo o inconsistente
+
+- Then el sistema rechaza la configuración
+
+- And muestra un mensaje indicando el error
+
+**Prioridad:** Media
+
+**Dependencias:** RF1.2
+
+---
+
+# Historia de Usuario 5
+
+**ID:** HU5  
+**Título:** Detección automática de campañas críticas
+
+## Historia
+
+Como usuario, quiero que el sistema destaque automáticamente campañas extremadamente por debajo del umbral para priorizar acciones urgentes.
+
+---
+
+## Criterios de Aceptación
+
+### Scenario: Identificación de campañas críticas
+
+- Given que existen campañas con métricas significativamente inferiores al umbral
+
+- When el sistema realiza el análisis de desempeño
+
+- Then las campañas críticas son resaltadas visualmente
+
+- And el sistema asigna un nivel de severidad alto
+
+### Scenario: Campañas sin criticidad elevada
+
+- Given que las campañas presentan desviaciones menores
+
+- When el sistema procesa la evaluación
+
+- Then las campañas se muestran como advertencias normales
+
+- And no son clasificadas como críticas
+
+**Prioridad:** Alta
+
+**Dependencias:** RF1.1
+
 ### 3.2 Casos de uso
 
 #### 3.2.1 Diagrama de casos de uso
@@ -436,7 +580,153 @@ Como usuario de la plataforma, quiero consultar información histórica diaria y
 
 ---
 
-## 6. Backlog
+## 6. RF3: Subsistema D <<Nombre el Subsistema>>
+
+### 6.1 Historias de usuario
+
+# Historia de Usuario 1
+
+**ID:** HU1  
+**Título:** Explicación detallada de recomendaciones IA
+
+## Historia
+
+Como usuario, quiero visualizar una explicación clara de cada recomendación para entender qué datos motivaron la sugerencia.
+
+## Criterios de Aceptación
+
+### Scenario: Visualización correcta de explicación
+
+- Given que el sistema genera una recomendación
+
+- When el usuario consulta el detalle de la sugerencia
+
+- Then el sistema muestra una explicación asociada
+
+- And presenta las métricas y tendencias utilizadas para generar la recomendación
+
+**Prioridad:** Alta
+
+**Dependencias:** RF4.1
+
+---
+
+# Historia de Usuario 2
+
+**ID:** HU2  
+**Título:** Visualización de nivel de confianza
+
+## Historia
+
+Como usuario, quiero conocer el nivel de confianza de una recomendación para decidir si debo aplicarla.
+
+## Criterios de Aceptación
+
+### Scenario: Consulta de nivel de confianza
+
+- Given que el sistema genera una recomendación
+
+- When el usuario revisa la sugerencia
+
+- Then el sistema muestra un porcentaje o nivel de confianza asociado
+
+- And explica brevemente cómo fue calculado
+
+---
+
+# Historia de Usuario 3
+
+**ID:** HU3  
+**Título:** Aplicación gradual de recomendaciones
+
+## Historia
+
+Como usuario, quiero aplicar parcialmente una recomendación para evaluar resultados antes de ejecutar cambios completos.
+
+## Criterios de Aceptación
+
+### Scenario: Aplicación parcial exitosa
+
+- Given que existe una recomendación disponible
+
+- When el usuario selecciona aplicación parcial
+
+- Then el sistema ejecuta únicamente una parte de los cambios
+
+- And registra la configuración aplicada
+
+---
+
+# Historia de Usuario 4
+
+**ID:** HU4  
+**Título:** Historial de decisiones sobre recomendaciones
+
+## Historia
+
+Como usuario, quiero consultar recomendaciones aceptadas, rechazadas o ignoradas para revisar decisiones anteriores y comprender cómo han impactado mis campañas.
+
+## Criterios de Aceptación
+
+### Scenario: Consulta exitosa del historial
+
+- Given que existen recomendaciones registradas
+
+- When el usuario accede al historial de recomendaciones
+
+- Then el sistema muestra las recomendaciones junto con su estado
+
+- And presenta la fecha y tiempo de respuesta del usuario
+
+### Scenario: Historial vacío
+
+- Given que no existen recomendaciones registradas
+
+- When el usuario consulta el historial
+
+- Then el sistema informa que no hay registros disponibles
+
+**Prioridad:** Media
+
+**Dependencias:** RF4.4
+
+---
+
+# Historia de Usuario 5
+
+**ID:** HU5  
+**Título:** Comparación de resultados antes y después de aplicar recomendaciones
+
+## Historia
+
+Como usuario, quiero visualizar las métricas antes y después de aplicar una recomendación para evaluar si realmente mejoró el rendimiento de mis campañas.
+
+## Criterios de Aceptación
+
+### Scenario: Comparación exitosa de resultados
+
+- Given que una recomendación fue aplicada previamente
+
+- When el usuario consulta el impacto generado
+
+- Then el sistema muestra métricas anteriores y posteriores a la aplicación
+
+- And presenta las variaciones obtenidas en el rendimiento de la campaña
+
+### Scenario: Datos insuficientes para comparación
+
+- Given que aún no existe suficiente información posterior a la aplicación
+
+- When el usuario consulta el impacto de la recomendación
+
+- Then el sistema informa que el análisis todavía no está disponible
+
+**Prioridad:** Alta
+
+**Dependencias:** RF4.5
+
+
+## 7. Backlog
 
 | ID | Historia de Usuario | Prioridad |
 |----|--------------------|----------|
@@ -444,12 +734,12 @@ Como usuario de la plataforma, quiero consultar información histórica diaria y
 
 ---
 
-## 7. MockUp
+## 8. MockUp
 
-### 7.1 Descripción general
+### 8.1 Descripción general
 
 Se presenta el MVP que cumple con todas las funcionalidades propuestas. Estas no se referencian en los formatos bicolumnares debido a la extensión del proyecto.
 
-### 7.2 Enlace MockUp
+### 8.2 Enlace MockUp
 
 <<Enlace MockUp>>
