@@ -1,12 +1,16 @@
 # DOCUMENTO DE ESPECIFICACIÓN DE REQUERIMIENTOS
 
-## <NOMBRE DE LA PLATAFORMA DESARROLLADA>
-
-## <NOMBRE DE LA EMPRESA / CLIENTE>
+## ROAX
 
 ---
 
-## INTEGRANTES
+**INTEGRANTES**
+
+###Equipo Reto 1 - Datos y Decisiones
+
+-
+
+###Equipo Reto 2 - Alertas que razonan
 
 - David Altaminaro Altamirano
 - Mariana Carmona Galvez
@@ -15,64 +19,168 @@
 - Mario Andrés Romero Rivera
 - Andrés Vinasco
 
----
+###Equipo Reto 3 - Creatividades desde el rendimiento
 
-## Tabla de Contenido
+-
 
-1. Especificación de requerimientos  
-   1.1 Descripción general  
-   1.2 Contexto del proyecto  
-   1.3 Requisitos  
-   1.4 Subespecificación por subsistemas  
-   1.5 Tabla de asignación a subsistemas  
+###Equipo Reto 4 - Confianza progresiva
 
-2. PESTLE  
-   2.1 Listado de requerimientos  
-
-3. RF1: Subsistema A  
-   3.1 Historias de usuario  
-   3.2 Casos de uso  
-     3.2.1 Diagrama de casos de uso  
-     3.2.2 Formatos bicolumnares  
-
-4. RF2: Subsistema B  
-   4.1 Historias de usuario  
-   4.2 Casos de uso  
-     4.2.1 Diagrama de casos de uso  
-     4.2.2 Formatos bicolumnares  
-
-5. RF3: Subsistema C  
-   5.1 Historias de usuario  
-   5.2 Casos de uso  
-     5.2.1 Diagrama de casos de uso  
-     5.2.2 Formatos bicolumnares  
-
-6. Backlog  
-
-7. MockUp  
-   7.1 Descripción general  
-   7.2 Enlace MockUp  
+- Melisa Gomez Gomez
+- Samuel Alejandro Estupiñan Gonzales
+- Jorge Humberto Garcia Leon
+- Juan Camilo Borrero Florez
+- Juan Pablo Urbina Ladino
+- Matius Montealegre Padilla
 
 ---
 
-## 1. Especificación de requerimientos
+# Tabla de Contenido
 
-### 1.1 Descripción general
+1. Especificación de Requerimientos
+   1.1 Descripción General
+   1.2 Contexto del Proyecto
+   1.3 Requisitos
+      1.3.1 Subsistema de Datos y Decisiones
+      1.3.2 Subsistema de Alertas que razonan
+      1.3.3 Subsistema de Creatividades desde el rendimiento
+      1.3.4 Subsistema de Confianza Progresiva
 
-En esta sección se describirán y analizarán los requerimientos del proyecto titulado <NOMBRE_DEL_PROYECTO>, por medio de análisis con enfoque de entidades e historias de usuario.
+   1.4 Subespecificación por Subsistemas
+      1.4.1 RF1: Datos y Decisiones
+      1.4.2 RF2: Alertas que razonan
+      1.4.3 RF3: Creatividades desde el rendimiento
+      1.4.4 RF4: Confianza Progresiva
 
-### 1.2 Contexto del proyecto
+   1.5 Tabla de Asignación a Subsistemas
 
-<DESCRIPCIÓN GENERAL DE LAS FUNCIONALIDADES DEL PROYECTO>
+2. PESTLE
+      2.1 RF1: Datos y Decisiones
+      2.2 RF2: Alertas que razonan
+      2.3 RF3: Creatividades desde el rendimiento
+      2.4 RF4: Confianza Progresiva
 
-**Ejemplo:**  
-Las funcionalidades que este sistema ofrece son las referentes al módulo de contabilidad, encargado del proceso de recepción, verificación, corrección y aceptación de solicitudes monetarias. La aplicación permite el envío de solicitudes, seguimiento, cambio de estado y gestión posterior.
+3. RF1: Datos y Decisiones
+   3.1 Historias de Usuario
+   3.2 Casos de Uso
+      3.2.1 Diagrama de Casos de Uso
+      3.2.2 Formatos Bicolumnares
 
-### 1.3 Requisitos
+4. RF2: Alertas Inteligentes
+   4.1 Historias de Usuario
+   4.2 Casos de Uso
+      4.2.1 Diagrama de Casos de Uso
+      4.2.2 Formatos Bicolumnares
 
-<DESCRIPCIÓN DE LOS REQUISITOS DE ALTO NIVEL>
+5. RF3: Inteligencia Creativa
+   5.1 Historias de Usuario
+   5.2 Casos de Uso
+      5.2.1 Diagrama de Casos de Uso
+      5.2.2 Formatos Bicolumnares
+
+6. RF4: Confianza Progresiva
+   6.1 Historias de Usuario
+   6.2 Casos de Uso
+      6.2.1 Diagrama de Casos de Uso
+      6.2.2 Formatos Bicolumnares
+
+7. Backlog
+
+8. MockUp
+   8.1 Descripción General
+   8.2 Enlace MockUp
+
+---
+
+# 1. Especificación de Requerimientos
+
+## 1.1 Descripción General
+
+En esta sección se describen y analizan los requerimientos del proyecto ROAX Refactor 2026, una plataforma de inteligencia de negocio orientada a e-commerce que busca transformar la manera en que los usuarios interpretan, analizan y ejecutan decisiones relacionadas con sus campañas de marketing digital y desempeño comercial.
+
+Actualmente, ROAX integra múltiples fuentes de datos provenientes de plataformas como Meta Ads, Shopify, Dropi y otros entornos de comercio electrónico, permitiendo visualizar métricas relacionadas con rentabilidad, conversión y rendimiento publicitario. Sin embargo, el sistema actual se centra principalmente en la visualización de información, dejando en manos del usuario la interpretación de los datos y la toma de decisiones estratégicas.
+
+El objetivo de este proyecto es rediseñar la plataforma para convertir la inteligencia artificial en el núcleo operativo del sistema, permitiendo no solo visualizar datos, sino también analizar comportamientos, generar recomendaciones, contextualizar alertas, sugerir acciones concretas y fortalecer progresivamente la confianza del usuario en las decisiones automatizadas.
+
+La solución propuesta se divide en cuatro subsistemas principales: Datos y Decisiones, Alertas Inteligentes, Inteligencia Creativa y Confianza Progresiva. Cada uno de estos componentes busca abordar distintos retos relacionados con automatización, interpretación de datos, generación de recomendaciones y aprendizaje continuo del comportamiento del negocio.
+
+El sistema está orientado a usuarios de e-commerce que requieren herramientas más inteligentes, proactivas y accionables para optimizar sus campañas publicitarias, mejorar su rentabilidad y facilitar la toma de decisiones basada en datos.
+
+---
+
+## 1.2 Contexto del Proyecto
+
+ROAX es una plataforma de data e inteligencia de negocio enfocada en e-commerce que actualmente permite conectar información proveniente de campañas publicitarias y canales de venta digitales para calcular métricas de rendimiento y rentabilidad de un negocio.
+
+La plataforma cuenta con integración de múltiples fuentes de datos, dashboards de métricas publicitarias, sistemas de alertas y herramientas de generación de anuncios mediante inteligencia artificial. Además, dispone de una base de usuarios reales que interactúan constantemente con el sistema y generan comportamientos medibles dentro de la plataforma.
+
+A pesar de contar con una infraestructura sólida de visualización y análisis de datos, el sistema presenta una limitación importante: actualmente la plataforma informa qué está ocurriendo, pero no participa activamente en la toma de decisiones del usuario.
+
+Los usuarios deben interpretar manualmente métricas como ROAS, CTR o CPA para determinar qué campañas están funcionando, cuáles están generando pérdidas y qué acciones deberían ejecutarse para mejorar el rendimiento del negocio. Esto genera dependencia del criterio humano, tiempos de análisis más largos y dificultad para reaccionar rápidamente ante cambios en el comportamiento de las campañas.
+
+El proyecto ROAX Refactor 2026 surge como respuesta a esta necesidad, proponiendo una evolución de la plataforma hacia un sistema más inteligente, proactivo y automatizado, donde la inteligencia artificial no funcione como una característica adicional, sino como el motor principal de análisis, recomendación y aprendizaje continuo.
+
+Para abordar este reto, el proyecto se enfoca en cuatro áreas fundamentales: la generación de decisiones basadas en datos, la construcción de alertas inteligentes capaces de contextualizar recomendaciones, el uso de inteligencia artificial aplicada a creatividades publicitarias y la construcción progresiva de confianza entre el usuario y las decisiones automatizadas del sistema.
+
+Con este rediseño, ROAX busca evolucionar de una plataforma de visualización de datos hacia un ecosistema inteligente capaz de observar, interpretar, recomendar y aprender continuamente del comportamiento de cada negocio.
+
+---
+
+## 1.3 Requisitos
+
+### 1.3.1 Subsistema de Datos y Decisiones
+
+---
+
+### 1.3.2 Subsistema de Alertas que razonan
 
 #### RF1. El sistema debe mostrar al usuario las campañas cuyo desempeño se encuentre por debajo de un umbral definido.
+   
+#### RF2. El sistema generará recomendaciones inteligentes basadas en losresultados del negocio
+
+#### RF3. El sistema debe medir, analizar y aprender del impacto de las decisiones tomadas en campañas publicitarias y resultados del negocio.
+
+#### RF4. El sistema debe construir confianza progresiva en las recomendaciones generadas por IA
+
+---
+
+### 1.3.3 Subsistema de Creatividades desde el rendimiento
+
+---
+
+### 1.3.4 Subsistema de Confianza Progresiva
+
+### Requerimientos Funcionales
+
+| **RF** | **Descripción** |
+| --- | --- |
+| **RF13** | El sistema debe permitir la comunicación con el usuario mediante un agente conversacional visual en tiempo real |
+| **RF14** | El sistema debe generar y presentar recomendaciones inteligentes sobre campañas publicitarias basadas en análisis de datos y comportamiento histórico |
+| **RF15** | El sistema debe gestionar alertas priorizadas sobre indicadores críticos del negocio evitando la saturación de información al usuario |
+| **RF16** | El sistema debe gestionar la retroalimentación del usuario y ajustar progresivamente sus recomendaciones para construir confianza progresiva |
+
+### Requerimientos No Funcionales
+
+| **RNF** | **Descripción** |
+| --- | --- |
+| **RNF1** | **Disponibilidad:** el sistema debe estar disponible 24/7 para monitoreo continuo de campañas |
+| **RNF2** | **Procesamiento en tiempo real:** el sistema debe procesar y analizar datos con mínima latencia |
+| **RNF3** | **Interfaz de usuario:** el sistema debe ofrecer una interfaz intuitiva, clara y orientada a la toma de decisiones |
+| **RNF4** | **Portabilidad:** el sistema debe ser accesible desde múltiples dispositivos incluyendo móviles |
+| **RNF5** | **Interacción por voz:** el sistema debe permitir interacción mediante audio procesando comandos en tiempo real |
+| **RNF6** | **Transparencia IA:** el sistema debe hacer visible cuando una recomendación es generada por inteligencia artificial |
+| **RNF7** | **Escalabilidad:** el sistema debe gestionar el consumo de recursos según el plan de suscripción del usuario |
+
+---
+
+## 1.4 Subespecificación por Subsistemas
+
+   ###1.4.1 RF1: Datos y Decisiones
+   
+   ---
+   
+   ###1.4.2 RF2: Alertas que razonan
+   
+   #### RF1. El sistema debe mostrar al usuario las campañas cuyo desempeño se encuentre por debajo de un umbral definido.
    
 - **RF1.1.** El sistema debe calcular el desempeño de cada campaña utilizando métricas cuantificables definidas (por ejemplo: tasa de conversión, CTR, ROI) y compararlas contra un umbral configurado.
    
@@ -130,22 +238,96 @@ Las funcionalidades que este sistema ofrece son las referentes al módulo de con
 - **RF4.4** El sistema debe registrar si el usuario aceptó, rechazó o ignoró cada recomendación, y en qué tiempo lo hizo, para construir un perfil de adopción que permita personalizar cómo y cuándo se presentan futuras recomendaciones.
 
 - **RF4.5** El sistema debe mostrar, posterior a la ejecución de una recomendación, un resumen del impacto real medido (comparando métricas antes y después), cerrando el ciclo de confianza con evidencia concreta del resultado.
-### 1.4 Subespecificación por subsistemas
 
-<ESCRIBIR_REQUERIMIENTOS_SUBESPECIFICADOS_POR_SUBSISTEMA_PARA_TODOS_SUS_REQUERIMIENTOS>
-**Ejemplo:**
-- APIR1.1 El sistema debe permitir conexión con API académica para validar promedio superior a 4.2.
+   
+   ---
+   
+   ###1.4.3 RF3: Creatividades desde el rendimiento
+   
+   ---
+   
+   ###1.4.4 RF4: Confianza Progresiva
 
-### 1.5 Tabla de asignación a subsistemas
+#### RF13 — Agente Conversacional Visual (ACV)
 
-| Requisito | Subsistema | Descripción |
-|----------|------------|-------------|
-|          |            |             |
+| **ID** | **Subrequerimiento** |
+| --- | --- |
+| **ACV R13.1** | El sistema debe mostrar el avatar visual del agente mediante una ventana fija en la interfaz principal de la plataforma |
+| **ACV R13.2** | El sistema debe reproducir la voz del agente mediante síntesis de voz clonada de actriz al momento de emitir una recomendación o alerta |
+| **ACV R13.3** | El sistema debe mostrar el texto de la respuesta en un panel de conversación junto al avatar para usuarios que prefieran leer |
+| **ACV R13.4** | El sistema debe permitir al usuario enviar mensajes al agente mediante un campo de texto o por entrada de voz |
+| **ACV R13.5** | El sistema debe responder al usuario en lenguaje natural evitando tecnicismos innecesarios mediante el procesamiento del LLM |
+| **ACV R13.6** | El sistema debe permitir al usuario activar o desactivar la voz del agente mediante un botón de configuración en la interfaz |
 
 ---
 
-## 2. PESTLE
-## Análisis PESTLE – RF1: Detección de campañas de bajo desempeño
+#### RF14 — Recomendaciones Inteligentes (REC)
+
+| **ID** | **Subrequerimiento** |
+| --- | --- |
+| **REC R14.1** | El sistema debe identificar automáticamente campañas con bajo rendimiento mediante el análisis de métricas como ROAS, CPA, CTR y comportamiento histórico |
+| **REC R14.2** | El sistema debe presentar cada recomendación en una tarjeta de acción que incluya la acción sugerida, la explicación basada en datos y la estimación de impacto esperado |
+| **REC R14.3** | El sistema debe permitir al usuario interactuar con cada recomendación mediante tres opciones: Aplicar, Rechazar o Posponer, mostradas como botones diferenciados en la interfaz |
+| **REC R14.4** | El sistema debe permitir al usuario expandir cada recomendación para acceder a una vista detallada con gráficas de evolución temporal y análisis del embudo de conversión |
+| **REC R14.5** | El sistema debe solicitar y almacenar información cualitativa del negocio (inventario disponible, costos fijos, perfil del cliente) mediante un formulario de onboarding para mejorar la precisión de las recomendaciones |
+| **REC R14.6** | El sistema debe mostrar, posterior a la aplicación de una recomendación, un seguimiento del impacto real versus el impacto estimado en formato antes/después con métricas en valores monetarios y porcentajes |
+
+---
+
+#### RF15 — Gestión de Alertas (ALR)
+
+| **ID** | **Subrequerimiento** |
+| --- | --- |
+| **ALR R15.1** | El sistema debe enviar notificaciones inmediatas al usuario cuando detecte una campaña en situación crítica, priorizando aquellas con mayor impacto económico potencial |
+| **ALR R15.2** | El sistema debe agrupar y priorizar las alertas según su impacto potencial mediante un sistema de pesos por indicador, mostrando un máximo de alertas críticas por sesión |
+| **ALR R15.3** | El sistema debe analizar indicadores en conjunto (CTR + CPA + CBR) en lugar de dispararlos individualmente, para evitar la saturación de alertas al usuario |
+| **ALR R15.4** | El sistema debe permitir al usuario configurar sus preferencias de notificación incluyendo canales (in-app, correo, WhatsApp, push móvil), horarios de envío y nivel de criticidad mínimo |
+
+---
+
+#### RF16 — Retroalimentación y Aprendizaje (RFA)
+
+| **ID** | **Subrequerimiento** |
+| --- | --- |
+| **RFA R16.1** | El sistema debe presentar al usuario un mecanismo de retroalimentación explícita que le permita calificar la utilidad de cada recomendación (útil, incorrecta, irrelevante) con comentario opcional |
+| **RFA R16.2** | El sistema debe registrar retroalimentación implícita derivada del comportamiento del usuario: frecuencia de aceptación, tiempo antes de actuar, recomendaciones ignoradas y acciones revertidas |
+| **RFA R16.3** | El sistema debe continuar generando recomendaciones aunque el usuario las rechace de forma repetida, ajustando el tipo y enfoque de las sugerencias según el patrón detectado |
+| **RFA R16.4** | El sistema debe permitir al usuario configurar niveles de automatización desde recomendaciones manuales hasta ejecución automática de acciones según su preferencia y nivel de confianza acumulada |
+| **RFA R16.5** | El sistema debe mostrar al usuario un indicador de nivel de confianza acumulada con el agente de IA, reflejando el historial de recomendaciones aceptadas y sus resultados medibles |
+
+---
+
+## 1.5 Tabla de Asignación a Subsistemas
+
+| **Requerimiento** | **RF13 - ACV** | **RF14 - REC** | **RF15 - ALR** | **RF16 - RFA** |
+| --- | :---: | :---: | :---: | :---: |
+| Agente conversacional visual | X | | | |
+| Síntesis de voz clonada | X | | | |
+| Identificación de campañas | | X | | |
+| Tarjetas de recomendación | | X | | |
+| Opciones aplicar/rechazar/posponer | | X | | |
+| Datos cualitativos del negocio | | X | | |
+| Alertas priorizadas | | | X | |
+| Sistema de pesos de indicadores | | | X | |
+| Configuración de notificaciones | | | X | |
+| Retroalimentación explícita | | | | X |
+| Aprendizaje por comportamiento | | | | X |
+| Niveles de automatización | | | | X |
+| Indicador de confianza acumulada | | | | X |
+
+
+# 2. PESTLE
+
+> El análisis PESTLE se aplica a los requerimientos funcionales que toman decisiones sobre personas, usan datos sensibles o pueden generar impacto negativo. Para cada dimensión se identifica el hallazgo verificado, su impacto real y el requerimiento derivado.
+
+
+   ###2.1 RF1: Datos y Decisiones
+   
+   ---
+   
+   ###2.2 RF2: Alertas que razonan
+   
+   ## Análisis PESTLE – RF1: Detección de campañas de bajo desempeño
 
 | Dimensión | Hallazgo | Impacto | Requerimiento derivado |
 |----------|----------|---------|-------------------------|
@@ -178,9 +360,86 @@ Las funcionalidades que este sistema ofrece son las referentes al módulo de con
 | **L — Legal** | El sistema maneja información sensible relacionada con ventas, comportamiento de usuarios y datos comerciales. | Riesgo de incumplimiento de normativas de protección de datos y privacidad. | **RNFL-3-05:** El sistema debe proteger la información histórica y analítica mediante autenticación, control de acceso basado en roles y cifrado de datos sensibles almacenados y transmitidos. |
 | **E — Ético** | Las recomendaciones inteligentes y decisiones automatizadas pueden influir directamente en inversiones publicitarias y estrategias de negocio. | Recomendaciones poco transparentes o sesgadas podrían afectar negativamente a los usuarios. | **RNFEt-3-06:** El sistema debe mostrar la justificación de cada recomendación o decisión automatizada indicando las métricas, tendencias históricas y reglas utilizadas para generarla. |
 
-## 3. RF1: Subsistema A <<Nombre el Subsistema>>
+   
+   ---
+   
+   ###2.3 RF3: Creatividades desde el rendimiento
+   
+   ---
+   
+   ###2.4 RF4: Confianza Progresiva
+   
+   ## PESTLE — RF13: Agente Conversacional Visual
 
-### 3.1 Historias de usuario
+| Dimensión | Hallazgo | Impacto | Requerimiento derivado |
+|-----------|----------|---------|----------------------|
+| **P — Político** | Colombia tiene en trámite el Proyecto de Ley 043 de 2025 de Inteligencia Artificial, radicado ante el Congreso por MinCiencias y MinTIC, que clasifica los sistemas de IA por nivel de riesgo. Los agentes conversacionales que toman decisiones comerciales podrían clasificarse como riesgo limitado o alto según este marco. | Si el proyecto es aprobado, los agentes de IA conversacionales deberán cumplir con requisitos de trazabilidad, transparencia y gobernanza. | El sistema debe documentar y hacer trazable toda acción sugerida o ejecutada por el agente de IA. |
+| **E — Económico** | La síntesis de voz clonada y el procesamiento LLM en tiempo real implican costos por token y por llamada a APIs externas. Con más de 5.600 usuarios activos, el costo por interacción puede escalar rápidamente.| Sin control de consumo, el servicio puede volverse inviable a escala. | El sistema debe gestionar el consumo por niveles de suscripción e implementar caché de respuestas frecuentes para reducir costos. |
+| **S — Social** | Usuarios con discapacidad auditiva pueden verse excluidos de la interacción verbal.| Un agente que solo funciona por voz excluye a usuarios con discapacidad auditiva o en entornos ruidosos. | El sistema debe mostrar siempre el texto de las respuestas de forma simultánea a la voz. |
+| **T — Tecnológico** | La síntesis de voz en tiempo real con más de 5.600 usuarios puede desbordarse bajo alta concurrencia.| Si el motor de voz se satura, el agente pierde respuesta en tiempo real destruyendo la experiencia del usuario. | El sistema debe degradar al modo texto cuando el procesamiento de voz supere la capacidad disponible. |
+| **L — Legal** | El agente accede a datos financieros del negocio. En Colombia aplica la Ley 1581 de Habeas Data. Dado que Dropi opera en Europa con más de 180.000 usuarios, el EU AI Act (vigente desde agosto 2024, plenamente aplicable desde agosto 2026) exige que los usuarios sean informados de que interactúan con una máquina. | No identificar el agente como IA ante usuarios europeos viola el EU AI Act, con multas de hasta 35 millones de euros. | El sistema debe identificar al agente como IA al inicio de cada sesión y cifrar las conversaciones almacenadas. |
+| **E — Ético** |  la voz clonada puede ofrecerse como una opción elegible por el usuario junto a otras alternativas como voz sintética estándar o solo texto. | Si el usuario no sabe que interactúa con una IA, la confianza puede erosionarse cuando lo descubra. | El sistema debe ofrecer la voz clonada como una opción entre varias e identificar siempre al agente como IA independientemente de la modalidad elegida. |
+
+---
+
+## PESTLE — RF14: Recomendaciones Inteligentes
+
+| Dimensión | Hallazgo | Impacto | Requerimiento derivado |
+|-----------|----------|---------|----------------------|
+| **P — Político** | Meta Ads ya está implementando en 2025-2026 restricciones en el acceso a datos para categorías sensibles (salud, finanzas, política).| El sistema puede perder datos clave para generar recomendaciones en categorías restringidas. | El sistema debe adaptarse cuando una fuente de datos esté parcialmente restringida sin interrumpir el servicio. |
+| **E — Económico** | Un usuario promedio invierte entre 1.500 y 2.000 USD/mes en publicidad digital.| Una recomendación incorrecta puede generar pérdidas significativas y abandono de la plataforma. | El sistema debe mostrar el nivel de confianza de cada recomendación y advertir cuando los datos sean insuficientes. |
+| **S — Social** |Entendimiento de las metricas dentro de ROAX | Si las recomendaciones usan jerga técnica el usuario no actúa sobre ellas. | El sistema debe presentar las recomendaciones en lenguaje no técnico. |
+| **T — Tecnológico** | El cruce de datos entre Meta, Shopify y Dropi hoy es manual porque son bases de datos distintas | Datos inconsistentes pueden generar recomendaciones incorrectas y dañinas. | El sistema debe indicar la última sincronización de cada fuente y marcar recomendaciones de baja confianza si los datos están desactualizados. |
+| **L — Legal** |  El EU AI Act exige transparencia sobre decisiones generadas por IA. | El sistema puede generar expectativas incorrectas si no aclara la naturaleza de sus sugerencias. | El sistema debe avisar que las recomendaciones son sugerencias automatizadas y que el usuario conserva la decisión final. |
+| **E — Ético** |Usar datos agregados de todos los usuarios para mejorar recomendaciones individuales es válido y valioso. | El modelo puede volverse sesgado y perjudicial si no contrasta con parámetros objetivos de rentabilidad. | El sistema debe combinar el aprendizaje individual con benchmarks de industria y alertar cuando los patrones del usuario afecten negativamente su ROAS. |
+
+---
+
+## PESTLE — RF15: Gestión de Alertas
+
+| Dimensión | Hallazgo | Impacto | Requerimiento derivado |
+|-----------|----------|---------|----------------------|
+| **P — Político** | Dado que Dropi opera en Europa, el envío de alertas con datos financieros a usuarios europeos está sujeto al GDPR y al EU AI Act. Las notificaciones automatizadas con datos personales deben cumplir requisitos de consentimiento. | Sin cumplimiento del GDPR, ROAX puede recibir sanciones regulatorias europeas. | El sistema debe diferenciar los perfiles de notificación según la región del usuario. |
+| **E — Económico** | El envío masivo de alertas por correo o push implica costos por notificación que escalan con la base de usuarios. | Sin control, los costos de notificación pueden volverse inviables económicamente. | El sistema debe agrupar alertas para reducir el volumen de notificaciones sin perder cobertura crítica. |
+| **S — Social** | Laura mencionó que el sistema anterior generaba hasta 250 alertas diarias causando fatiga total. Algunos canales menos invasivos como WhatsApp o correo electrónico. | La saturación de alertas lleva al usuario a desactivarlas todas, perdiendo el valor del monitoreo 24/7. | El sistema debe limitar las alertas críticas y ofrecer canales menos invasivos configurables por el usuario. |
+| **T — Tecnológico** | El motor de alertas debe operar 24/7.  | Una falla nocturna puede generar pérdidas significativas y destruir la confianza en el sistema. | El sistema debe implementar redundancia en el motor de alertas y notificar al usuario ante cualquier interrupción. |
+| **L — Legal** | Las alertas con métricas financieras enviadas por canales externos deben estar cifradas según la Ley 1581 y el GDPR. | El envío de datos financieros sin cifrado constituye una violación de datos personales. | El sistema debe cifrar el contenido de las notificaciones que incluyan métricas financieras del usuario. |
+| **E — Ético** | El sistema prioriza alertas por impacto económico absoluto, lo que puede perjudicar a usuarios con menor volumen de inversión. | Un usuario pequeño puede perder el 100% de su presupuesto sin recibir alertas críticas. | El sistema debe calcular el impacto de las alertas de forma relativa al presupuesto de cada usuario. |
+
+---
+
+## PESTLE — RF16: Retroalimentación y Aprendizaje
+
+| Dimensión | Hallazgo | Impacto | Requerimiento derivado |
+|-----------|----------|---------|----------------------|
+| **P — Político** | ROAX opera actualmente en Latinoamérica y Europa a través de Dropi, que tiene más de 180.000 usuarios en esa región. El EU AI Act ya está en vigor desde agosto 2024 con alcance extraterritorial y multas de hasta 35 millones de euros. | Si el motor de aprendizaje no es auditable, ROAX puede enfrentar sanciones europeas que afecten su operación en toda la región. | El sistema debe mantener logs auditables de cómo la retroalimentación del usuario modifica el modelo de recomendaciones. |
+| **E — Económico** | El reentrenamiento del modelo con retroalimentación de más de 5.600 usuarios puede crecer en costos computacionales de forma no lineal. | Costos insostenibles pueden limitar la frecuencia de actualización reduciendo la personalización percibida. | El sistema debe actualizar el modelo por lotes con un ciclo máximo de 24 horas para optimizar costos. |
+| **S — Social** | Usuarios con alta desconfianza inicial rechazan todas las recomendaciones sin probarlas.| Sin interacciones iniciales el sistema no puede personalizar, generando el ciclo de baja confianza.| El sistema debe ofrecer un modo de observación donde el usuario vea el impacto hipotético de recomendaciones sin necesidad de aplicarlas. |
+| **T — Tecnológico** | La automatización completa requiere integración con la API de Meta, que ya ha cambiado políticas de forma abrupta y está restringiendo categorías en 2025-2026. | Si Meta revoca permisos sin aviso, la automatización falla en el momento más crítico. | El sistema debe verificar los permisos de escritura de Meta antes de cada acción automatizada. |
+| **L — Legal** | El historial de comportamiento del usuario es un dato personal bajo la Ley 1581 y el GDPR, que incluye el derecho al olvido para usuarios europeos. | Almacenar datos de comportamiento sin mecanismo de eliminación viola ambas regulaciones. | El sistema debe permitir al usuario eliminar su historial de interacciones y reiniciar su modelo personalizado. |
+| **E — Ético** |La IA debe usar datos de toda la base de usuarios para enriquecer recomendaciones, pero también debe proteger al usuario de reforzar sus propias malas prácticas. | El sistema puede volverse cómplice de pérdidas si refuerza decisiones que el usuario acepta pero que son objetivamente perjudiciales. | El sistema debe balancear el aprendizaje individual con parámetros objetivos de rentabilidad de la industria. |
+
+
+   
+   ---
+   
+##3. RF1: Datos y Decisiones
+   
+###3.1 Historias de Usuario
+
+---
+   
+###3.2 Casos de Uso (Aún no solicitado)
+
+####3.2.1 Diagrama de Casos de Uso
+
+####3.2.2 Formatos Bicolumnares
+
+---
+
+##4. RF2: Alertas Inteligentes
+
+###4.1 Historias de Usuario
 
 # Historia de Usuario 1
 
@@ -444,302 +703,153 @@ Prioridad: Alta
 
 Dependencias: Servicio de inteligencia artificial e integración con base de datos de campañas
 
-### 4.2 Casos de uso
-
-#### 4.2.1 Diagrama de casos de uso
-
-#### 4.2.2 Formatos bicolumnares
-
-<<Enlace Formatos bicolumnares>>
 
 ---
 
-## 5. RF3: Subsistema C <<Nombre el Subsistema>>
+###4.2 Casos de Uso (Aún no solicitado)
 
-### 5.1 Historias de usuario
+####4.2.1 Diagrama de Casos de Uso
 
-# Historia de Usuario 1
-
-**ID:** HU1  
-**Título:** Registro de acciones tomadas sobre campañas
-
-## Historia
-Como usuario de la plataforma, quiero que el sistema registre las acciones realizadas manual o automáticamente sobre mis campañas para poder analizar posteriormente su impacto en el negocio.
-
----
-## Criterios de Aceptación 
-
-### Scenario: Registro exitoso de acción manual
--Given que el usuario modifica manualmente una campaña
-
--When la acción es confirmada
-
--Then el sistema registra la acción realizada
-
--And almacena la fecha, campaña afectada y tipo de acción
-
-
-### Scenario: Registro de acción automática
--Given que el sistema ejecuta una recomendación automática
-
--When la acción es aplicada sobre una campaña
-
--Then el sistema registra la acción automaticamente
-
--And la asocia al análisis correspondiente
-
-### Scenario: Registro fallido de acción manual por datos incompletos
-
--Given que el usuario modifica una campaña
-
--And la información de la acción no contiene datos válidos de la campaña afectada
-
--When la acción es confirmada
-
--Then el sistema no registra la acción aplicada
-
--And muestra un mensaje que la modificación es erronea o inválida
-
-
----
-**ID:** HU2 
-**Título:** Consulta de información histórica
-
-## Historia
-
-Como usuario de la plataforma, quiero consultar información histórica diaria y mensual para identificar tendencias y cambios en el comportamiento de mis campañas.
+####4.2.2 Formatos Bicolumnares
 
 ---
 
-## Criterios de Aceptación 
+##5. RF3: Inteligencia Creativa
+   
+###5.1 Historias de Usuario
+   
+---
 
-### Scenario: Consulta de historial diario
+###5.2 Casos de Uso (Aún no solicitado)
 
+####5.2.1 Diagrama de Casos de Uso
 
--Given que existen registros históricos almacenados
-
--When el usuario selecciona una campaña y un rango de fechas
-
--Then el sistema muestra el comportamiento histórico diario
-
-### Scenario: Consulta de historial mensual
-
-
--Given que existen datos históricos mensuales
-
--When el usuario consulta el resumen histórico
-
--Then el sistema presenta tendencias mensuales de rendimiento
-
+####5.2.2 Formatos Bicolumnares
 
 ---
 
-**Prioridad:** Alta / Media / Baja
+## 6. RF4: Confianza Progresiva
+   
+###6.1 Historias de Usuario
+  
+| **Campo** | **Descripción** |
+| --- | --- |
+| **Título** | Recibir y actuar sobre recomendaciones de campañas |
+| **Yo, como** | usuario de ROAX con campañas activas en Meta Ads |
+| **Quiero** | recibir recomendaciones claras sobre qué hacer con mis campañas, con su justificación y estimación de impacto |
+| **Para** | tomar decisiones informadas sin necesidad de ser experto en métricas publicitarias |
 
-**Dependencias:**
+**Scenario 1**
 
----
+| | |
+| --- | --- |
+| **Given** | el sistema detecta una campaña con rendimiento por debajo del umbral de la industria |
+| **When** | genera la recomendación |
+| **Then** | muestra una tarjeta con la acción sugerida en lenguaje simple, la justificación y el impacto estimado |
 
-### 5.2 Casos de uso
+**Scenario 2**
 
-#### 5.2.1 Diagrama de casos de uso
+| | |
+| --- | --- |
+| **Given** | el usuario revisa una recomendación |
+| **When** | hace clic en Aplicar |
+| **Then** | el sistema ejecuta la acción y comienza el seguimiento del impacto real versus el estimado |
 
-#### 4.2.2 Formatos bicolumnares
+**Scenario 3**
 
-<<Enlace Formatos bicolumnares>>
-
----
-
-## 5. RF3: Subsistema C <<Nombre el Subsistema>>
-
-### 5.1 Historias de usuario
-
-**Nombre de la historia:**
-
-**Descripción:**  Como [tipo de usuario] quiero [objetivo] para [beneficio].
-
-**Criterios de aceptación:**
-
-- Criterio 1
-- Criterio 2
-- Criterio 3
-
-**Prioridad:** Alta / Media / Baja
-
-**Dependencias:**
-
----
-
-### 5.2 Casos de uso
-
-#### 5.2.1 Diagrama de casos de uso
-
-#### 5.2.2 Formatos bicolumnares
-
-<<Enlace Formatos bicolumnares>>
+| | |
+| --- | --- |
+| **Given** | el usuario rechaza una recomendación |
+| **When** | selecciona un motivo |
+| **Then** | el sistema registra el rechazo, ajusta el enfoque y continúa generando recomendaciones |
 
 ---
 
-## 6. RF3: Subsistema D <<Nombre el Subsistema>>
+# 5. RF15 — Gestión de Alertas (ALR)
 
-### 6.1 Historias de usuario
+## 5.1 Historias de Usuario
 
-# Historia de Usuario 1
+| **Campo** | **Descripción** |
+| --- | --- |
+| **Título** | Recibir alertas críticas sin saturación |
+| **Yo, como** | usuario de ROAX con campañas activas fuera del horario laboral |
+| **Quiero** | recibir alertas priorizadas sobre situaciones críticas en tiempo real |
+| **Para** | actuar rápido sin ahogarme en notificaciones irrelevantes |
 
-**ID:** HU1  
-**Título:** Explicación detallada de recomendaciones IA
 
-## Historia
+**Scenario 1**
 
-Como usuario, quiero visualizar una explicación clara de cada recomendación para entender qué datos motivaron la sugerencia.
+| | |
+| --- | --- |
+| **Given** | el sistema detecta una campaña con gasto elevado sin conversiones |
+| **When** | evalúa el impacto relativo al presupuesto del usuario |
+| **Then** | envía una alerta crítica por el canal configurado con la situación y las opciones de acción |
 
-## Criterios de Aceptación
+**Scenario 2**
 
-### Scenario: Visualización correcta de explicación
+| | |
+| --- | --- |
+| **Given** | el usuario tiene múltiples campañas con indicadores fuera de rango |
+| **When** | el sistema evalúa los indicadores en conjunto |
+| **Then** | agrupa las alertas por criticidad y presenta un máximo configurable sin saturar al usuario |
 
-- Given que el sistema genera una recomendación
+**Scenario 3**
 
-- When el usuario consulta el detalle de la sugerencia
-
-- Then el sistema muestra una explicación asociada
-
-- And presenta las métricas y tendencias utilizadas para generar la recomendación
-
-**Prioridad:** Alta
-
-**Dependencias:** RF4.1
-
----
-
-# Historia de Usuario 2
-
-**ID:** HU2  
-**Título:** Visualización de nivel de confianza
-
-## Historia
-
-Como usuario, quiero conocer el nivel de confianza de una recomendación para decidir si debo aplicarla.
-
-## Criterios de Aceptación
-
-### Scenario: Consulta de nivel de confianza
-
-- Given que el sistema genera una recomendación
-
-- When el usuario revisa la sugerencia
-
-- Then el sistema muestra un porcentaje o nivel de confianza asociado
-
-- And explica brevemente cómo fue calculado
+| | |
+| --- | --- |
+| **Given** | el usuario quiere configurar sus notificaciones |
+| **When** | accede a la sección de alertas |
+| **Then** | puede definir canales (in-app, correo, WhatsApp, push), horarios y nivel mínimo de criticidad |
 
 ---
 
-# Historia de Usuario 3
+# 6. RF16 — Retroalimentación y Aprendizaje (RFA)
 
-**ID:** HU3  
-**Título:** Aplicación gradual de recomendaciones
+## 6.1 Historias de Usuario
 
-## Historia
+| **Campo** | **Descripción** |
+| --- | --- |
+| **Título** | Construir confianza progresiva con el agente |
+| **Yo, como** | usuario de ROAX que usa las recomendaciones del sistema |
+| **Quiero** | ver cómo el sistema aprende de mis decisiones y poder delegar autonomía gradualmente |
+| **Para** | confiar en el sistema y permitirle actuar en mi nombre cuando esté fuera |
 
-Como usuario, quiero aplicar parcialmente una recomendación para evaluar resultados antes de ejecutar cambios completos.
 
-## Criterios de Aceptación
+**Scenario 1**
 
-### Scenario: Aplicación parcial exitosa
+| | |
+| --- | --- |
+| **Given** | el usuario ha aplicado varias recomendaciones con resultados positivos |
+| **When** | el sistema calcula el nivel de confianza acumulada |
+| **Then** | muestra el indicador actualizado y sugiere activar un nivel mayor de automatización |
 
-- Given que existe una recomendación disponible
+**Scenario 2**
 
-- When el usuario selecciona aplicación parcial
+| | |
+| --- | --- |
+| **Given** | el usuario rechaza repetidamente un tipo de recomendación |
+| **When** | el modelo procesa el patrón |
+| **Then** | ajusta el enfoque de futuras recomendaciones sin dejar de recomendar |
 
-- Then el sistema ejecuta únicamente una parte de los cambios
+**Scenario 3**
 
-- And registra la configuración aplicada
-
+| | |
+| --- | --- |
+| **Given** | el usuario tiene activado el modo de automatización |
+| **When** | el sistema va a ejecutar una acción automática |
+| **Then** | verifica permisos, ejecuta la acción, notifica al usuario y le ofrece revertirla dentro de 24 horas |
+   
 ---
 
-# Historia de Usuario 4
+###6.2 Casos de Uso (Aún no solicitado)
 
-**ID:** HU4  
-**Título:** Historial de decisiones sobre recomendaciones
+####6.2.1 Diagrama de Casos de Uso
 
-## Historia
+####6.2.2 Formatos Bicolumnares
 
-Como usuario, quiero consultar recomendaciones aceptadas, rechazadas o ignoradas para revisar decisiones anteriores y comprender cómo han impactado mis campañas.
+7. Backlog (Aún no solicitado)
 
-## Criterios de Aceptación
+8. MockUp (Aún no solicitado)
+   8.1 Descripción General
+   8.2 Enlace MockUp
 
-### Scenario: Consulta exitosa del historial
-
-- Given que existen recomendaciones registradas
-
-- When el usuario accede al historial de recomendaciones
-
-- Then el sistema muestra las recomendaciones junto con su estado
-
-- And presenta la fecha y tiempo de respuesta del usuario
-
-### Scenario: Historial vacío
-
-- Given que no existen recomendaciones registradas
-
-- When el usuario consulta el historial
-
-- Then el sistema informa que no hay registros disponibles
-
-**Prioridad:** Media
-
-**Dependencias:** RF4.4
-
----
-
-# Historia de Usuario 5
-
-**ID:** HU5  
-**Título:** Comparación de resultados antes y después de aplicar recomendaciones
-
-## Historia
-
-Como usuario, quiero visualizar las métricas antes y después de aplicar una recomendación para evaluar si realmente mejoró el rendimiento de mis campañas.
-
-## Criterios de Aceptación
-
-### Scenario: Comparación exitosa de resultados
-
-- Given que una recomendación fue aplicada previamente
-
-- When el usuario consulta el impacto generado
-
-- Then el sistema muestra métricas anteriores y posteriores a la aplicación
-
-- And presenta las variaciones obtenidas en el rendimiento de la campaña
-
-### Scenario: Datos insuficientes para comparación
-
-- Given que aún no existe suficiente información posterior a la aplicación
-
-- When el usuario consulta el impacto de la recomendación
-
-- Then el sistema informa que el análisis todavía no está disponible
-
-**Prioridad:** Alta
-
-**Dependencias:** RF4.5
-
-
-## 7. Backlog
-
-| ID | Historia de Usuario | Prioridad |
-|----|--------------------|----------|
-| 1  | Registro de Usuario | Alta     |
-
----
-
-## 8. MockUp
-
-### 8.1 Descripción general
-
-Se presenta el MVP que cumple con todas las funcionalidades propuestas. Estas no se referencian en los formatos bicolumnares debido a la extensión del proyecto.
-
-### 8.2 Enlace MockUp
-
-<<Enlace MockUp>>
