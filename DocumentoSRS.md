@@ -36,58 +36,60 @@
 
 # Tabla de Contenido
 
+# Tabla de Contenido
+
 1. Especificación de Requerimientos
-   1.1 Descripción General
-   1.2 Contexto del Proyecto
-   1.3 Requisitos
-      1.3.1 Subsistema de Datos y Decisiones
-      1.3.2 Subsistema de Alertas que razonan
-      1.3.3 Subsistema de Creatividades desde el rendimiento
-      1.3.4 Subsistema de Confianza Progresiva
+   1.1. Descripción General  
+   1.2. Contexto del Proyecto  
+   1.3. Requisitos  
+   - 1.3.1 Subsistema de Datos y Decisiones  
+   - 1.3.2 Subsistema de Alertas que Razonan  
+   - 1.3.3 Subsistema de Creatividades desde el Rendimiento  
+   - 1.3.4 Subsistema de Confianza Progresiva  
 
-   1.4 Subespecificación por Subsistemas
-      1.4.1 RF1: Datos y Decisiones
-      1.4.2 RF2: Alertas que razonan
-      1.4.3 RF3: Creatividades desde el rendimiento
-      1.4.4 RF4: Confianza Progresiva
+   1.4. Subespecificación por Subsistemas  
+   - 1.4.1 RF1: Datos y Decisiones  
+   - 1.4.2 RF2: Alertas que Razonan  
+   - 1.4.3 RF3: Creatividades desde el Rendimiento  
+   - 1.4.4 RF4: Confianza Progresiva  
 
-   1.5 Tabla de Asignación a Subsistemas
+   1.5. Tabla de Asignación a Subsistemas  
 
 2. PESTLE
-      2.1 RF1: Datos y Decisiones
-      2.2 RF2: Alertas que razonan
-      2.3 RF3: Creatividades desde el rendimiento
-      2.4 RF4: Confianza Progresiva
+   - 2.1 RF1: Datos y Decisiones  
+   - 2.2 RF2: Alertas que Razonan  
+   - 2.3 RF3: Creatividades desde el Rendimiento  
+   - 2.4 RF4: Confianza Progresiva  
 
 3. RF1: Datos y Decisiones
-   3.1 Historias de Usuario
-   3.2 Casos de Uso
-      3.2.1 Diagrama de Casos de Uso
-      3.2.2 Formatos Bicolumnares
+   3.1. Historias de Usuario  
+   3.2. Casos de Uso  
+   - 3.2.1 Diagrama de Casos de Uso  
+   - 3.2.2 Formatos Bicolumnares  
 
 4. RF2: Alertas Inteligentes
-   4.1 Historias de Usuario
-   4.2 Casos de Uso
-      4.2.1 Diagrama de Casos de Uso
-      4.2.2 Formatos Bicolumnares
+   4.1. Historias de Usuario  
+   4.2. Casos de Uso  
+   - 4.2.1 Diagrama de Casos de Uso  
+   - 4.2.2 Formatos Bicolumnares  
 
 5. RF3: Inteligencia Creativa
-   5.1 Historias de Usuario
-   5.2 Casos de Uso
-      5.2.1 Diagrama de Casos de Uso
-      5.2.2 Formatos Bicolumnares
+   5.1. Historias de Usuario  
+   5.2. Casos de Uso  
+   - 5.2.1 Diagrama de Casos de Uso  
+   - 5.2.2 Formatos Bicolumnares  
 
 6. RF4: Confianza Progresiva
-   6.1 Historias de Usuario
-   6.2 Casos de Uso
-      6.2.1 Diagrama de Casos de Uso
-      6.2.2 Formatos Bicolumnares
+   6.1. Historias de Usuario  
+   6.2. Casos de Uso  
+   - 6.2.1 Diagrama de Casos de Uso  
+   - 6.2.2 Formatos Bicolumnares  
 
 7. Backlog
 
 8. MockUp
-   8.1 Descripción General
-   8.2 Enlace MockUp
+   - 8.1 Descripción General  
+   - 8.2 Enlace MockUp
 
 ---
 
