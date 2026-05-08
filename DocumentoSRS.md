@@ -138,47 +138,211 @@ Con este rediseño, ROAX busca evolucionar de una plataforma de visualización d
 ## 1.3 Requisitos
 
 ### 1.3.1 Subsistema de Datos y Decisiones
+# Requisitos de Usuario
 
-Requisitos de Usuario
-RU1 - Visibilidad de rentabilidad real: El usuario necesita saber en tiempo real cuánto está ganando o perdiendo por cada campaña activa, cruzando automáticamente su inversión en publicidad con las ventas y entregas reales, sin tener que hacer los cálculos manualmente ni entrar a múltiples plataformas.
-RU2 - Alertas comprensibles: El usuario necesita recibir alertas que no solo le avisen que algo está mal, sino que le expliquen en lenguaje sencillo por qué está pasando y qué parte del proceso está fallando, ya sea el anuncio, la página de venta o la logística.
-RU3 - Control sobre la automatización: El usuario necesita poder definir sus propias reglas de automatización y aprobar las acciones que la IA propone antes de que se ejecuten, manteniendo siempre el control sobre su presupuesto y sus campañas si lo prefiere, sino, puede configurar las automatizaciones que no requieran su aporbación o considere oportunas.
-RU4 - Monitoreo sin intervención: El usuario necesita que el sistema vigile sus campañas las 24 horas del día los 7 días de la semana, actuando de forma autónoma dentro de los límites que él mismo configuró, para evitar pérdidas mientras no está disponible.
-RU5 - Privacidad y acceso seguro: El usuario necesita que los datos de sus clientes y pedidos estén protegidos, y que cada miembro de su equipo solo pueda ver la información que le corresponde según su rol.
-RU6  - Transparencia y acceso móvil: El usuario necesita conocer cualquier costo adicional antes de aplicar cambios en su presupuesto, y poder gestionar todo desde su telefono -ya sea en app o en portal web o en un chatbot de wspp- sin perder funcionalidades.
-RU7 - Decisiones con contexto real: El usuario puede preferir que la IA tenga en cuenta factores reales de su negocio como el inventario disponible, sus restricciones financieras y el perfil de su cliente ideal, para que las recomendaciones sean útiles y no genéricas; o puede usar las recomendaciones de MEta Advantage.
+## RU1 - Visibilidad de rentabilidad real
+El usuario necesita saber en tiempo real cuánto está ganando o perdiendo por cada campaña activa, cruzando automáticamente su inversión en publicidad con las ventas y entregas reales, sin tener que hacer los cálculos manualmente ni entrar a múltiples plataformas.
 
-Requisitos del Sistema
-RF1: El sistema debe calcular la rentabilidad real del negocio integrando fuentes de pauta y ventas.
-●	RF1.1: El sistema debe cruzar automáticamente los datos de Meta Ads (Inversión, ROAS, CPA) con los de las plataformas de venta como Shopify o Dropi, para saber cuánto está ganando o perdiendo el negocio por cada campaña activa.
-●	RF1.2: El sistema debe detectar de forma proactiva las campañas que no están siendo rentables, comparando el ROAS actual contra el punto de equilibrio real del producto.
-RF2: El sistema debe explicar el porqué de cada métrica de rentabilidad.
-●	RF2.1: Las alertas del sistema no deben limitarse a mostrar datos. Deben explicar qué está pasando y por qué, por ejemplo: "La campaña X está quemando dinero porque el CPA superó el margen de ganancia en un 15%".
-●	RF2.2: El sistema aprenderá de las decisiones del usuario -aprobaciones, rechazos y modificaciones- para ajustar progresivamente su nivel de autonomía. El usuario puede configurar en cualquier momento qué tipo de acciones puede ejecutar la IA sin pedir permiso -En modo Automatico- basándose en el historial de interacciones que haya acumulado. El nivel de autonomía activado siempre es reversible.
-RF3: El sistema debe ejecutar acciones correctivas de forma autónoma sobre la publicidad digital.
-●	RF3.1: Cada usuario debe poder configurar sus propias reglas de automatización, como pausar campañas o ajustar presupuestos, basándose en la rentabilidad real del negocio y no solo en las métricas de pauta.
-●	RF3.2: Cada acción automática debe quedar registrada con la fecha, lo que se hizo y la razón por la que se tomó esa decisión.
-RF4: El sistema debe monitorear el negocio de forma autónoma las 24 horas, los 7 días de la semana.
-●	RF4.1: El sistema debe revisar continuamente los datos de Meta Ads para detectar, incluso fuera del horario de trabajo del usuario, cuando el CPA o el ROAS estén fallando de forma crítica y poniendo en riesgo la rentabilidad. La evaluación debe considerar el tiempo de madurez de cada campaña, reconociendo que los datos de Meta Ads tienen un delay natural de hasta 24 horas, y clasificar el rendimiento según la fase en que se encuentre la campaña: Testeo, Optimización o Escalado. 
-RF5: El sistema debe proteger la integridad y privacidad de los datos del e-commerce.
-●	RF5.1: El sistema debe cumplir con la Ley de Habeas Data y cifrar los datos de clientes y pedidos de Shopify o Dropi usando protocolos TLS 1.3.
-●	RF5.2: El acceso a los datos financieros debe estar dividido por roles — Administrador y Vendedor — para que la información sensible solo la vea quien debe verla.
-RF6: El sistema debe ser transparente con los costos y funcionar bien en dispositivos móviles.
-●	RF6.1: Antes de ejecutar cualquier cambio de presupuesto o activar una integración que pueda generar costos adicionales, el sistema debe informar al usuario sobre el monto estimado, la frecuencia y el servicio involucrado. Esto aplica tanto desde la plataforma web como desde el chatbot de WhatsApp, y el sistema siempre debe esperar confirmación explícita antes de proceder. Sin sorpresas, en ningún canal.
-●	RF6.2: El sistema debe funcionar correctamente en navegadores móviles de Android e iOS, ya que la mayoría de los dropshippers manejan su negocio desde el celular.
-RF7: El sistema debe tomar decisiones considerando el contexto operativo real del negocio, más allá de los datos de las APIs de publicidad, integrando el inventario, las restricciones financieras y el perfil cualitativo del cliente ideal. 
-●	RF7.1 El sistema debe sincronizarse de forma automática con el inventario real de cada producto, leyendo el stock disponible en tiempo real desde las plataformas de venta integradas (Shopify, Dropi, WooCommerce, Tienda Nube). Cuando un producto se quede sin stock o caiga por debajo del umbral mínimo definido, el sistema debe pausar automáticamente las campañas asociadas para evitar gasto publicitario innecesario, y reactivarlas cuando el inventario sea repuesto. 
-●	RF7.2 además, el sistema debe identificar campañas ganadoras -aquellas con ROAS y CPA sostenidos en zona positiva por más de 24 horas- y sugerir proactivamente un aumento de presupuesto cuando haya margen financiero disponible según las restricciones registradas. La sugerencia debe incluir el monto recomendado, la proyección de gasto en las próximas 24 horas y el resultado esperado, antes de que el usuario confirme.
-●	RF7.3: El sistema debe conectarse con la API de Meta Advantage para analizar la configuració.n de los públicos en las campañas activas, detectar errores o inconsistencias en la segmentación actual y sugerir ajustes concretos. El usuario siempre puede aceptar, modificar o descartar cada sugerencia — el sistema no aplica cambios de segmentación de forma automática.
-●	RF7.4. El sistema debe integrar fuentes de datos externos del mercado (tendencias estacionales, picos de demanda detectables en plataformas como Google Trends, comportamiento publicitario de la competencia accesible vía APIs públicas de Meta) y debe alimentar a la IA con esa información para que sus recomendaciones de pauta consideren el contexto externo, anticipándose a oportunidades o riesgos que no son visibles desde los datos internos del negocio.
+---
 
+## RU2 - Alertas comprensibles
+El usuario necesita recibir alertas que no solo le avisen que algo está mal, sino que le expliquen en lenguaje sencillo por qué está pasando y qué parte del proceso está fallando, ya sea el anuncio, la página de venta o la logística.
 
+---
 
-Requisitos de Proceso
-RP1: El desarrollo del módulo se llevará a cabo bajo metodología Scrum, con sprints de 2 semanas y reuniones de revisión al final de cada sprint con el Product Owner de ROAX.
-RP2: El código fuente del sistema debe gestionarse mediante control de versiones usando Git, con ramas separadas para desarrollo, pruebas y producción.
-RP3: Toda integración con APIs externas (Meta Ads, Shopify, Dropi) debe realizarse respetando los permisos y condiciones de uso vigentes de cada plataforma.
-RP4: El sistema debe ser diseñado para operar sobre la infraestructura existente de ROAX en app.roaxai.com, sin requerir cambios en la arquitectura base de la plataforma externa.
+## RU3 - Control sobre la automatización
+El usuario necesita poder definir sus propias reglas de automatización y aprobar las acciones que la IA propone antes de que se ejecuten, manteniendo siempre el control sobre su presupuesto y sus campañas si lo prefiere, sino, puede configurar las automatizaciones que no requieran su aporbación o considere oportunas.
+
+---
+
+## RU4 - Monitoreo sin intervención
+El usuario necesita que el sistema vigile sus campañas las 24 horas del día los 7 días de la semana, actuando de forma autónoma dentro de los límites que él mismo configuró, para evitar pérdidas mientras no está disponible.
+
+---
+
+## RU5 - Privacidad y acceso seguro
+El usuario necesita que los datos de sus clientes y pedidos estén protegidos, y que cada miembro de su equipo solo pueda ver la información que le corresponde según su rol.
+
+---
+
+## RU6 - Transparencia y acceso móvil
+El usuario necesita conocer cualquier costo adicional antes de aplicar cambios en su presupuesto, y poder gestionar todo desde su telefono -ya sea en app o en portal web o en un chatbot de wspp- sin perder funcionalidades.
+
+---
+
+## RU7 - Decisiones con contexto real
+El usuario puede preferir que la IA tenga en cuenta factores reales de su negocio como el inventario disponible, sus restricciones financieras y el perfil de su cliente ideal, para que las recomendaciones sean útiles y no genéricas; o puede usar las recomendaciones de MEta Advantage.
+
+---
+
+# Requisitos del Sistema
+
+## RF1
+El sistema debe calcular la rentabilidad real del negocio integrando fuentes de pauta y ventas.
+
+### RF1.1
+El sistema debe cruzar automáticamente los datos de Meta Ads (Inversión, ROAS, CPA) con los de las plataformas de venta como Shopify o Dropi, para saber cuánto está ganando o perdiendo el negocio por cada campaña activa.
+
+### RF1.2
+El sistema debe detectar de forma proactiva las campañas que no están siendo rentables, comparando el ROAS actual contra el punto de equilibrio real del producto.
+
+---
+
+## RF2
+El sistema debe explicar el porqué de cada métrica de rentabilidad.
+
+### RF2.1
+Las alertas del sistema no deben limitarse a mostrar datos. Deben explicar qué está pasando y por qué, por ejemplo:
+
+> "La campaña X está quemando dinero porque el CPA superó el margen de ganancia en un 15%".
+
+### RF2.2
+El sistema aprenderá de las decisiones del usuario -aprobaciones, rechazos y modificaciones- para ajustar progresivamente su nivel de autonomía.
+
+El usuario puede configurar en cualquier momento qué tipo de acciones puede ejecutar la IA sin pedir permiso -En modo Automatico- basándose en el historial de interacciones que haya acumulado.
+
+El nivel de autonomía activado siempre es reversible.
+
+---
+
+## RF3
+El sistema debe ejecutar acciones correctivas de forma autónoma sobre la publicidad digital.
+
+### RF3.1
+Cada usuario debe poder configurar sus propias reglas de automatización, como pausar campañas o ajustar presupuestos, basándose en la rentabilidad real del negocio y no solo en las métricas de pauta.
+
+### RF3.2
+Cada acción automática debe quedar registrada con:
+- la fecha,
+- lo que se hizo,
+- y la razón por la que se tomó esa decisión.
+
+---
+
+## RF4
+El sistema debe monitorear el negocio de forma autónoma las 24 horas, los 7 días de la semana.
+
+### RF4.1
+El sistema debe revisar continuamente los datos de Meta Ads para detectar, incluso fuera del horario de trabajo del usuario, cuando el CPA o el ROAS estén fallando de forma crítica y poniendo en riesgo la rentabilidad.
+
+La evaluación debe considerar el tiempo de madurez de cada campaña, reconociendo que los datos de Meta Ads tienen un delay natural de hasta 24 horas, y clasificar el rendimiento según la fase en que se encuentre la campaña:
+- Testeo,
+- Optimización,
+- Escalado.
+
+---
+
+## RF5
+El sistema debe proteger la integridad y privacidad de los datos del e-commerce.
+
+### RF5.1
+El sistema debe cumplir con la Ley de Habeas Data y cifrar los datos de clientes y pedidos de Shopify o Dropi usando protocolos TLS 1.3.
+
+### RF5.2
+El acceso a los datos financieros debe estar dividido por roles:
+- Administrador,
+- Vendedor,
+
+para que la información sensible solo la vea quien debe verla.
+
+---
+
+## RF6
+El sistema debe ser transparente con los costos y funcionar bien en dispositivos móviles.
+
+### RF6.1
+Antes de ejecutar cualquier cambio de presupuesto o activar una integración que pueda generar costos adicionales, el sistema debe informar al usuario sobre:
+- el monto estimado,
+- la frecuencia,
+- y el servicio involucrado.
+
+Esto aplica tanto desde la plataforma web como desde el chatbot de WhatsApp, y el sistema siempre debe esperar confirmación explícita antes de proceder.
+
+Sin sorpresas, en ningún canal.
+
+### RF6.2
+El sistema debe funcionar correctamente en navegadores móviles de Android e iOS, ya que la mayoría de los dropshippers manejan su negocio desde el celular.
+
+---
+
+## RF7
+El sistema debe tomar decisiones considerando el contexto operativo real del negocio, más allá de los datos de las APIs de publicidad, integrando:
+- el inventario,
+- las restricciones financieras,
+- y el perfil cualitativo del cliente ideal.
+
+### RF7.1
+El sistema debe sincronizarse de forma automática con el inventario real de cada producto, leyendo el stock disponible en tiempo real desde las plataformas de venta integradas:
+- Shopify,
+- Dropi,
+- WooCommerce,
+- Tienda Nube.
+
+Cuando un producto se quede sin stock o caiga por debajo del umbral mínimo definido, el sistema debe pausar automáticamente las campañas asociadas para evitar gasto publicitario innecesario, y reactivarlas cuando el inventario sea repuesto.
+
+### RF7.2
+Además, el sistema debe identificar campañas ganadoras -aquellas con ROAS y CPA sostenidos en zona positiva por más de 24 horas- y sugerir proactivamente un aumento de presupuesto cuando haya margen financiero disponible según las restricciones registradas.
+
+La sugerencia debe incluir:
+- el monto recomendado,
+- la proyección de gasto en las próximas 24 horas,
+- y el resultado esperado,
+
+antes de que el usuario confirme.
+
+### RF7.3
+El sistema debe conectarse con la API de Meta Advantage para analizar la configuració.n de los públicos en las campañas activas, detectar errores o inconsistencias en la segmentación actual y sugerir ajustes concretos.
+
+El usuario siempre puede:
+- aceptar,
+- modificar,
+- o descartar cada sugerencia.
+
+El sistema no aplica cambios de segmentación de forma automática.
+
+### RF7.4
+El sistema debe integrar fuentes de datos externos del mercado:
+- tendencias estacionales,
+- picos de demanda detectables en plataformas como Google Trends,
+- comportamiento publicitario de la competencia accesible vía APIs públicas de Meta.
+
+Además, debe alimentar a la IA con esa información para que sus recomendaciones de pauta consideren el contexto externo, anticipándose a oportunidades o riesgos que no son visibles desde los datos internos del negocio.
+
+---
+
+# Requisitos de Proceso
+
+## RP1
+El desarrollo del módulo se llevará a cabo bajo metodología Scrum, con:
+- sprints de 2 semanas,
+- y reuniones de revisión al final de cada sprint con el Product Owner de ROAX.
+
+---
+
+## RP2
+El código fuente del sistema debe gestionarse mediante control de versiones usando Git, con ramas separadas para:
+- desarrollo,
+- pruebas,
+- y producción.
+
+---
+
+## RP3
+Toda integración con APIs externas:
+- Meta Ads,
+- Shopify,
+- Dropi,
+
+debe realizarse respetando los permisos y condiciones de uso vigentes de cada plataforma.
+
+---
+
+## RP4
+El sistema debe ser diseñado para operar sobre la infraestructura existente de ROAX en:
+
+> app.roaxai.com
+
+sin requerir cambios en la arquitectura base de la plataforma externa.
 
 
 ---
