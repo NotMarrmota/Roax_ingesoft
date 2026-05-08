@@ -6,6 +6,25 @@
 
 **INTEGRANTES**
 
+###Equipo Reto 1 - Datos y Decisiones
+
+-
+
+###Equipo Reto 2 - Alertas que razonan
+
+- David Altaminaro Altamirano
+- Mariana Carmona Galvez
+- Santiago Campo
+- David Santiago García
+- Mario Andrés Romero Rivera
+- Andrés Vinasco
+
+###Equipo Reto 3 - Creatividades desde el rendimiento
+
+-
+
+###Equipo Reto 4 - Confianza progresiva
+
 - Melisa Gomez Gomez
 - Samuel Alejandro Estupiñan Gonzales
 - Jorge Humberto Garcia Leon
@@ -18,16 +37,57 @@
 # Tabla de Contenido
 
 1. Especificación de Requerimientos
-   - 1.1 Descripción general
-   - 1.2 Contexto del proyecto
-   - 1.3 Requisitos
-   - 1.4 Subespecificación por subsistemas
-   - 1.5 Tabla de asignación a subsistemas
+   1.1 Descripción General
+   1.2 Contexto del Proyecto
+   1.3 Requisitos
+      1.3.1 Subsistema de Datos y Decisiones
+      1.3.2 Subsistema de Alertas que razonan
+      1.3.3 Subsistema de Creatividades desde el rendimiento
+      1.3.4 Subsistema de Confianza Progresiva
+
+   1.4 Subespecificación por Subsistemas
+      1.4.1 RF1: Datos y Decisiones
+      1.4.2 RF2: Alertas que razonan
+      1.4.3 RF3: Creatividades desde el rendimiento
+      1.4.4 RF4: Confianza Progresiva
+
+   1.5 Tabla de Asignación a Subsistemas
+
 2. PESTLE
-3. RF13: Agente Conversacional — Historias de usuario
-4. RF14: Recomendaciones Inteligentes — Historias de usuario
-5. RF15: Gestión de Alertas — Historias de usuario
-6. RF16: Retroalimentación y Aprendizaje — Historias de usuario
+      2.1 RF1: Datos y Decisiones
+      2.2 RF2: Alertas que razonan
+      2.3 RF3: Creatividades desde el rendimiento
+      2.4 RF4: Confianza Progresiva
+
+3. RF1: Datos y Decisiones
+   3.1 Historias de Usuario
+   3.2 Casos de Uso
+      3.2.1 Diagrama de Casos de Uso
+      3.2.2 Formatos Bicolumnares
+
+4. RF2: Alertas Inteligentes
+   4.1 Historias de Usuario
+   4.2 Casos de Uso
+      4.2.1 Diagrama de Casos de Uso
+      4.2.2 Formatos Bicolumnares
+
+5. RF3: Inteligencia Creativa
+   5.1 Historias de Usuario
+   5.2 Casos de Uso
+      5.2.1 Diagrama de Casos de Uso
+      5.2.2 Formatos Bicolumnares
+
+6. RF4: Confianza Progresiva
+   6.1 Historias de Usuario
+   6.2 Casos de Uso
+      6.2.1 Diagrama de Casos de Uso
+      6.2.2 Formatos Bicolumnares
+
+7. Backlog
+
+8. MockUp
+   8.1 Descripción General
+   8.2 Enlace MockUp
 
 ---
 
@@ -35,29 +95,59 @@
 
 ## 1.1 Descripción General
 
-El presente documento describe el análisis, diseño y propuesta de solución para el **Reto 4: Confianza Progresiva** del proyecto **ROAX by Dropi**, desarrollado en el marco de la asignatura de Ingeniería de Software.
+En esta sección se describen y analizan los requerimientos del proyecto ROAX Refactor 2026, una plataforma de inteligencia de negocio orientada a e-commerce que busca transformar la manera en que los usuarios interpretan, analizan y ejecutan decisiones relacionadas con sus campañas de marketing digital y desempeño comercial.
 
-El reto consiste en diseñar un sistema que permita a la plataforma ROAX pasar de mostrar datos a tomar decisiones concretas por el usuario, construyendo gradualmente la confianza necesaria para que este delegue acciones críticas de su negocio a la inteligencia artificial. Para ello se identificaron requerimientos funcionales y no funcionales, se propuso una arquitectura de solución y se desarrolló un prototipo visual del agente inteligente.
+Actualmente, ROAX integra múltiples fuentes de datos provenientes de plataformas como Meta Ads, Shopify, Dropi y otros entornos de comercio electrónico, permitiendo visualizar métricas relacionadas con rentabilidad, conversión y rendimiento publicitario. Sin embargo, el sistema actual se centra principalmente en la visualización de información, dejando en manos del usuario la interpretación de los datos y la toma de decisiones estratégicas.
+
+El objetivo de este proyecto es rediseñar la plataforma para convertir la inteligencia artificial en el núcleo operativo del sistema, permitiendo no solo visualizar datos, sino también analizar comportamientos, generar recomendaciones, contextualizar alertas, sugerir acciones concretas y fortalecer progresivamente la confianza del usuario en las decisiones automatizadas.
+
+La solución propuesta se divide en cuatro subsistemas principales: Datos y Decisiones, Alertas Inteligentes, Inteligencia Creativa y Confianza Progresiva. Cada uno de estos componentes busca abordar distintos retos relacionados con automatización, interpretación de datos, generación de recomendaciones y aprendizaje continuo del comportamiento del negocio.
+
+El sistema está orientado a usuarios de e-commerce que requieren herramientas más inteligentes, proactivas y accionables para optimizar sus campañas publicitarias, mejorar su rentabilidad y facilitar la toma de decisiones basada en datos.
 
 ---
 
 ## 1.2 Contexto del Proyecto
 
-**ROAX by Dropi** es una plataforma de inteligencia de negocio para e-commerce que integra datos de publicidad digital (Meta Ads, y próximamente TikTok) con datos reales de ventas y logística (Shopify, Tienda Nube, WooCommerce y Dropi), con el objetivo de calcular la rentabilidad real de un negocio digital.
+ROAX es una plataforma de data e inteligencia de negocio enfocada en e-commerce que actualmente permite conectar información proveniente de campañas publicitarias y canales de venta digitales para calcular métricas de rendimiento y rentabilidad de un negocio.
 
-La plataforma actualmente cuenta con más de 5.600 usuarios registrados y opera en dos modalidades: como módulo interno dentro de Dropi, y como plataforma externa independiente en app.roaxai.com, que es el foco del presente proyecto.
+La plataforma cuenta con integración de múltiples fuentes de datos, dashboards de métricas publicitarias, sistemas de alertas y herramientas de generación de anuncios mediante inteligencia artificial. Además, dispone de una base de usuarios reales que interactúan constantemente con el sistema y generan comportamientos medibles dentro de la plataforma.
 
-Hoy, ROAX funciona principalmente como una plataforma de reportería: conecta fuentes de datos, calcula métricas clave como ROAS, CPA, CTR, CPC y CPM, y genera alertas sobre el rendimiento de las campañas. Sin embargo, el modelo actual presenta una limitación estructural: muestra información pero no ayuda a tomar decisiones. El usuario debe interpretar solo qué significan los números y qué hacer con ellos, lo cual genera una alta fricción en la adopción del producto.
+A pesar de contar con una infraestructura sólida de visualización y análisis de datos, el sistema presenta una limitación importante: actualmente la plataforma informa qué está ocurriendo, pero no participa activamente en la toma de decisiones del usuario.
 
-Con el avance de la inteligencia artificial, las plataformas de data enfrentan el reto de evolucionar: pasar de responder "¿qué está pasando?" a responder "¿qué debo hacer para mejorar mi negocio?". En este contexto, ROAX plantea su **Refactor 2026**, un proceso de rediseño profundo orientado a convertir la IA en el motor central de decisiones de la plataforma.
+Los usuarios deben interpretar manualmente métricas como ROAS, CTR o CPA para determinar qué campañas están funcionando, cuáles están generando pérdidas y qué acciones deberían ejecutarse para mejorar el rendimiento del negocio. Esto genera dependencia del criterio humano, tiempos de análisis más largos y dificultad para reaccionar rápidamente ante cambios en el comportamiento de las campañas.
 
-Dentro de este refactor se definen cuatro retos técnicos. El presente proyecto aborda el **Reto 4: Confianza Progresiva**, cuyo foco es diseñar el mecanismo mediante el cual un sistema de recomendaciones basado en IA logra que el usuario confíe en él, actúe sobre sus sugerencias, y permita que el sistema aprenda y mejore con el tiempo.
+El proyecto ROAX Refactor 2026 surge como respuesta a esta necesidad, proponiendo una evolución de la plataforma hacia un sistema más inteligente, proactivo y automatizado, donde la inteligencia artificial no funcione como una característica adicional, sino como el motor principal de análisis, recomendación y aprendizaje continuo.
 
-Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emprendedor o marca que invierte en promedio entre 1.500 y 2.000 dólares mensuales en publicidad digital, que opera en múltiples plataformas simultáneamente, y que ya ha desarrollado una desconfianza hacia las recomendaciones automáticas de Meta, debido a que estas priorizan el gasto publicitario por encima de la rentabilidad real del negocio.
+Para abordar este reto, el proyecto se enfoca en cuatro áreas fundamentales: la generación de decisiones basadas en datos, la construcción de alertas inteligentes capaces de contextualizar recomendaciones, el uso de inteligencia artificial aplicada a creatividades publicitarias y la construcción progresiva de confianza entre el usuario y las decisiones automatizadas del sistema.
+
+Con este rediseño, ROAX busca evolucionar de una plataforma de visualización de datos hacia un ecosistema inteligente capaz de observar, interpretar, recomendar y aprender continuamente del comportamiento de cada negocio.
 
 ---
 
 ## 1.3 Requisitos
+
+### 1.3.1 Subsistema de Datos y Decisiones
+
+---
+
+### 1.3.2 Subsistema de Alertas que razonan
+
+#### RF1. El sistema debe mostrar al usuario las campañas cuyo desempeño se encuentre por debajo de un umbral definido.
+   
+#### RF2. El sistema generará recomendaciones inteligentes basadas en losresultados del negocio
+
+#### RF3. El sistema debe medir, analizar y aprender del impacto de las decisiones tomadas en campañas publicitarias y resultados del negocio.
+
+#### RF4. El sistema debe construir confianza progresiva en las recomendaciones generadas por IA
+
+---
+
+### 1.3.3 Subsistema de Creatividades desde el rendimiento
+
+---
+
+### 1.3.4 Subsistema de Confianza Progresiva
 
 ### Requerimientos Funcionales
 
@@ -84,7 +174,81 @@ Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emp
 
 ## 1.4 Subespecificación por Subsistemas
 
-### RF13 — Agente Conversacional Visual (ACV)
+   ###1.4.1 RF1: Datos y Decisiones
+   
+   ---
+   
+   ###1.4.2 RF2: Alertas que razonan
+   
+   #### RF1. El sistema debe mostrar al usuario las campañas cuyo desempeño se encuentre por debajo de un umbral definido.
+   
+- **RF1.1.** El sistema debe calcular el desempeño de cada campaña utilizando métricas cuantificables definidas (por ejemplo: tasa de conversión, CTR, ROI) y compararlas contra un umbral configurado.
+   
+- **RF1.2** El sistema debe permitir al usuario definir y modificar los umbrales de desempeño mediante valores numéricos o porcentuales para cada métrica.
+   
+- RF1.3 El sistema debe permitir al usuario seleccionar las métricas que serán utilizadas para evaluar el desempeño de las campañas.
+
+#### RF2. El sistema generará recomendaciones inteligentes basadas en losresultados del negocio
+- **RF 2.1** El asistente sugerirá cambios en el dinero invertido diariamente en cada campaña publicitaria. Esto lo hará analizando si la inversión actual está generando ventas reales o si se está perdiendo dinero.
+  
+- **RF 2.2** El sistema de recomendaciones propondrá cambiar las imágenes o videos que no están funcionando por anuncios nuevos creados con la inteligencia artificial de la plataforma. El sistema elegirá los diseños que tienen más probabilidades de atraer clientes basándose en los gustos del público y en las ventas que ya se han logrado anteriormente.
+  
+- **RF 2.3** La pantalla de alertas incluirá un botón para aplicar las mejoras sugeridas al instante y sin complicaciones. Al presionarlo, el sistema realizará los cambios automáticamente en las cuentas de publicidad y ventas del usuario, ahorrando tiempo y asegurando que las decisiones se tomen rápido.
+
+#### RF3. El sistema debe medir, analizar y aprender del impacto de las decisiones tomadas en campañas publicitarias y resultados del negocio.
+
+- **RF3.1** El sistema debe registrar las acciones tomadas manualmente por el usuario o ejecutadas automáticamente a partir de recomendaciones inteligentes generadas por la plataforma.
+
+- **RF3.2** El sistema debe evaluar el impacto de las acciones realizadas utilizando métricas clave del negocio y de publicidad digital, como ROAS, CTR, CPC, conversiones, compras, facturación, alcance, impresiones, clicks, video views, porcentaje de visualización completa de videos, add to cart y conversion rate.
+
+- **RF3.3** El sistema debe almacenar información histórica diaria y mensual para identificar cambios de comportamiento, tendencias y resultados derivados de las decisiones tomadas.
+
+- **RF3.4** El sistema debe estructurar el análisis de datos siguiendo la jerarquía de las plataformas publicitarias: Business Manager (BM), cuentas publicitarias, campañas, conjuntos de anuncios y anuncios.
+
+- **RF3.5** El sistema debe permitir analizar el rendimiento de campañas y anuncios en cada nivel de la jerarquía publicitaria para identificar qué elemento está afectando positiva o negativamente el desempeño del negocio.
+
+- **RF3.6** El sistema debe relacionar las métricas publicitarias con las métricas reales de ventas provenientes de tiendas integradas como Shopify, Dropi, WooCommerce o Tienda Nube.
+
+- **RF3.7** El sistema debe permitir realizar seguimiento del recorrido del usuario consumidor final dentro del embudo de conversión, relacionando eventos como impresiones, clicks, visitas a la página, add to cart y compras realizadas, con el fin de identificar puntos de pérdida dentro del proceso de venta.
+
+- **RF3.8** El sistema debe relacionar las compras realizadas con la tienda correspondiente y con las campañas publicitarias asociadas para medir el impacto real de cada anuncio sobre las ventas.
+
+- **RF3.9** El sistema debe calcular métricas de conversión y relación entre interacción y ventas, incluyendo conversion rate, relación click/ventas, costo por conversión y calidad de tráfico, para evaluar la efectividad de las campañas.
+
+- **RF3.10** El sistema debe analizar la calidad de la página de destino y su influencia en el rendimiento de campañas y conversiones del negocio.
+
+- **RF3.11** El sistema debe permitir personalizar el análisis y las recomendaciones según las necesidades específicas del negocio y las métricas relevantes para cada usuario.
+
+- **RF3.12** El sistema debe utilizar un agente inteligente personalizado basado en el contexto, historial y comportamiento del negocio, evitando respuestas o recomendaciones genéricas.
+
+- **RF3.13** El sistema debe diferenciar entre distintos modelos de negocio, como dropshipping y marcas propias, para adaptar las recomendaciones, métricas prioritarias y análisis de rendimiento.
+
+- **RF3.14** El sistema debe detectar comportamientos anormales o riesgos asociados a baneos y restricciones en cuentas publicitarias, generando alertas preventivas.
+
+- **RF3.15** El sistema debe utilizar el historial de comportamiento del negocio para construir un perfil inteligente del usuario y mejorar continuamente la toma de decisiones automatizadas.
+  
+#### RF4. El sistema debe construir confianza progresiva en las recomendaciones generadas por IA
+
+- **RF4.1** El sistema debe presentar las recomendaciones acompañadas de una justificación explicable, indicando qué métricas del negocio motivaron la sugerencia (por ejemplo: "Se recomienda pausar esta campaña porque su ROAS lleva 3 días por debajo de tu umbral configurado y ha generado pérdida neta de $X").
+
+- **RF4.2** El sistema debe clasificar cada recomendación según un nivel de confianza calculado, basado en la cantidad de datos históricos disponibles del negocio del usuario y en el historial de aciertos de recomendaciones previas similares.
+
+- **RF4.3** El sistema debe permitir que el usuario ejecute las recomendaciones de forma gradual, ofreciendo opciones escalonadas (por ejemplo: aplicar cambio parcial, programar para mañana, o aplicar de inmediato), reduciendo la fricción de adopción sin eliminar el control del usuario.
+
+- **RF4.4** El sistema debe registrar si el usuario aceptó, rechazó o ignoró cada recomendación, y en qué tiempo lo hizo, para construir un perfil de adopción que permita personalizar cómo y cuándo se presentan futuras recomendaciones.
+
+- **RF4.5** El sistema debe mostrar, posterior a la ejecución de una recomendación, un resumen del impacto real medido (comparando métricas antes y después), cerrando el ciclo de confianza con evidencia concreta del resultado.
+
+   
+   ---
+   
+   ###1.4.3 RF3: Creatividades desde el rendimiento
+   
+   ---
+   
+   ###1.4.4 RF4: Confianza Progresiva
+
+#### RF13 — Agente Conversacional Visual (ACV)
 
 | **ID** | **Subrequerimiento** |
 | --- | --- |
@@ -97,7 +261,7 @@ Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emp
 
 ---
 
-### RF14 — Recomendaciones Inteligentes (REC)
+#### RF14 — Recomendaciones Inteligentes (REC)
 
 | **ID** | **Subrequerimiento** |
 | --- | --- |
@@ -110,7 +274,7 @@ Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emp
 
 ---
 
-### RF15 — Gestión de Alertas (ALR)
+#### RF15 — Gestión de Alertas (ALR)
 
 | **ID** | **Subrequerimiento** |
 | --- | --- |
@@ -121,7 +285,7 @@ Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emp
 
 ---
 
-### RF16 — Retroalimentación y Aprendizaje (RFA)
+#### RF16 — Retroalimentación y Aprendizaje (RFA)
 
 | **ID** | **Subrequerimiento** |
 | --- | --- |
@@ -151,15 +315,61 @@ Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emp
 | Niveles de automatización | | | | X |
 | Indicador de confianza acumulada | | | | X |
 
----
 
 # 2. PESTLE
 
 > El análisis PESTLE se aplica a los requerimientos funcionales que toman decisiones sobre personas, usan datos sensibles o pueden generar impacto negativo. Para cada dimensión se identifica el hallazgo verificado, su impacto real y el requerimiento derivado.
 
----
 
-## PESTLE — RF13: Agente Conversacional Visual
+   ###2.1 RF1: Datos y Decisiones
+   
+   ---
+   
+   ###2.2 RF2: Alertas que razonan
+   
+   ## Análisis PESTLE – RF1: Detección de campañas de bajo desempeño
+
+| Dimensión | Hallazgo | Impacto | Requerimiento derivado |
+|----------|----------|---------|-------------------------|
+| P — Político | No existen lineamientos específicos en Colombia sobre transparencia en algoritmos que evalúan desempeño de campañas. | El sistema podría ser cuestionado si no justifica cómo clasifica una campaña como de bajo desempeño. | **RNFP-1-01:** El sistema debe permitir consultar las métricas, umbrales y reglas utilizadas para clasificar una campaña como de bajo desempeño, mostrando al menos: nombre de la métrica, valor calculado, umbral aplicado y resultado de la evaluación. |
+| E — Económico | El cálculo frecuente de métricas sobre grandes volúmenes de campañas implica alto costo computacional. | Puede afectar la escalabilidad y costos operativos del sistema. | **RNFE-1-02:** El sistema debe calcular métricas de desempeño mediante procesamiento incremental o por lotes, reduciendo en al menos un 30% el tiempo de procesamiento respecto a un cálculo completo sobre todos los datos históricos. |
+| S — Social | Usuarios no expertos pueden no comprender métricas como CTR, ROI o tasa de conversión. | Riesgo de mala interpretación del desempeño de campañas. | **RNFS-1-03:** El sistema debe mostrar una descripción textual comprensible (máximo 100 palabras) para cada métrica utilizada, accesible desde la interfaz de evaluación de campañas. |
+| T — Tecnológico | La evaluación depende de la actualización oportuna de datos de campañas. | Datos desactualizados generan clasificaciones incorrectas. | **RNFT-1-04:** El sistema debe actualizar las métricas de desempeño de campañas con una latencia máxima de 5 minutos desde la recepción de nuevos datos, garantizando que al menos el 95% de las actualizaciones cumplan este límite. |
+| L — Legal | El sistema maneja datos sensibles de negocio asociados a campañas. | Riesgo de incumplimiento de normativas de protección de datos. | **RNFL-1-05:** El sistema debe restringir el acceso a la información de desempeño de campañas mediante control de roles, garantizando que solo usuarios autorizados puedan visualizar o modificar dichos datos. |
+| E — Ético | La clasificación automática influye en decisiones comerciales del usuario. | Clasificaciones poco transparentes pueden inducir decisiones erróneas. | **RNFEt-1-06:** El sistema debe indicar explícitamente si la clasificación de bajo desempeño fue generada por reglas del sistema o configuraciones del usuario, mostrando esta información en la vista de resultados de cada campaña. |
+
+# Análisis PESTLE - RF2: sistema generará recomendaciones inteligentes basadas en los resultados del negocio 
+
+| Dimensión | Hallazgo | Impacto | Requerimiento derivado |
+|-----------|----------|---------|-------------------------|
+| **P — Político** | Las plataformas como Meta y TikTok pueden cambiar sus reglas sobre cómo se permite ajustar presupuestos o publicar anuncios automáticamente. | Si Meta decide restringir la automatización, ROAX perdería la capacidad de aplicar cambios instantáneos (RF 2.3), y el usuario tendría que volver a hacer todo manualmente. | El sistema debe anticipar estos cambios mostrando una alerta al usuario del tipo “Meta cambió sus reglas, por ahora solo podemos sugerir, no aplicar automáticamente”. Así el usuario no se frustra y confía en que ROAX está al día. |
+| **E — Económico** | Analizar si cada campaña está quemando dinero o generando ventas reales (RF 2.1) requiere procesar muchos datos históricos. |  la plataforma sería cara de mantener y el precio para el usuario final tendría que aumentar. | El sistema debe priorizar el análisis solo en campañas que más invierten y ajustar cada 4 horas, no en tiempo real. Así se reduce costo sin perder efectividad. |
+| **S — Social** | Muchos usuarios de ROAX son dropshippers o pequeños empresarios, no expertos en marketing. Si ven una recomendación de “cambiar inversión” sin entender el porqué, pueden ignorarla o aplicarla mal. | El usuario termina tomando malas decisiones o no usa la función por miedo. El problema que resuelve ROAX (falta de acción) no se soluciona. | El sistema debe explicar cada recomendación en una frase simple, como: “Esta campaña gastó 100.000 $ y solo vendió 30.000 $. Te sugiero bajar la inversión a 50.000 $ diarios”. Así el usuario entiende antes de aceptar. |
+| **T — Tecnológico** | ROAX ya genera anuncios con IA, pero conectarlos con datos reales de venta para que aprenda de lo que ya convierte (RF 2.2) es complejo. | Si la IA propone creatividades bonitas pero que no venden, el usuario pierde confianza rápidamente y deja de usar la función. | El sistema debe etiquetar cada creatividad generada con una predicción simple: “Alta probabilidad de venta”, “Media”, “Baja” basada en anuncios anteriores que sí funcionaron. El usuario decide si probarla. |
+| **L — Legal** | El sistema puede llegar a pausar campañas o redistribuir presupuesto automáticamente (RF 2.3) basado en rentabilidad. Si lo hace mal, el usuario pierde ventas reales. | ROAX podría ser demandado o perder muchos usuarios por mala publicidad. La confianza se rompe. | La plataforma debe pedir un consentimiento explícito al inicio: "Autorizo a ROAX a hacer cambios automáticos hasta por un límite de $X diarios". Además, cada acción debe poder deshacerse con un botón "Reversar cambio". |
+| **E — Ético** | El sistema decide qué algunas recomendaciones "no están funcionando" (RF 2.2) basándose en ventas pasadas. Eso puede dejar fuera a nuevos diseños que con más tiempo sí funcionarían. | El usuario puede terminar viendo siempre el mismo tipo de anuncio, saturando a su audiencia y sin explorar nuevas ideas. | El sistema debe reservar un pequeño porcentaje del presupuesto para probar creatividades nuevas sin que la IA las descarte de entrada. Y mostrar un mensaje: "Probamos algo nuevo por si te funciona". |
+
+> **RF3.** El sistema debe medir, analizar y aprender del impacto de las decisiones tomadas en campañas publicitarias y resultados del negocio.
+
+| Dimensión | Hallazgo | Impacto | Requerimiento derivado |
+|----------|----------|---------|-------------------------|
+| **P — Político** | Las plataformas publicitarias (Meta Ads, TikTok Ads, Google Ads) pueden cambiar políticas o restricciones sobre acceso y uso de datos analíticos. | Cambios externos podrían afectar la continuidad del análisis y aprendizaje del sistema. | **RNFP-3-01:** El sistema debe registrar y notificar cambios en la disponibilidad de datos provenientes de plataformas publicitarias integradas, indicando el servicio afectado y el impacto sobre los análisis generados. |
+| **E — Económico** | El procesamiento continuo de métricas históricas, embudos y relaciones entre campañas y ventas implica alto consumo computacional y almacenamiento. | Incremento de costos operativos y riesgo de baja escalabilidad. | **RNFE-3-02:** El sistema debe optimizar el almacenamiento y procesamiento histórico utilizando consolidación incremental de datos diarios y mensuales, reduciendo en al menos un 25% el consumo de recursos respecto a un procesamiento completo continuo. |
+| **S — Social** | Usuarios con distintos niveles de experiencia pueden interpretar incorrectamente métricas complejas como ROAS, conversion rate o calidad de tráfico. | Riesgo de tomar decisiones comerciales equivocadas. | **RNFS-3-03:** El sistema debe proporcionar explicaciones contextuales y descripciones comprensibles para cada métrica y recomendación mostrada, utilizando textos de máximo 120 palabras accesibles desde la interfaz de análisis. |
+| **T — Tecnológico** | El sistema depende de integración constante con múltiples plataformas externas (Shopify, WooCommerce, Meta Ads, TikTok Ads, etc.). | Fallas de sincronización pueden generar análisis incorrectos o incompletos. | **RNFT-3-04:** El sistema debe sincronizar datos provenientes de plataformas integradas con una disponibilidad mínima del 99% mensual y una latencia máxima de 10 minutos para actualizaciones críticas de métricas y conversiones. |
+| **L — Legal** | El sistema maneja información sensible relacionada con ventas, comportamiento de usuarios y datos comerciales. | Riesgo de incumplimiento de normativas de protección de datos y privacidad. | **RNFL-3-05:** El sistema debe proteger la información histórica y analítica mediante autenticación, control de acceso basado en roles y cifrado de datos sensibles almacenados y transmitidos. |
+| **E — Ético** | Las recomendaciones inteligentes y decisiones automatizadas pueden influir directamente en inversiones publicitarias y estrategias de negocio. | Recomendaciones poco transparentes o sesgadas podrían afectar negativamente a los usuarios. | **RNFEt-3-06:** El sistema debe mostrar la justificación de cada recomendación o decisión automatizada indicando las métricas, tendencias históricas y reglas utilizadas para generarla. |
+
+   
+   ---
+   
+   ###2.3 RF3: Creatividades desde el rendimiento
+   
+   ---
+   
+   ###2.4 RF4: Confianza Progresiva
+   
+   ## PESTLE — RF13: Agente Conversacional Visual
 
 | Dimensión | Hallazgo | Impacto | Requerimiento derivado |
 |-----------|----------|---------|----------------------|
@@ -209,50 +419,319 @@ Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emp
 | **L — Legal** | El historial de comportamiento del usuario es un dato personal bajo la Ley 1581 y el GDPR, que incluye el derecho al olvido para usuarios europeos. | Almacenar datos de comportamiento sin mecanismo de eliminación viola ambas regulaciones. | El sistema debe permitir al usuario eliminar su historial de interacciones y reiniciar su modelo personalizado. |
 | **E — Ético** |La IA debe usar datos de toda la base de usuarios para enriquecer recomendaciones, pero también debe proteger al usuario de reforzar sus propias malas prácticas. | El sistema puede volverse cómplice de pérdidas si refuerza decisiones que el usuario acepta pero que son objetivamente perjudiciales. | El sistema debe balancear el aprendizaje individual con parámetros objetivos de rentabilidad de la industria. |
 
+
+   
+   ---
+   
+##3. RF1: Datos y Decisiones
+   
+###3.1 Historias de Usuario
+
 ---
+   
+###3.2 Casos de Uso (Aún no solicitado)
 
-# 3. RF13 — Agente Conversacional Visual (ACV)
+####3.2.1 Diagrama de Casos de Uso
 
-## 3.1 Historias de Usuario
-
-| **Campo** | **Descripción** |
-| --- | --- |
-| **Título** | Interacción con el agente de IA |
-| **Yo, como** | usuario de ROAX (emprendedor o gestor de e-commerce) |
-| **Quiero** | comunicarme con un agente de IA mediante voz o texto que me muestre su avatar en pantalla |
-| **Para** | entender mis métricas y recomendaciones sin necesidad de interpretar dashboards complejos |
-
-
-**Scenario 1**
-
-| | |
-| --- | --- |
-| **Given** | el usuario accede a la plataforma |
-| **When** | el agente se carga |
-| **Then** | el sistema muestra el avatar, reproduce un saludo e informa que el agente es IA |
-
-**Scenario 2**
-
-| | |
-| --- | --- |
-| **Given** | el usuario envía un mensaje |
-| **When** | el agente procesa la consulta |
-| **Then** | responde en lenguaje natural mostrando texto de forma simultánea independientemente del canal de voz |
-
-**Scenario 3**
-
-| | |
-| --- | --- |
-| **Given** | el usuario desactiva el audio |
-| **When** | hace clic en el botón de configuración |
-| **Then** | el agente continúa respondiendo solo con texto sin perder funcionalidad |
+####3.2.2 Formatos Bicolumnares
 
 ---
 
-# 4. RF14 — Recomendaciones Inteligentes (REC)
+##4. RF2: Alertas Inteligentes
 
-## 4.1 Historias de Usuario
+###4.1 Historias de Usuario
 
+# Historia de Usuario 1
+
+**ID:** HU1  
+**Título:** Visualización de campañas con bajo rendimiento
+
+## Historia
+
+Como usuario de la plataforma, quiero identificar fácilmente las campañas con bajo rendimiento para poder tomar decisiones rápidas y evitar pérdidas de dinero
+
+## Criterios de Aceptación
+### Scenario: Visualización correcta de campañas con bajo rendimiento
+- Given que existen campañas con métricas por debajo del umbral definido
+
+- And que el usuario ha configurado previamente los umbrales de desempeño
+
+- When el usuario accede al módulo de campañas
+
+- Then el sistema muestra únicamente las campañas que están por debajo del umbral
+
+- And presenta las métricas clave asociadas (ROAS, CTR, conversiones)
+
+**Prioridad:** Alta / Media / Baja
+
+**Dependencias:**
+
+---
+
+# Historia de Usuario 2
+
+**ID:** HU2  
+**Título:** Configuración de métricas prioritarias
+
+## Historia
+
+Como especialista en marketing, quiero seleccionar qué métricas tienen mayor prioridad en la evaluación para adaptar el análisis a mis objetivos comerciales.
+
+## Criterios de Aceptación
+
+### Scenario: Selección exitosa de métricas prioritarias
+
+- Given que el usuario accede a la configuración de evaluación de campañas
+
+- When selecciona las métricas prioritarias para el análisis
+
+- Then el sistema guarda la configuración seleccionada
+
+- And utiliza dichas métricas en futuras evaluaciones de desempeño
+
+### Scenario: Intento de guardar configuración sin métricas
+
+- Given que el usuario accede a la configuración de métricas
+
+- And no selecciona ninguna métrica
+
+- When intenta guardar la configuración
+
+- Then el sistema no permite continuar
+
+- And muestra un mensaje indicando que debe seleccionar al menos una métrica
+
+**Prioridad:** Alta
+
+**Dependencias:** RF1.3
+
+---
+
+# Historia de Usuario 3
+
+**ID:** HU3  
+**Título:** Visualización comparativa contra umbrales
+
+## Historia
+
+Como usuario, quiero visualizar el valor actual de cada métrica junto al umbral configurado para entender rápidamente por qué una campaña fue clasificada como deficiente.
+
+## Criterios de Aceptación
+
+### Scenario: Comparación correcta de métricas y umbrales
+
+- Given que existen campañas evaluadas por el sistema
+
+- And que el usuario ha configurado previamente umbrales de desempeño
+
+- When el usuario consulta el análisis de una campaña
+
+- Then el sistema muestra el valor actual de cada métrica
+
+- And presenta el umbral correspondiente
+
+- And resalta visualmente las métricas que incumplen el umbral configurado
+
+**Prioridad:** Alta
+
+**Dependencias:** RF1.1, RF1.2
+
+---
+
+# Historia de Usuario 4
+
+**ID:** HU4  
+**Título:** Configuración de umbrales por tipo de campaña
+
+## Historia
+
+Como usuario, quiero configurar umbrales distintos según el tipo de campaña para evaluar correctamente estrategias con objetivos diferentes.
+
+## Criterios de Aceptación
+
+### Scenario: Configuración exitosa de umbrales diferenciados
+
+- Given que existen distintos tipos de campañas registradas
+
+- When el usuario define umbrales específicos para cada tipo
+
+- Then el sistema almacena la configuración de manera independiente
+
+- And utiliza el umbral correspondiente durante la evaluación
+
+### Scenario: Configuración inválida de umbrales
+
+- Given que el usuario intenta ingresar un umbral inválido
+
+- When el valor ingresado es negativo o inconsistente
+
+- Then el sistema rechaza la configuración
+
+- And muestra un mensaje indicando el error
+
+**Prioridad:** Media
+
+**Dependencias:** RF1.2
+
+---
+
+# Historia de Usuario 5
+
+**ID:** HU5  
+**Título:** Detección automática de campañas críticas
+
+## Historia
+
+Como usuario, quiero que el sistema destaque automáticamente campañas extremadamente por debajo del umbral para priorizar acciones urgentes.
+
+---
+
+## Criterios de Aceptación
+
+### Scenario: Identificación de campañas críticas
+
+- Given que existen campañas con métricas significativamente inferiores al umbral
+
+- When el sistema realiza el análisis de desempeño
+
+- Then las campañas críticas son resaltadas visualmente
+
+- And el sistema asigna un nivel de severidad alto
+
+### Scenario: Campañas sin criticidad elevada
+
+- Given que las campañas presentan desviaciones menores
+
+- When el sistema procesa la evaluación
+
+- Then las campañas se muestran como advertencias normales
+
+- And no son clasificadas como críticas
+
+**Prioridad:** Alta
+
+**Dependencias:** RF1.1
+
+### 3.2 Casos de uso
+
+#### 3.2.1 Diagrama de casos de uso
+
+#### 3.2.2 Formatos bicolumnares
+
+<<Enlace Formatos bicolumnares>>
+
+---
+
+## 4. RF2: Subsistema B <<Nombre el Subsistema>>
+
+### 4.1 Historias de usuario
+
+# Historia de Usuario 1
+
+**ID:** HU1  
+**Título:** Aplicación rápida de recomendaciones
+
+## Historia
+
+Como usuario de la plataforma, quiero aplicar automáticamente las recomendaciones sugeridas por el sistema para optimizar mis campañas sin tener que realizar ajustes manuales.
+
+## Criterios de Aceptación
+
+### Scenario: Aplicación exitosa de una recomendación
+
+-Given que el sistema ha generado una recomendación para una campaña
+
+-And que la cuenta del usuario está correctamente integrada con las plataformas externas
+
+-When el usuario hace clic en el botón de aplicar recomendación
+
+-Then el sistema ejecuta automáticamente los cambios sugeridos
+
+
+-And actualiza la configuración de la campaña en la plataforma externa
+
+### Scenario: Error al aplicar recomendación por falta de integración
+
+-Given que el sistema ha generado una recomendación para una campaña
+
+-And que la cuenta del usuario no está correctamente integrada con la plataforma externa
+
+-When el usuario intenta aplicar la recomendación
+
+-Then el sistema no ejecuta ningún cambio
+
+-And muestra un mensaje de error indicando el problema de integración
+
+**Prioridad:** Alta / Media / Baja
+
+**Dependencias:**
+
+---
+Historia de Usuario 2
+
+ID: HU2
+##Titulo## Recomendación automática de inversión publicitaria
+
+Como usuario de la plataforma, quiero que el sistema detecte anuncios poco efectivos y genere nuevas imágenes o videos utilizando inteligencia artificial para atraer más clientes y mejorar las ventas.
+
+## Criterios de Aceptación
+Scenario: Generación válida de nuevo anuncio
+
+-Given que el sistema detecta un anuncio con bajo rendimiento
+
+-And que existen datos históricos de preferencias y ventas
+
+-When el sistema inicia el proceso de optimización
+
+-Then el sistema genera nuevas imágenes o videos automáticamente
+
+-And presenta las nuevas propuestas publicitarias al usuario
+
+## Scenario: Generación inválida por error en la inteligencia artificial
+
+-Given que el sistema intenta generar un nuevo anuncio
+
+-And que el servicio de inteligencia artificial presenta una falla
+
+-When el usuario solicita la generación del anuncio
+
+-Then el sistema no crea contenido publicitario
+
+-And muestra un mensaje de error indicando que no fue posible generar el anuncio
+
+Prioridad: Alta
+
+Dependencias: Servicio de inteligencia artificial e integración con base de datos de campañas
+
+
+---
+
+###4.2 Casos de Uso (Aún no solicitado)
+
+####4.2.1 Diagrama de Casos de Uso
+
+####4.2.2 Formatos Bicolumnares
+
+---
+
+##5. RF3: Inteligencia Creativa
+   
+###5.1 Historias de Usuario
+   
+---
+
+###5.2 Casos de Uso (Aún no solicitado)
+
+####5.2.1 Diagrama de Casos de Uso
+
+####5.2.2 Formatos Bicolumnares
+
+---
+
+## 6. RF4: Confianza Progresiva
+   
+###6.1 Historias de Usuario
+  
 | **Campo** | **Descripción** |
 | --- | --- |
 | **Título** | Recibir y actuar sobre recomendaciones de campañas |
@@ -359,3 +838,18 @@ Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emp
 | **Given** | el usuario tiene activado el modo de automatización |
 | **When** | el sistema va a ejecutar una acción automática |
 | **Then** | verifica permisos, ejecuta la acción, notifica al usuario y le ofrece revertirla dentro de 24 horas |
+   
+---
+
+###6.2 Casos de Uso (Aún no solicitado)
+
+####6.2.1 Diagrama de Casos de Uso
+
+####6.2.2 Formatos Bicolumnares
+
+7. Backlog (Aún no solicitado)
+
+8. MockUp (Aún no solicitado)
+   8.1 Descripción General
+   8.2 Enlace MockUp
+
