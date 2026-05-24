@@ -249,15 +249,24 @@ Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emp
 
 ## 3.2 Caso de uso 
 
+## Caso de uso 01-RF13
+
+![Caso de uso 01-RF13](Imagenes/Caso de uso 01.jpeg)
+
+## Caso de uso 2 -RF13
+
+![Caso de uso 02-RF13](Imagenes/Caso de uso 02.jpeg)
+
+
 ## 3.3 Formatos Bicolumnares 
 
 ## Formato Bicolumnar-01-RF13
 
-[text](https://docs.google.com/document/d/1TDo1TTdEj_wKEtHp9ctVsHX_yG9c6Bq6nMTPyKIl7fE/edit?usp=sharing)
+[Formato Bicolumnar-01-RF13](https://docs.google.com/document/d/1TDo1TTdEj_wKEtHp9ctVsHX_yG9c6Bq6nMTPyKIl7fE/edit?usp=sharing)
 
 ## Formato Bicolumnar-02-RF13
 
-[text](https://docs.google.com/document/d/1W9J1i2ecVRGP5G9hOKJs7YT8tL1P38t-gC1fvb_BG3k/edit?usp=sharing)
+[Formato Bicolumnar-02-RF13](https://docs.google.com/document/d/1W9J1i2ecVRGP5G9hOKJs7YT8tL1P38t-gC1fvb_BG3k/edit?usp=sharing)
 
 
 
@@ -301,15 +310,27 @@ Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emp
 
 ## 4.2 Caso de uso 
 
+## Caso de uso 01-RF14:
+
+![Caso de uso 01-RF14](Imagenes/Caso de uso 03.jpeg)
+
+
+## Caso de uso 02-RF14:
+
+![Caso de uso 02-RF14](Imagenes/Caso de uso 04.jpeg)
+
+
+
+
 ## 4.3 Formatos Bicolumnares 
 
-## Formato Bicolumnar-01-RF14
+## Formato Bicolumnar-01-RF14:
 
-[text](https://docs.google.com/document/d/1XEnIszNS_L7ecwf0LtUeyBp6_ZerAuZBfnwhDKyjlcs/edit?usp=sharing)
+[Formato Bicolumnar-01-RF14](https://docs.google.com/document/d/1XEnIszNS_L7ecwf0LtUeyBp6_ZerAuZBfnwhDKyjlcs/edit?usp=sharing)
 
-## Formato Bicolumnar-02-RF14
+## Formato Bicolumnar-02-RF14:
 
-[text](https://docs.google.com/document/d/1-K1FWEDIBLcpTYH0QG6UmPqgaPHUBNcKKdLmWMUeu2A/edit?usp=sharing)
+[Formato Bicolumnar-02-RF14](https://docs.google.com/document/d/1-K1FWEDIBLcpTYH0QG6UmPqgaPHUBNcKKdLmWMUeu2A/edit?usp=sharing)
 
 
 
@@ -355,15 +376,26 @@ Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emp
 
 ## 5.2 Caso de uso 
 
+## Caso de uso 01-RF15:
+
+![Caso de uso 01-RF15](Imagenes/Caso de uso 05.jpeg)
+
+
+## Caso de uso 02-RF15_
+
+![Caso de uso 02-RF15](Imagenes/Caso de uso 06.jpeg)
+
+
+
 ## 5.3 Formatos Bicolumnares 
 
 ## Formato Bicolumnar-01-RF15
 
-[text](https://docs.google.com/document/d/1tnP73K3gOLi3lbml82Woqx60uFBn9MJfaYvp_luhMEg/edit?usp=sharing)
+[Formato Bicolumnar-01-RF15](https://docs.google.com/document/d/1tnP73K3gOLi3lbml82Woqx60uFBn9MJfaYvp_luhMEg/edit?usp=sharing)
 
 ## Formato Bicolumnar-02-RF15
 
-[text](https://docs.google.com/document/d/1JD7duImYBW1lOvTrh6khlGdWskXr-8m9sPR6lQ6Sl3E/edit?usp=sharing)
+[Formato Bicolumnar-02-RF15](https://docs.google.com/document/d/1JD7duImYBW1lOvTrh6khlGdWskXr-8m9sPR6lQ6Sl3E/edit?usp=sharing)
 
 ---
 
@@ -409,8 +441,8 @@ Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emp
 
 ## Formato Bicolumnar-01-RF16
 
-[text](https://docs.google.com/document/d/1iAuLzWd_MS7xk6nPBQ9Vc4ATOAfWvXaoF6ExM6D663c/edit?usp=sharing)
+[Formato Bicolumnar-01-RF16](https://docs.google.com/document/d/1iAuLzWd_MS7xk6nPBQ9Vc4ATOAfWvXaoF6ExM6D663c/edit?usp=sharing)
 
 ## Formato Bicolumnar-02-RF16
 
-[text](https://docs.google.com/document/d/1XDNQ0x9D_c9VJY83ohNyv0WCq8bmWZJhL6SQxBMDttM/edit?usp=sharing)
+[Formato Bicolumnar-02-RF16](https://docs.google.com/document/d/1XDNQ0x9D_c9VJY83ohNyv0WCq8bmWZJhL6SQxBMDttM/edit?usp=sharing)
