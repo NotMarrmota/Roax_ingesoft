@@ -437,6 +437,9 @@ Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emp
 
 ## 6.2 Caso de uso 
 
+
+![Caso de uso 02-RF16](Imagenes/Caso%20de%20uso%2007.jpeg)
+
 ## 6.3 Formatos Bicolumnares 
 
 ## Formato Bicolumnar-01-RF16
