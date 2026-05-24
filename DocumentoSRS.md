@@ -251,11 +251,11 @@ Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emp
 
 ## Caso de uso 01-RF13
 
-![Caso de uso 01-RF13](Imagenes/Caso de uso 01.jpeg)
+![Caso de uso 01-RF13](Imagenes/Caso%20de%20uso%2001.jpeg)
 
 ## Caso de uso 2 -RF13
 
-![Caso de uso 02-RF13](Imagenes/Caso de uso 02.jpeg)
+![Caso de uso 02-RF13](Imagenes/Caso%20de%20uso%2002.jpeg)
 
 
 ## 3.3 Formatos Bicolumnares 
@@ -312,12 +312,12 @@ Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emp
 
 ## Caso de uso 01-RF14:
 
-![Caso de uso 01-RF14](Imagenes/Caso de uso 03.jpeg)
+![Caso de uso 01-RF14](Imagenes/Caso%20de%20uso%2003.jpeg)
 
 
 ## Caso de uso 02-RF14:
 
-![Caso de uso 02-RF14](Imagenes/Caso de uso 04.jpeg)
+![Caso de uso 02-RF14](Imagenes/Caso%20de%20uso%2004.jpeg)
 
 
 
@@ -378,12 +378,12 @@ Este reto cobra especial relevancia dado el contexto del usuario de ROAX: un emp
 
 ## Caso de uso 01-RF15:
 
-![Caso de uso 01-RF15](Imagenes/Caso de uso 05.jpeg)
+![Caso de uso 01-RF15](Imagenes/Caso%20de%20uso%2005.jpeg)
 
 
 ## Caso de uso 02-RF15_
 
-![Caso de uso 02-RF15](Imagenes/Caso de uso 06.jpeg)
+![Caso de uso 02-RF15](Imagenes/Caso%20de%20uso%2006.jpeg)
 
 
 
