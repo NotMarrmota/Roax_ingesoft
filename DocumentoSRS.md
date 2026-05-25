@@ -47,13 +47,13 @@
 # Tabla de Contenido
 
 1. Especificación de Requerimientos
-   1.1. Descripción General  
-   1.2. Contexto del Proyecto  
-   1.3. Requisitos  
-   - 1.3.1 Subsistema de Datos y Decisiones  
-   - 1.3.2 Subsistema de Alertas que Razonan  
-   - 1.3.3 Subsistema de Creatividades desde el Rendimiento  
-   - 1.3.4 Subsistema de Confianza Progresiva  
+   - 1.1. Descripción General  
+   - 1.2. Contexto del Proyecto  
+   - 1.3. Requisitos  
+   - - 1.3.1 Subsistema de Datos y Decisiones  
+   - - 1.3.2 Subsistema de Alertas que Razonan  
+   - - 1.3.3 Subsistema de Creatividades desde el Rendimiento  
+   - - 1.3.4 Subsistema de Confianza Progresiva  
 
    1.4. Subespecificación por Subsistemas  
    - 1.4.1 RF1: Datos y Decisiones  
@@ -70,28 +70,28 @@
    - 2.4 RF4: Confianza Progresiva  
 
 3. RF1: Datos y Decisiones
-   3.1. Historias de Usuario  
-   3.2. Casos de Uso  
-   - 3.2.1 Diagrama de Casos de Uso  
-   - 3.2.2 Formatos Bicolumnares  
+   - 3.1. Historias de Usuario  
+   - 3.2. Casos de Uso  
+   - - 3.2.1 Diagrama de Casos de Uso  
+   - - 3.2.2 Formatos Bicolumnares  
 
-4. RF2: Alertas Inteligentes
-   4.1. Historias de Usuario  
-   4.2. Casos de Uso  
-   - 4.2.1 Diagrama de Casos de Uso  
-   - 4.2.2 Formatos Bicolumnares  
+4. RF2: Creatividades desde el rendimiento
+   - 4.1. Historias de Usuario  
+   - 4.2. Casos de Uso  
+   - - 4.2.1 Diagrama de Casos de Uso  
+   - - 4.2.2 Formatos Bicolumnares  
 
-5. RF3: Inteligencia Creativa
-   5.1. Historias de Usuario  
-   5.2. Casos de Uso  
-   - 5.2.1 Diagrama de Casos de Uso  
-   - 5.2.2 Formatos Bicolumnares  
+5. RF3: Creatividades desde el rendimiento
+   - 5.1. Historias de Usuario  
+   - 5.2. Casos de Uso  
+   - - 5.2.1 Diagrama de Casos de Uso  
+   - - 5.2.2 Formatos Bicolumnares  
 
 6. RF4: Confianza Progresiva
-   6.1. Historias de Usuario  
-   6.2. Casos de Uso  
-   - 6.2.1 Diagrama de Casos de Uso  
-   - 6.2.2 Formatos Bicolumnares  
+   - 6.1. Historias de Usuario  
+   - 6.2. Casos de Uso  
+   - - 6.2.1 Diagrama de Casos de Uso  
+   - - 6.2.2 Formatos Bicolumnares  
 
 7. Backlog
 
@@ -111,7 +111,7 @@ Actualmente, ROAX integra múltiples fuentes de datos provenientes de plataforma
 
 El objetivo de este proyecto es rediseñar la plataforma para convertir la inteligencia artificial en el núcleo operativo del sistema, permitiendo no solo visualizar datos, sino también analizar comportamientos, generar recomendaciones, contextualizar alertas, sugerir acciones concretas y fortalecer progresivamente la confianza del usuario en las decisiones automatizadas.
 
-La solución propuesta se divide en cuatro subsistemas principales: Datos y Decisiones, Alertas Inteligentes, Inteligencia Creativa y Confianza Progresiva. Cada uno de estos componentes busca abordar distintos retos relacionados con automatización, interpretación de datos, generación de recomendaciones y aprendizaje continuo del comportamiento del negocio.
+La solución propuesta se divide en cuatro subsistemas principales: Datos y Decisiones, Alertas Inteligentes, Creatividades desde el rendimiento y Confianza Progresiva. Cada uno de estos componentes busca abordar distintos retos relacionados con automatización, interpretación de datos, generación de recomendaciones y aprendizaje continuo del comportamiento del negocio.
 
 El sistema está orientado a usuarios de e-commerce que requieren herramientas más inteligentes, proactivas y accionables para optimizar sus campañas publicitarias, mejorar su rentabilidad y facilitar la toma de decisiones basada en datos.
 
@@ -618,7 +618,7 @@ Subsistema E — Integración de APIs Externas
 
 ### Tabla de Asignación a Subsistemas - RF1 y RF2
 
-| Requerimiento | Motor de Datos y Análisis | Motor de Alertas Inteligentes | Motor de Inteligencia Creativa | Motor de Confianza y Aprendizaje | Integraciones y APIs | Sistema Conversacional | Monitor de Rendimiento y Riesgos |
+| Requerimiento | Motor de Datos y Análisis | Motor de Alertas Inteligentes | Motor de Creatividades desde el rendimiento | Motor de Confianza y Aprendizaje | Integraciones y APIs | Sistema Conversacional | Monitor de Rendimiento y Riesgos |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | RF1 | X |  |  |  | X |  |  |
 | RF1.1 | X |  |  |  | X |  |  |
@@ -660,7 +660,7 @@ Subsistema E — Integración de APIs Externas
 
 ### Tabla de Asignación a Subsistemas - RF3 y RF4
 
-| Requerimiento | Motor de Datos y Análisis | Motor de Alertas Inteligentes | Motor de Inteligencia Creativa | Motor de Confianza y Aprendizaje | Integraciones y APIs | Sistema Conversacional | Monitor de Rendimiento y Riesgos |
+| Requerimiento | Motor de Datos y Análisis | Motor de Alertas Inteligentes | Motor de Creatividades desde el rendimiento | Motor de Confianza y Aprendizaje | Integraciones y APIs | Sistema Conversacional | Monitor de Rendimiento y Riesgos |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | RF3 |  |  | X |  | X | X |  |
 | RF3.1 |  |  | X |  | X | X |  |
@@ -748,7 +748,7 @@ Subsistema E — Integración de APIs Externas
    
    ---
    
-   ###2.3 RF3: Creatividades desde el rendimiento
+ ### 2.3 RF3: Creatividades desde el rendimiento
 
    2.1 Listado de requerimientos PESTLE
 | Factor      | Situación                                        | Requerimiento derivado                                                                   |
@@ -767,7 +767,7 @@ Subsistema E — Integración de APIs Externas
    
    ---
    
-   ###2.4 RF4: Confianza Progresiva
+ ### 2.4 RF4: Confianza Progresiva
    
    ## PESTLE — RF13: Agente Conversacional Visual
 
@@ -822,142 +822,375 @@ Subsistema E — Integración de APIs Externas
 
    
 ---
-   
-## 3. RF1: Datos y Decisiones
-   
-### 3.1 Historias de Usuario
 
-# 3. RF1: Motor de Rentabilidad
+# Historias de usuario y Casos de uso
+
+## 3. RF1: Datos y Decisiones
 
 ## 3.1 Historias de Usuario
+   
 
----
+**RF1: Motor de Rentabilidad**
 
-## HU RF1.1 – Visualización de rentabilidad real por campaña
+**HU RF1.1 - Visualización de rentabilidad real por campaña**
 
-**Historia N°:** RF1.1  
+| **Historia N°:** | RF1.1                                                                                                                    |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Yo como**      | dropshipper                                                                                                              |
+| **Quiero**       | que el sistema cruce automáticamente mis datos de inversión en Meta Ads con las ventas reales de mi tienda               |
+| **Para**         | saber en tiempo real cuánto estoy ganando o perdiendo por cada campaña activa, sin tener que hacer los cálculos yo mismo |
 
-**Yo como:** dropshipper  
-**Quiero:** que el sistema cruce automáticamente mis datos de inversión en Meta Ads con las ventas reales de mi tienda  
-**Para:** saber en tiempo real cuánto estoy ganando o perdiendo por cada campaña activa, sin tener que hacer los cálculos yo mismo  
+Escenario RF1.1.1
 
-### Escenario RF1.1.1
+| **Scenario: Cálculo del margen neto real por campaña** | |
+| --- | | --- |
+| **Given** | el dropshipper tiene sesión iniciada y ha integrado su cuenta de Meta Ads y su tienda en ROAX |
+| **When** | accede al dashboard de rentabilidad |
+| **Then** | el sistema muestra el margen neto real por campaña usando órdenes efectivamente entregadas, no solo las vendidas |
+| **And** | el dashboard distingue entre órdenes entregadas, pendientes y devueltas |
 
-**Scenario:** Cálculo del margen neto real por campaña  
+Escenario RF1.1.2
 
-**Given** el dropshipper tiene sesión iniciada y ha integrado su cuenta de Meta Ads y su tienda en ROAX  
-**When** accede al dashboard de rentabilidad  
-**Then** el sistema muestra el margen neto real por campaña usando órdenes efectivamente entregadas, no solo las vendidas  
-**And** el dashboard distingue entre órdenes entregadas, pendientes y devueltas  
+| **Scenario: Actualización de datos con retraso máximo de 15 minutos** | |
+| --- | | --- |
+| **Given** | el dropshipper tiene campañas activas con datos en Meta Ads y Shopify/Dropi |
+| **When** | consulta el dashboard de rentabilidad |
+| **Then** | el sistema muestra información actualizada con un máximo de 15 minutos de retraso respecto a las fuentes de datos |
+| **And** | se indica la hora de la última actualización |
 
-### Escenario RF1.1.2
+**HU RF1.2 - Detección proactiva de campañas deficitarias**
 
-**Scenario:** Actualización de datos con retraso máximo de 15 minutos  
+| **Historia N°:** | RF1.2                                                                                                                  |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **Yo como**      | dropshipper                                                                                                            |
+| **Quiero**       | recibir una alerta automática cuando alguna campaña activa esté por debajo del punto de equilibrio real de mi producto |
+| **Para**         | poder actuar antes de perder más dinero del necesario                                                                  |
 
-**Given** el dropshipper tiene campañas activas con datos en Meta Ads y Shopify/Dropi  
-**When** consulta el dashboard de rentabilidad  
-**Then** el sistema muestra información actualizada con un máximo de 15 minutos de retraso respecto a las fuentes de datos  
-**And** se indica la hora de la última actualización  
+**Escenario RF1.2.1**
 
----
+| **Scenario: Alerta por campaña bajo el punto de equilibrio** | |
+| --- | | --- |
+| **Given** | el dropshipper tiene una campaña activa con el margen del producto registrado en ROAX |
+| **When** | el ROAS de la campaña cae por debajo del umbral de equilibrio durante más de 2 horas continuas |
+| **Then** | el sistema genera una alerta automática indicando qué campaña está afectada |
+| **And** | la alerta muestra cuánto dinero se está perdiendo por hora y desde cuándo ocurre la caída |
 
-## HU RF1.2 – Detección proactiva de campañas deficitarias
+**Escenario RF1.2.2**
 
-**Historia N°:** RF1.2  
+| **Scenario: Cálculo automático del ROAS de equilibrio** | |
+| --- | | --- |
+| **Given** | el dropshipper ha registrado el margen del producto en ROAX |
+| **When** | el sistema analiza el rendimiento de la campaña |
+| **Then** | calcula automáticamente el ROAS de equilibrio a partir del margen del producto registrado |
+| **And** | usa ese umbral como referencia para activar alertas de déficit |
 
-**Yo como:** dropshipper  
-**Quiero:** recibir una alerta automática cuando alguna campaña activa esté por debajo del punto de equilibrio real de mi producto  
-**Para:** poder actuar antes de perder más dinero del necesario  
+**HU RF3.1 - Configuración de reglas de automatización personalizadas**
 
-### Escenario RF1.2.1
+| **Historia N°:** | RF3.1                                                                                                                                             |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Yo como**      | dropshipper                                                                                                                                       |
+| **Quiero**       | poder configurar mis propias reglas de automatización, como pausar campañas o ajustar presupuestos, basadas en la rentabilidad real de mi negocio |
+| **Para**         | tener control sobre las acciones automáticas del sistema sin depender solo de las métricas de Meta                                                |
 
-**Scenario:** Alerta por campaña bajo el punto de equilibrio  
+**Escenario RF3.1.1**
 
-**Given** el dropshipper tiene una campaña activa con el margen del producto registrado en ROAX  
-**When** el ROAS de la campaña cae por debajo del umbral de equilibrio durante más de 2 horas continuas  
-**Then** el sistema genera una alerta automática indicando qué campaña está afectada  
-**And** la alerta muestra cuánto dinero se está perdiendo por hora y desde cuándo ocurre la caída  
+| **Scenario: Creación de una regla para pausar campaña por CPA alto** | |
+| --- | | --- |
+| **Given** | el dropshipper tiene sesión iniciada y tiene campañas activas integradas en ROAX |
+| **When** | accede al módulo de automatización y define una regla del tipo "Si el CPA supera X valor durante más de Y horas pausar la campaña" |
+| **Then** | el sistema guarda la regla y la asocia a las campañas seleccionadas |
+| **And** | muestra una confirmación con el resumen de la regla creada y las campañas afectadas |
 
-### Escenario RF1.2.2
+**Escenario RF3.1.2**
 
-**Scenario:** Cálculo automático del ROAS de equilibrio  
+| **Scenario: Edición y desactivación de una regla existente** | |
+| --- | | --- |
+| **Given** | el dropshipper tiene al menos una regla de automatización configurada |
+| **When** | accede a la lista de reglas y selecciona una para editarla o desactivarla |
+| **Then** | el sistema actualiza la regla con los nuevos parámetros o la marca como inactiva |
+| **And** | las campañas asociadas dejan de estar sujetas a esa regla hasta que el usuario la reactive |
 
-**Given** el dropshipper ha registrado el margen del producto en ROAX  
-**When** el sistema analiza el rendimiento de la campaña  
-**Then** calcula automáticamente el ROAS de equilibrio a partir del margen del producto registrado  
-**And** usa ese umbral como referencia para activar alertas de déficit  
+**HU RF3.2 - Registro auditado de acciones automáticas**
 
----
+| **Historia N°:** | RF3.2                                                                                                             |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Yo como**      | dropshipper                                                                                                       |
+| **Quiero**       | que el sistema registre cada acción automática que ejecute, indicando qué hizo, cuándo y por qué                  |
+| **Para**         | poder revisar el historial de decisiones del sistema y entender si está actuando correctamente sobre mis campañas |
 
-# RF3: Automatización Inteligente
+**Escenario RF3.2.1**
 
-## HU RF3.1 — Configuración de reglas de automatización personalizadas
+| **Scenario: Consulta del historial de acciones automáticas** | |
+| --- | | --- |
+| **Given** | el dropshipper tiene sesión iniciada y el sistema ha ejecutado al menos una acción automática |
+| **When** | accede al módulo de historial de automatización |
+| **Then** | el sistema muestra una lista cronológica de todas las acciones ejecutadas, con la fecha, la campaña afectada, la acción tomada y la regla o condición que la disparó |
+| **And** | cada entrada incluye el estado anterior y posterior de la campaña para que el usuario pueda comparar |
 
-**Historia N°:** RF3.1  
+**Escenario RF3.2.2**
 
-**Yo como:** dropshipper  
-**Quiero:** poder configurar mis propias reglas de automatización, como pausar campañas o ajustar presupuestos, basadas en la rentabilidad real de mi negocio  
-**Para:** tener control sobre las acciones automáticas del sistema sin depender solo de las métricas de Meta  
+| **Scenario: Detalle de una acción automática específica** | |
+| --- | | --- |
+| **Given** | el dropshipper está consultando el historial de acciones automáticas |
+| **When** | selecciona una acción específica de la lista |
+| **Then** | el sistema muestra el detalle completo: hora exacta, métricas que activaron la regla (por ejemplo, CPA en ese momento), la decisión tomada y si el usuario la revirtió manualmente después |
+| **And** | ofrece la opción de deshacer la acción si aún es posible hacerlo |
 
-### Escenario RF3.1.1
+**HU RF4.1 - Monitoreo continuo del negocio**
 
-**Scenario:** Creación de una regla para pausar campaña por CPA alto  
+| **Historia N°:** | RF4.1                                                                                                                                                                                                                     |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Yo como**      | dropshipper                                                                                                                                                                                                               |
+| **Quiero**       | que el sistema monitoree continuamente mis campañas en Meta Ads evaluando su rendimiento según la fase en que se encuentran (Testeo, Optimización o Escalado) y considerando el delay de 24 horas propio de la plataforma |
+| **Para**         | recibir alertas precisas que no confundan una campaña inmadura con una campaña fallida, y poder tomar decisiones correctas en el momento adecuado                                                                         |
 
-**Given** el dropshipper tiene sesión iniciada y tiene campañas activas integradas en ROAX  
-**When** accede al módulo de automatización y define una regla del tipo “Si el CPA supera X valor durante más de Y horas pausar la campaña”  
-**Then** el sistema guarda la regla y la asocia a las campañas seleccionadas  
-**And** muestra una confirmación con el resumen de la regla creada y las campañas afectadas  
+**Escenario RF4.1.1**
 
-### Escenario RF3.1.2
+| **Scenario: Evaluación de campaña en fase de Testeo con indicadores correctos** | |
+| --- | | --- |
+| **Given** | el dropshipper tiene una campaña activa clasificada en fase de Testeo y el sistema ha recopilado datos con al menos 24 horas de antigüedad |
+| **When** | el sistema evalúa el rendimiento de esa campaña |
+| **Then** | analiza los indicadores propios de Testeo: Hook rate, Tasas de retención de atención, Retention rate y Click rate |
+| **And** | no emite alertas de CPA o ROAS hasta que la campaña haya superado la fase de madurez mínima |
 
-**Scenario:** Edición y desactivación de una regla existente  
+**Escenario RF4.1.2**
 
-**Given** el dropshipper tiene al menos una regla de automatización configurada  
-**When** accede a la lista de reglas y selecciona una para editarla o desactivarla  
-**Then** el sistema actualiza la regla con los nuevos parámetros o la marca como inactiva  
-**And** las campañas asociadas dejan de estar sujetas a esa regla hasta que el usuario la reactive  
+| **Scenario: Detección de bajo rendimiento en fase de Escalado** | |
+| --- | | --- |
+| **Given** | el dropshipper tiene una campaña en fase de Escalado con umbrales de CPA y ROAS neto configurados |
+| **When** | el sistema detecta que el CPA supera el umbral definido o que el ROAS neto cae por debajo del punto de equilibrio |
+| **Then** | genera una alerta indicando la campaña afectada, la fase en que se encuentra y el indicador crítico que falló |
+| **And** | registra el evento con la hora, los valores detectados y el contexto de madurez de la campaña para que el usuario pueda interpretar correctamente la situación |
 
----
+**HU RF5.1 - Protección de datos bajo Ley de Habeas Data**
 
-## HU RF3.2 — Registro auditado de acciones automáticas
+| **Historia N°:** | RF5.1                                                                                                                                               |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Yo como**      | dropshipper                                                                                                                                         |
+| **Quiero**       | que el sistema cifre y proteja los datos personales de mis clientes y pedidos provenientes de Shopify o Dropi, cumpliendo con la Ley de Habeas Data |
+| **Para**         | garantizar que la información privada de mis compradores esté segura y que mi negocio opere dentro del marco legal colombiano                       |
 
-**Historia N°:** RF3.2  
+**Escenario RF5.1.1**
 
-**Yo como:** dropshipper  
-**Quiero:** que el sistema registre cada acción automática que ejecute, indicando qué hizo, cuándo y por qué  
-**Para:** poder revisar el historial de decisiones del sistema y entender si está actuando correctamente sobre mis campañas  
+| **Scenario: Cifrado de datos personales en tránsito** | |
+| --- | | --- |
+| **Given** | el sistema está recibiendo datos de clientes y pedidos desde Shopify o Dropi mediante la integración configurada por el dropshipper |
+| **When** | los datos se transmiten entre las plataformas externas y ROAX |
+| **Then** | el sistema aplica cifrado TLS 1.3 sobre toda la comunicación que contenga información personal como nombres, direcciones y datos de contacto de compradores |
+| **And** | cualquier intento de conexión con protocolos de menor versión es rechazado automáticamente |
 
-### Escenario RF3.2.1
+**Escenario RF5.1.2**
 
-**Scenario:** Consulta del historial de acciones automáticas  
+| **Scenario: Datos personales no expuestos en logs ni interfaces no autorizadas** | |
+| --- | | --- |
+| **Given** | el sistema ha procesado órdenes con datos personales de clientes |
+| **When** | se generan registros internos de actividad, errores o auditoría |
+| **Then** | el sistema omite o enmascara los datos personales identificables (nombre, teléfono, dirección) en los logs del sistema |
+| **And** | los datos completos solo son accesibles desde las vistas habilitadas para roles con permiso explícito |
 
-**Given** el dropshipper tiene sesión iniciada y el sistema ha ejecutado al menos una acción automática  
-**When** accede al módulo de historial de automatización  
-**Then** el sistema muestra una lista cronológica de todas las acciones ejecutadas, con la fecha, la campaña afectada, la acción tomada y la regla o condición que la disparó  
-**And** cada entrada incluye el estado anterior y posterior de la campaña para que el usuario pueda comparar  
+**HU RF5.2 - Control de acceso diferenciado por roles**
 
-### Escenario RF3.2.2
+| **Historia N°:** | RF5.2                                                                                                                                                |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Yo como**      | dropshipper con equipo de trabajo                                                                                                                    |
+| **Quiero**       | que el sistema restrinja el acceso a la información financiera según el rol de cada miembro del equipo, diferenciando entre Administrador y Vendedor |
+| **Para**         | que los datos sensibles de mi negocio solo los vea quien realmente debe verlos, y no queden expuestos a todo el equipo                               |
 
-**Scenario:** Detalle de una acción automática específica  
+**Escenario RF5.2.1**
 
-**Given** el dropshipper está consultando el historial de acciones automáticas  
-**When** selecciona una acción específica de la lista  
-**Then** el sistema muestra el detalle completo: hora exacta, métricas que activaron la regla, la decisión tomada y si el usuario la revirtió manualmente después  
-**And** ofrece la opción de deshacer la acción si aún es posible hacerlo  
+| **Scenario: Acceso restringido del rol Vendedor a datos financieros** | |
+| --- | | --- |
+| **Given** | un miembro del equipo tiene el rol de Vendedor y ha iniciado sesión en ROAX |
+| **When** | intenta acceder a las secciones de rentabilidad por campaña, costos de pauta o márgenes del producto |
+| **Then** | el sistema le deniega el acceso y muestra un mensaje indicando que esa información solo está disponible para Administradores |
+| **And** | el intento de acceso queda registrado en el log de actividad de la cuenta |
+
+**Escenario RF5.2.2**
+
+| **Scenario: Asignación de roles por parte del Administrador** | |
+| --- | | --- |
+| **Given** | el dropshipper tiene rol de Administrador y tiene al menos un colaborador registrado en su cuenta de ROAX |
+| **When** | accede al módulo de gestión de equipo y asigna o modifica el rol de un colaborador |
+| **Then** | el sistema aplica los nuevos permisos de forma inmediata sin necesidad de reiniciar sesión |
+| **And** | el colaborador solo puede ver y operar las secciones habilitadas para su rol desde ese momento |
+
+**HU RF6.1 - Transparencia de costos antes de ejecutar cambios de presupuesto**
+
+| **Historia N°:** | RF6.1                                                                                                                                                          |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Yo como**      | dropshipper                                                                                                                                                    |
+| **Quiero**       | que el sistema me informe previamente sobre cualquier costo adicional, comisión o cargo asociado a cambios automáticos de presupuesto o integraciones externas |
+| **Para**         | tomar decisiones informadas y evitar gastos inesperados en mi operación publicitaria                                                                           |
+
+**Escenario RF6.1.1**
+
+| **Scenario: Notificación de costo adicional antes de aumentar presupuesto** | |
+| --- | | --- |
+| **Given** | el dropshipper tiene campañas activas y el sistema detecta una oportunidad de aumentar automáticamente el presupuesto de pauta |
+| **When** | la acción implica costos adicionales por integración, procesamiento o comisiones de terceros |
+| **Then** | el sistema muestra una notificación detallando el costo estimado antes de ejecutar el cambio |
+| **And** | solicita confirmación explícita del usuario para continuar con la operación |
+
+**Escenario RF6.1.2**
+
+| **Scenario: Visualización de costos asociados a integraciones externas** | |
+| --- | | --- |
+| **Given** | el dropshipper desea conectar una nueva integración externa dentro de ROAX |
+| **When** | el dropshipper inicia el proceso de conexión con una nueva integración dentro de ROAX |
+| **Then** | el sistema informa claramente el tipo de costo, su frecuencia y el servicio asociado antes de completar la integración |
+| **And** | el usuario puede aceptar o cancelar el proceso antes de que se genere cualquier cargo |
+
+**HU RF6.2 - Interfaz Conversacional de ROAX vía WhatsApp**
+
+| **Historia N°:** | RF6.2                                                                                                                                                                      |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Yo como**      | dropshipper                                                                                                                                                                |
+| **Quiero**       | interactuar con el sistema a través de un chatbot inteligente en WhatsApp                                                                                                  |
+| **Para**         | supervisar mis campañas, recibir diagnósticos y ejecutar acciones usando lenguaje natural, sin tener que entrar a una plataforma externa o interpretar gráficos complejos. |
+
+**Escenario RF6.2.1**
+
+| **Scenario: Ejecución de acción inmediata mediante comando en WhatsApp** | |
+| --- | | --- |
+| **Given** | que el usuario recibe un mensaje de alerta del bot en WhatsApp informando que una campaña tiene un rendimiento deficiente . |
+| **When** | el usuario responde al chat con un comando natural como "Pausa esa campaña". |
+| **Then** | el sistema procesa el lenguaje y ejecuta la instrucción de pausa en la plataforma publicitaria de forma instantánea. |
+| **And** | el bot responde confirmando: "Listo, campaña pausada exitosamente." |
+
+**Escenario RF6.2.2**
+
+| **Scenario: Consulta de métricas de forma conversacional** | |
+| --- | | --- |
+| **Given** | que el usuario ha iniciado sesión en la aplicación móvil de ROAX. |
+| **When** | envía un mensaje al bot preguntando: "¿Cómo vamos hoy de rentabilidad?" o "¿Cuál es el margen neto?" |
+| **Then** | el sistema interpreta la intención y cruza los datos del negocio en tiempo real |
+| **And** | el bot responde con un resumen conciso y fácil de leer detallando las métricas directamente en el chat. |
+
+**HU RF7.1 - Registro de inventario para decisiones contextualizadas**
+
+| **Historia N°:** | RF7.1                                                                                                                                                          |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Yo como**      | dropshipper                                                                                                                                                    |
+| **Quiero**       | que el sistema se sincronice automáticamente con el inventario real de mis productos en mis plataformas de venta y pause las campañas cuando el stock se agote |
+| **Para**         | no seguir gastando presupuesto en publicidad de productos que ya no puedo entregar y reactivar las campañas en cuanto reabastezca el inventario                |
+
+**Escenario RF7.1.1**
+
+| **Scenario: Pausa automática de campaña por agotamiento de stock** | |
+| --- | | --- |
+| **Given** | el dropshipper tiene una campaña activa promocionando un producto que aún tiene stock en su tienda integrada |
+| **When** | el sistema detecta que el stock disponible del producto cae a cero o por debajo del umbral mínimo configurado |
+| **Then** | el sistema pausa automáticamente la campaña asociada a ese producto |
+| **And** | registra la acción en el historial indicando el motivo (agotamiento de inventario) y notifica al dropshipper para que reabastezca |
+
+**Escenario RF7.1.2**
+
+| **Scenario: Reactivación de campaña tras reposición de inventario** | |
+| --- | | --- |
+| **Given** | el dropshipper tenía una campaña pausada automáticamente por falta de stock y ha reabastecido el producto en su tienda |
+| **When** | el sistema detecta que el inventario del producto vuelve a estar por encima del umbral mínimo configurado |
+| **Then** | el sistema reactiva automáticamente la campaña previamente pausada |
+| **And** | notifica al dropshipper que la campaña ha vuelto a estar activa, indicando la fecha y la cantidad de stock detectada |
+
+**HU RF7.2 - Registro de restricciones financieras del negocio**
+
+| **Historia N°:** | RF7.2                                                                                                                                           |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Yo como**      | administrador                                                                                                                                   |
+| **Quiero**       | poder registrar las restricciones financieras de mi negocio como deudas activas, límites de flujo de caja y presupuesto máximo mensual de pauta |
+| **Para**         | que la IA no me recomiende aumentos de presupuesto que mi negocio no puede asumir                                                               |
+
+**Escenario RF7.2.1**
+
+| **Scenario: Registro de parámetros financieros del negocio** | |
+| --- | | --- |
+| **Given** | el administrador tiene sesión iniciada en ROAX |
+| **When** | accede al módulo de configuración financiera y registra el presupuesto máximo de pauta, el flujo de caja disponible y las deudas activas |
+| **Then** | el sistema guarda esos parámetros como restricciones del negocio |
+| **And** | los toma como referencia para validar futuras recomendaciones de la IA |
+
+**Escenario RF7.2.2**
+
+| **Scenario: Bloqueo de recomendación que excede el límite financiero** | |
+| --- | | --- |
+| **Given** | el administrador ha registrado un presupuesto máximo mensual de pauta |
+| **When** | la IA evalúa una recomendación de aumento de presupuesto que superaría ese límite |
+| **Then** | el sistema bloquea automáticamente la recomendación |
+| **And** | muestra al administrador una explicación clara indicando que la propuesta fue restringida por el techo financiero configurado |
+
+**HU RF7.3 - Definición de buyer persona para alineamiento de recomendaciones**
+
+| **Historia N°:** | RF7.3                                                                                                                            |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| **Yo como**      | dropshipper                                                                                                                      |
+| **Quiero**       | poder definir el perfil cualitativo de mi cliente ideal (buyer persona)                                                          |
+| **Para**         | que las recomendaciones de creativos, segmentación y mensajes que me dé la IA estén alineadas con ese perfil y no sean genéricas |
+
+**Escenario RF7.3.1**
+
+| **Scenario: Registro de atributos del buyer persona** | |
+| --- | | --- |
+| **Given** | el dropshipper tiene sesión iniciada en ROAX |
+| **When** | accede al módulo de buyer persona y registra rango de edad, intereses principales, ubicación geográfica y comportamiento de compra esperado |
+| **Then** | el sistema guarda el perfil del cliente ideal asociado al negocio |
+| **And** | ese perfil queda disponible para que la IA lo considere en sus recomendaciones |
+
+**Escenario RF7.3.2**
+
+| **Scenario: Recomendaciones alineadas al buyer persona definido** | |
+| --- | | --- |
+| **Given** | el dropshipper ha registrado el buyer persona de su negocio |
+| **When** | la IA genera una recomendación sobre creativos, segmentación o horarios de pauta |
+| **Then** | el sistema evalúa la pertinencia de la recomendación contra los atributos del buyer persona registrado |
+| **And** | cada recomendación incluye una breve explicación de cómo se alinea con ese perfil |
+
+**HU RF7.4**
+
+| **Historia N°:** | RF7.4                                                                                                                                                                  |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Yo como**      | dropshipper                                                                                                                                                            |
+| **Quiero**       | que la IA considere tendencias externas del mercado, como variaciones estacionales, picos de búsqueda en Google Trends y comportamiento publicitario de mi competencia |
+| **Para**         | recibir recomendaciones de pauta que se anticipen a oportunidades o riesgos del contexto externo, y no solo basadas en mi histórico interno                            |
+
+**Escenario RF7.4.1**
+
+| **Scenario: Recomendación de aumento de presupuesto por pico estacional detectado** | |
+| --- | | --- |
+| **Given** | el sistema está conectado a fuentes externas de tendencias del mercado y el dropshipper tiene campañas activas |
+| **When** | el sistema detecta un pico de demanda estacional para una categoría de producto que el dropshipper está promocionando |
+| **Then** | la IA genera una recomendación de aumento de presupuesto justificada con el dato externo detectado |
+| **And** | la recomendación incluye una explicación clara del contexto que la motivó (por ejemplo, aumento del 60% en búsquedas de la categoría en Google Trends durante los últimos 7 días) |
+
+**Escenario RF7.4.2**
+
+| **Scenario: Alerta por movimiento publicitario agresivo de la competencia** | |
+| --- | | --- |
+| **Given** | el sistema monitorea el comportamiento publicitario de competidores definidos por el dropshipper a través de APIs públicas |
+| **When** | detecta que un competidor directo aumentó significativamente su inversión publicitaria sobre un producto similar |
+| **Then** | la IA genera una alerta contextual al dropshipper informando del movimiento de la competencia |
+| **And** | propone ajustes posibles en su propia estrategia de pauta para no perder visibilidad en el mercado |
 
 ---
    
-### 3.2 Casos de Uso (Aún no solicitado)
+## 3.2 Casos de Uso (Datos y Decisiones)
 
-#### 3.2.1 Diagrama de Casos de Uso
 
-#### 3.2.2 Formatos Bicolumnares
+### 3.2.1 Diagrama de Casos de Uso
+
+![Caso de uso]()
+
+> Pendiente por integración de diagramas de casos de uso entregados por el equipo correspondiente.
+
+
+### 3.2.2 Formatos Bicolumnares 
+
+[Formato Bicolumnar](https://docs.google.com/document/d/1Tl-pgph0c5_l7zp6FZbqnuXPiQ6JTkrJtpKxMOWy5VU/edit?usp=sharing)
 
 ---
 
-## 4. RF2: Alertas Inteligentes
+## 4. RF2: Creatividades desde el rendimiento
 
-### 4.1 Historias de Usuario
+## 4.1 Historias de Usuario
 
 # Historia de Usuario 1
 
@@ -1178,7 +1411,7 @@ Como usuario de la plataforma, quiero aplicar automáticamente las recomendacion
 **Dependencias:**
 
 ---
-Historia de Usuario 2
+### Historia de Usuario 2
 
 ID: HU2
 ##Titulo## Recomendación automática de inversión publicitaria
@@ -1214,24 +1447,65 @@ Prioridad: Alta
 
 Dependencias: Servicio de inteligencia artificial e integración con base de datos de campañas
 
+## 4.2 Caso de uso (RF1 - Alertas que Razonan)
+
+### 4.2.1 Diagrama de Casos de Uso
+
+![Caso de uso](Imagenes/RF2%20Alertas%20Inteligentes/CU1.jpg)
+
+
+### 4.2.2 Formatos Bicolumnares 
+
+[Formato Bicolumnar](https://docs.google.com/document/d/1I5PSUtAMPhLh_innqdz-A928Sz32RkF9yD_Muy9xxfQ/edit?usp=sharing)
 
 ---
 
-### 4.2 Casos de Uso (Aún no solicitado)
+## 4.2 Caso de uso (RF2 - Alertas que Razonan)
 
-#### 4.2.1 Diagrama de Casos de Uso
+### 4.2.1 Diagrama de Casos de Uso
 
-#### 4.2.2 Formatos Bicolumnares
+![Caso de uso](Imagenes/RF2%20Alertas%20Inteligentes/CU2.jpg)
+
+
+### 4.2.2 Formatos Bicolumnares 
+
+[Formato Bicolumnar](https://docs.google.com/document/d/1kVJW99QKqUjJ05fXVkuUhwnXC7O3ZaBO1HmUkGof8d8/edit?usp=sharing)
 
 ---
 
-## 5. RF3: Inteligencia Creativa
+## 4.2 Caso de uso (RF3 - Alertas que Razonan)
+
+### 4.2.1 Diagrama de Casos de Uso
+
+![Caso de uso](Imagenes/RF2%20Alertas%20Inteligentes/CU3.jpg)
+
+
+### 4.2.2 Formatos Bicolumnares 
+
+[Formato Bicolumnar](https://docs.google.com/document/d/1WLJjKFNwn3YCgUH8YzMMTfWK1elJ8eaHyZ5qe-wIuTU/edit?usp=sharing)
+
+---
+
+## 4.2 Caso de uso (RF4 - Alertas que Razonan)
+
+### 4.2.1 Diagrama de Casos de Uso
+
+![Caso de uso](Imagenes/RF2%20Alertas%20Inteligentes/CU4.jpg)
+
+
+### 4.2.2 Formatos Bicolumnares 
+
+[Formato Bicolumnar](https://docs.google.com/document/d/1rLeiiLk7PSYA9xlqEuBpiSFBjkFmd7_GfpwAof3BpNo/edit?usp=sharing)
+
+---
+
+
+## 5. RF3: Creatividades desde el rendimiento
    
 ### 5.1 Historias de Usuario
 
 ## 3. RF1: Subsistema A — Gestión de Usuarios
 
-### 3.1 Historias de usuario
 HU3.1.1 — Registro de usuario en ROAX
 
 | Campo                       | Contenido                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -1252,9 +1526,25 @@ HU3.1.2 — Asignación de rol organizacional
 
 ---
 
+### 5.2 Casos de uso
+
+---
+
+3.2.1 Diagrama de casos de uso
+
+<img width="1421" height="762" alt="image" src="https://github.com/user-attachments/assets/ca2a671d-0f5e-49b3-af80-97151619465c" />
+
+---
+
+3.2.2 Formato bicolumanr
+
+[Formato Bicolumnar Diagrama A_ID CU-A-0_CU-A-02.pdf](https://github.com/user-attachments/files/28204607/Formato.Bicolumnar.Diagrama.A_ID.CU-A-0_CU-A-02.pdf)
+
+---
+
 ## 4. RF2: Subsistema B — Perfilamiento del Cliente
 
-### 4.1 Historias de usuario
+### 5.1 Historias de usuario
 
 HU4.1.1 — Consulta de perfil 360° del consumidor
 | Campo                       | Contenido                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -1274,15 +1564,27 @@ HU4.1.2 — Consolidación automática de datos del consumidor
 
 ---
 
+### 5.2 Casos de uso
+
+---
+
+4.2.1 Diagrama de casos de uso 
+
+<img width="821" height="359" alt="Subsistema B jpg" src="https://github.com/user-attachments/assets/7c595e39-cebd-4d50-b581-4ec1412d05ea" />
+
+---
+4.2.2 Formato bicolumnar
+
+[Formato Bicolumnar Diagrama B_CU-B-0_CU-B-02.pdf](https://github.com/user-attachments/files/28204612/Formato.Bicolumnar.Diagrama.B_CU-B-0_CU-B-02.pdf)
+
+---
+
 ## 5. RF3: Subsistema C — Reportes de Inteligencia de Negocio
 
 ### 5.1 Historias de usuario
 
 ---
 
-## 5. RF3: Subsistema C <<Nombre el Subsistema>>
-
-### 5.1 Historias de usuario
 
 HU5.1.1 — Generación de reporte financiero y operativo
 | Campo                       | Contenido                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -1302,9 +1604,25 @@ HU5.1.2 — Alerta por inventario bajo en producto promocionado
 
 ---
 
+### 5.2 Casos de uso
+
+---
+
+5.2.1 Diagrama de casos de uso 
+
+<img width="884" height="669" alt="Roax-3 jpg (2)" src="https://github.com/user-attachments/assets/b548cb96-d1f8-4e89-a34b-1a0067843135" />
+
+---
+
+5.2.2 Formato bicolumnar
+
+[Formato Bicolumnar Diagrama C_ID CU-C-01_CU-C-02.pdf](https://github.com/user-attachments/files/28204618/Formato.Bicolumnar.Diagrama.C_ID.CU-C-01_CU-C-02.pdf)
+
+---
+
 ## 6. RF4: Subsistema D — Optimización de Campañas con IA
 
-### 6.1 Historias de usuario
+### 5.1 Historias de usuario
 
 HU6.1.1 — Análisis de rendimiento de creatividades
 | Campo                       | Contenido                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -1327,7 +1645,7 @@ HU6.1.2 — Propuesta automática de creatividad mejorada
 
 ## 7. Subsistema E — Integración de APIs Externas
 
-### 7.1 Historias de usuario
+### 5.1 Historias de usuario
 
 HU7.1.1 — Conexión con plataforma externa mediante API
 | Campo                       | Contenido                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -1336,21 +1654,93 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 | **Historia**                | Yo, como usuario de ROAX, quiero conectar mi cuenta con plataformas externas como Meta Ads, Shopify o Dropi, para que el sistema obtenga automáticamente datos de campañas y ventas reales.                                                                                                                                                                                                                                                                                                                                                                                       |
 | **Criterios de aceptación** | **Scenario 1: Conexión exitosa con plataforma externa**<br>**Given** el usuario se encuentra en el módulo de integraciones<br>**When** autoriza el acceso mediante credenciales válidas (OAuth)<br>**Then** el sistema confirma la conexión y comienza la sincronización automática.<br><br>**Scenario 2: Conexión fallida por autorización denegada**<br>**Given** el usuario se encuentra en el módulo de integraciones<br>**When** rechaza permisos o la plataforma externa retorna error de autenticación<br>**Then** el sistema muestra "No fue posible conectar la cuenta". |
 
-   
 ---
 
-### 5.2 Casos de Uso (Aún no solicitado)
+### 5.2 Casos de uso
 
-#### 5.2.1 Diagrama de Casos de Uso
+---
 
-#### 5.2.2 Formatos Bicolumnares
+7.2.1 Diagramas de casos de uso
+
+<img width="981" height="589" alt="Use Case Diagram2" src="https://github.com/user-attachments/assets/f059d78f-2bbd-4fb7-92ab-675903f04064" />
+
+---
+
+7.2.2 Formatos bicolumnares
+
+[Formato Bicolumnar v1.0_Subsitema E_ID UC7.2.3.pdf](https://github.com/user-attachments/files/28204154/Formato.Bicolumnar.v1.0_Subsitema.E_ID.UC7.2.3.pdf)
+
+[Formato Bicolumnar v1.0_Subsistema E_ID UC7.2.4.pdf](https://github.com/user-attachments/files/28204158/Formato.Bicolumnar.v1.0_Subsistema.E_ID.UC7.2.4.pdf)
 
 ---
 
 ## 6. RF4: Confianza Progresiva
    
-###6.1 Historias de Usuario
+### 6.1 Historias de Usuario
   
+
+# 3. RF13 — Agente Conversacional Visual (ACV)
+
+
+| **Campo** | **Descripción** |
+| --- | --- |
+| **Título** | Interacción con el agente de IA |
+| **Yo, como** | usuario de ROAX (emprendedor o gestor de e-commerce) |
+| **Quiero** | comunicarme con un agente de IA mediante voz o texto que me muestre su avatar en pantalla |
+| **Para** | entender mis métricas y recomendaciones sin necesidad de interpretar dashboards complejos |
+
+
+**Scenario 1**
+
+| | |
+| --- | --- |
+| **Given** | el usuario accede a la plataforma |
+| **When** | el agente se carga |
+| **Then** | el sistema muestra el avatar, reproduce un saludo e informa que el agente es IA |
+
+**Scenario 2**
+
+| | |
+| --- | --- |
+| **Given** | el usuario envía un mensaje |
+| **When** | el agente procesa la consulta |
+| **Then** | responde en lenguaje natural mostrando texto de forma simultánea independientemente del canal de voz |
+
+**Scenario 3**
+
+| | |
+| --- | --- |
+| **Given** | el usuario desactiva el audio |
+| **When** | hace clic en el botón de configuración |
+| **Then** | el agente continúa respondiendo solo con texto sin perder funcionalidad |
+
+### 6.2 Caso de uso
+
+## 6.2.1 Diagrama de Casos de Uso - 01-RF13
+
+![Caso de uso 01-RF13](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2001.jpeg)
+
+## 6.2.1 Diagrama de Casos de Uso - RF13
+
+![Caso de uso 02-RF13](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2002.jpeg)
+
+
+## 6.2.2 Formatos Bicolumnares -01-RF13
+
+[Formato Bicolumnar-01-RF13](https://docs.google.com/document/d/1TDo1TTdEj_wKEtHp9ctVsHX_yG9c6Bq6nMTPyKIl7fE/edit?usp=sharing)
+
+## 6.2.2 Formatos Bicolumnares - 02-RF13
+
+[Formato Bicolumnar-02-RF13](https://docs.google.com/document/d/1W9J1i2ecVRGP5G9hOKJs7YT8tL1P38t-gC1fvb_BG3k/edit?usp=sharing)
+
+
+
+---
+
+## 6.1 Historias de Usuario
+
+# 4. RF14 — Recomendaciones Inteligentes (REC)
+
 | **Campo** | **Descripción** |
 | --- | --- |
 | **Título** | Recibir y actuar sobre recomendaciones de campañas |
@@ -1382,11 +1772,36 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 | **When** | selecciona un motivo |
 | **Then** | el sistema registra el rechazo, ajusta el enfoque y continúa generando recomendaciones |
 
+
+## 6.2 Caso de uso 
+
+## 6.2.1 Diagrama de Casos de Uso  01-RF14:
+
+![Caso de uso 01-RF14](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2003.jpeg)
+
+
+## 6.2.1 Diagrama de Casos de Uso  02-RF14:
+
+![Caso de uso 02-RF14](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2004.jpeg)
+
+
+## 6.2.2 Formatos Bicolumnares-01-RF14:
+
+[Formato Bicolumnar-01-RF14](https://docs.google.com/document/d/1XEnIszNS_L7ecwf0LtUeyBp6_ZerAuZBfnwhDKyjlcs/edit?usp=sharing)
+
+## 6.2.2 Formatos Bicolumnares-02-RF14:
+
+[Formato Bicolumnar-02-RF14](https://docs.google.com/document/d/1-K1FWEDIBLcpTYH0QG6UmPqgaPHUBNcKKdLmWMUeu2A/edit?usp=sharing)
+
+
+
+
+
 ---
 
-# 5. RF15 — Gestión de Alertas (ALR)
+## 6.1 Historias de Usuario
 
-## 5.1 Historias de Usuario
+# 5. RF15 — Gestión de Alertas (ALR)
 
 | **Campo** | **Descripción** |
 | --- | --- |
@@ -1420,11 +1835,31 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 | **When** | accede a la sección de alertas |
 | **Then** | puede definir canales (in-app, correo, WhatsApp, push), horarios y nivel mínimo de criticidad |
 
+## 6.2 Caso de uso 
+
+## 6.2.1 Diagrama de Casos de Uso  01-RF15:
+
+![Caso de uso 01-RF15](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2005.jpeg)
+
+
+## 6.2.1 Diagrama de Casos de Uso 02-RF15_
+
+![Caso de uso 02-RF15](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2006.jpeg)
+
+
+## 6.2.2 Formatos Bicolumnares-01-RF15
+
+[Formato Bicolumnar-01-RF15](https://docs.google.com/document/d/1tnP73K3gOLi3lbml82Woqx60uFBn9MJfaYvp_luhMEg/edit?usp=sharing)
+
+## 6.2.2 Formatos Bicolumnares-02-RF15
+
+[Formato Bicolumnar-02-RF15](https://docs.google.com/document/d/1JD7duImYBW1lOvTrh6khlGdWskXr-8m9sPR6lQ6Sl3E/edit?usp=sharing)
+
 ---
 
-# 6. RF16 — Retroalimentación y Aprendizaje (RFA)
-
 ## 6.1 Historias de Usuario
+
+# 6. RF16 — Retroalimentación y Aprendizaje (RFA)
 
 | **Campo** | **Descripción** |
 | --- | --- |
@@ -1457,14 +1892,20 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 | **Given** | el usuario tiene activado el modo de automatización |
 | **When** | el sistema va a ejecutar una acción automática |
 | **Then** | verifica permisos, ejecuta la acción, notifica al usuario y le ofrece revertirla dentro de 24 horas |
-   
----
 
-### 6.2 Casos de Uso (Aún no solicitado)
+## 6.2 Caso de uso 
 
-#### 6.2.1 Diagrama de Casos de Uso
+### 6.2.1 Diagrama de Casos de Uso
 
-#### 6.2.2 Formatos Bicolumnares
+![Caso de uso 02-RF16](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2007.jpeg)
+
+## 6.2.2 Formatos Bicolumnares-01-RF16
+
+[Formato Bicolumnar-01-RF16](https://docs.google.com/document/d/1iAuLzWd_MS7xk6nPBQ9Vc4ATOAfWvXaoF6ExM6D663c/edit?usp=sharing)
+
+## 6.2.2 Formatos Bicolumnares-02-RF16
+
+[Formato Bicolumnar-02-RF16](https://docs.google.com/document/d/1XDNQ0x9D_c9VJY83ohNyv0WCq8bmWZJhL6SQxBMDttM/edit?usp=sharing)
 
 ## 7. Backlog
 
