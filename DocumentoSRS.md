@@ -47,13 +47,13 @@
 # Tabla de Contenido
 
 1. Especificación de Requerimientos
-   1.1. Descripción General  
-   1.2. Contexto del Proyecto  
-   1.3. Requisitos  
-   - 1.3.1 Subsistema de Datos y Decisiones  
-   - 1.3.2 Subsistema de Alertas que Razonan  
-   - 1.3.3 Subsistema de Creatividades desde el Rendimiento  
-   - 1.3.4 Subsistema de Confianza Progresiva  
+   - 1.1. Descripción General  
+   - 1.2. Contexto del Proyecto  
+   - 1.3. Requisitos  
+   - - 1.3.1 Subsistema de Datos y Decisiones  
+   - - 1.3.2 Subsistema de Alertas que Razonan  
+   - - 1.3.3 Subsistema de Creatividades desde el Rendimiento  
+   - - 1.3.4 Subsistema de Confianza Progresiva  
 
    1.4. Subespecificación por Subsistemas  
    - 1.4.1 RF1: Datos y Decisiones  
@@ -70,28 +70,28 @@
    - 2.4 RF4: Confianza Progresiva  
 
 3. RF1: Datos y Decisiones
-   3.1. Historias de Usuario  
-   3.2. Casos de Uso  
-   - 3.2.1 Diagrama de Casos de Uso  
-   - 3.2.2 Formatos Bicolumnares  
+   - 3.1. Historias de Usuario  
+   - 3.2. Casos de Uso  
+   - - 3.2.1 Diagrama de Casos de Uso  
+   - - 3.2.2 Formatos Bicolumnares  
 
 4. RF2: Alertas Inteligentes
-   4.1. Historias de Usuario  
-   4.2. Casos de Uso  
-   - 4.2.1 Diagrama de Casos de Uso  
-   - 4.2.2 Formatos Bicolumnares  
+   - 4.1. Historias de Usuario  
+   - 4.2. Casos de Uso  
+   - - 4.2.1 Diagrama de Casos de Uso  
+   - - 4.2.2 Formatos Bicolumnares  
 
 5. RF3: Inteligencia Creativa
-   5.1. Historias de Usuario  
-   5.2. Casos de Uso  
-   - 5.2.1 Diagrama de Casos de Uso  
-   - 5.2.2 Formatos Bicolumnares  
+   - 5.1. Historias de Usuario  
+   - 5.2. Casos de Uso  
+   - - 5.2.1 Diagrama de Casos de Uso  
+   - - 5.2.2 Formatos Bicolumnares  
 
 6. RF4: Confianza Progresiva
-   6.1. Historias de Usuario  
-   6.2. Casos de Uso  
-   - 6.2.1 Diagrama de Casos de Uso  
-   - 6.2.2 Formatos Bicolumnares  
+   - 6.1. Historias de Usuario  
+   - 6.2. Casos de Uso  
+   - - 6.2.1 Diagrama de Casos de Uso  
+   - - 6.2.2 Formatos Bicolumnares  
 
 7. Backlog
 
@@ -748,7 +748,7 @@ Subsistema E — Integración de APIs Externas
    
    ---
    
-   ###2.3 RF3: Creatividades desde el rendimiento
+ ### 2.3 RF3: Creatividades desde el rendimiento
 
    2.1 Listado de requerimientos PESTLE
 | Factor      | Situación                                        | Requerimiento derivado                                                                   |
@@ -767,7 +767,7 @@ Subsistema E — Integración de APIs Externas
    
    ---
    
-   ###2.4 RF4: Confianza Progresiva
+ ### 2.4 RF4: Confianza Progresiva
    
    ## PESTLE — RF13: Agente Conversacional Visual
 
@@ -947,7 +947,7 @@ Subsistema E — Integración de APIs Externas
 
 ---
    
-### 3.2 Casos de Uso (Aún no solicitado)
+### 3.2 Casos de Uso (Datos y Decisiones)
 
 #### 3.2.1 Diagrama de Casos de Uso
 
@@ -1349,8 +1349,74 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 
 ## 6. RF4: Confianza Progresiva
    
-###6.1 Historias de Usuario
+### 6.1 Historias de Usuario
   
+
+# 3. RF13 — Agente Conversacional Visual (ACV)
+
+## 3.1 Historias de Usuario
+
+| **Campo** | **Descripción** |
+| --- | --- |
+| **Título** | Interacción con el agente de IA |
+| **Yo, como** | usuario de ROAX (emprendedor o gestor de e-commerce) |
+| **Quiero** | comunicarme con un agente de IA mediante voz o texto que me muestre su avatar en pantalla |
+| **Para** | entender mis métricas y recomendaciones sin necesidad de interpretar dashboards complejos |
+
+
+**Scenario 1**
+
+| | |
+| --- | --- |
+| **Given** | el usuario accede a la plataforma |
+| **When** | el agente se carga |
+| **Then** | el sistema muestra el avatar, reproduce un saludo e informa que el agente es IA |
+
+**Scenario 2**
+
+| | |
+| --- | --- |
+| **Given** | el usuario envía un mensaje |
+| **When** | el agente procesa la consulta |
+| **Then** | responde en lenguaje natural mostrando texto de forma simultánea independientemente del canal de voz |
+
+**Scenario 3**
+
+| | |
+| --- | --- |
+| **Given** | el usuario desactiva el audio |
+| **When** | hace clic en el botón de configuración |
+| **Then** | el agente continúa respondiendo solo con texto sin perder funcionalidad |
+
+## 3.2 Caso de uso 
+
+## Caso de uso 01-RF13
+
+![Caso de uso 01-RF13](Imagenes/RF4-ConfianzaProgresivaCaso%20de%20uso%2001.jpeg)
+
+## Caso de uso 2 -RF13
+
+![Caso de uso 02-RF13](Imagenes/RF4-ConfianzaProgresivaCaso%20de%20uso%2002.jpeg)
+
+
+## 3.3 Formatos Bicolumnares 
+
+## Formato Bicolumnar-01-RF13
+
+[Formato Bicolumnar-01-RF13](https://docs.google.com/document/d/1TDo1TTdEj_wKEtHp9ctVsHX_yG9c6Bq6nMTPyKIl7fE/edit?usp=sharing)
+
+## Formato Bicolumnar-02-RF13
+
+[Formato Bicolumnar-02-RF13](https://docs.google.com/document/d/1W9J1i2ecVRGP5G9hOKJs7YT8tL1P38t-gC1fvb_BG3k/edit?usp=sharing)
+
+
+
+---
+
+# 4. RF14 — Recomendaciones Inteligentes (REC)
+
+## 4.1 Historias de Usuario
+
 | **Campo** | **Descripción** |
 | --- | --- |
 | **Título** | Recibir y actuar sobre recomendaciones de campañas |
@@ -1381,6 +1447,35 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 | **Given** | el usuario rechaza una recomendación |
 | **When** | selecciona un motivo |
 | **Then** | el sistema registra el rechazo, ajusta el enfoque y continúa generando recomendaciones |
+
+
+## 4.2 Caso de uso 
+
+## Caso de uso 01-RF14:
+
+![Caso de uso 01-RF14](Imagenes/RF4-ConfianzaProgresivaCaso%20de%20uso%2003.jpeg)
+
+
+## Caso de uso 02-RF14:
+
+![Caso de uso 02-RF14](Imagenes/RF4-ConfianzaProgresivaCaso%20de%20uso%2004.jpeg)
+
+
+
+
+## 4.3 Formatos Bicolumnares 
+
+## Formato Bicolumnar-01-RF14:
+
+[Formato Bicolumnar-01-RF14](https://docs.google.com/document/d/1XEnIszNS_L7ecwf0LtUeyBp6_ZerAuZBfnwhDKyjlcs/edit?usp=sharing)
+
+## Formato Bicolumnar-02-RF14:
+
+[Formato Bicolumnar-02-RF14](https://docs.google.com/document/d/1-K1FWEDIBLcpTYH0QG6UmPqgaPHUBNcKKdLmWMUeu2A/edit?usp=sharing)
+
+
+
+
 
 ---
 
@@ -1420,6 +1515,29 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 | **When** | accede a la sección de alertas |
 | **Then** | puede definir canales (in-app, correo, WhatsApp, push), horarios y nivel mínimo de criticidad |
 
+## 5.2 Caso de uso 
+
+## Caso de uso 01-RF15:
+
+![Caso de uso 01-RF15](Imagenes/RF4-ConfianzaProgresivaCaso%20de%20uso%2005.jpeg)
+
+
+## Caso de uso 02-RF15_
+
+![Caso de uso 02-RF15](Imagenes/RF4-ConfianzaProgresivaCaso%20de%20uso%2006.jpeg)
+
+
+
+## 5.3 Formatos Bicolumnares 
+
+## Formato Bicolumnar-01-RF15
+
+[Formato Bicolumnar-01-RF15](https://docs.google.com/document/d/1tnP73K3gOLi3lbml82Woqx60uFBn9MJfaYvp_luhMEg/edit?usp=sharing)
+
+## Formato Bicolumnar-02-RF15
+
+[Formato Bicolumnar-02-RF15](https://docs.google.com/document/d/1JD7duImYBW1lOvTrh6khlGdWskXr-8m9sPR6lQ6Sl3E/edit?usp=sharing)
+
 ---
 
 # 6. RF16 — Retroalimentación y Aprendizaje (RFA)
@@ -1457,14 +1575,21 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 | **Given** | el usuario tiene activado el modo de automatización |
 | **When** | el sistema va a ejecutar una acción automática |
 | **Then** | verifica permisos, ejecuta la acción, notifica al usuario y le ofrece revertirla dentro de 24 horas |
-   
----
 
-### 6.2 Casos de Uso (Aún no solicitado)
+## 6.2 Caso de uso 
 
-#### 6.2.1 Diagrama de Casos de Uso
 
-#### 6.2.2 Formatos Bicolumnares
+![Caso de uso 02-RF16](Imagenes/RF4-ConfianzaProgresivaCaso%20de%20uso%2007.jpeg)
+
+## 6.3 Formatos Bicolumnares 
+
+## Formato Bicolumnar-01-RF16
+
+[Formato Bicolumnar-01-RF16](https://docs.google.com/document/d/1iAuLzWd_MS7xk6nPBQ9Vc4ATOAfWvXaoF6ExM6D663c/edit?usp=sharing)
+
+## Formato Bicolumnar-02-RF16
+
+[Formato Bicolumnar-02-RF16](https://docs.google.com/document/d/1XDNQ0x9D_c9VJY83ohNyv0WCq8bmWZJhL6SQxBMDttM/edit?usp=sharing)
 
 ## 7. Backlog
 
