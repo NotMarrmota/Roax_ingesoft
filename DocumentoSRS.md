@@ -75,13 +75,13 @@
    - - 3.2.1 Diagrama de Casos de Uso  
    - - 3.2.2 Formatos Bicolumnares  
 
-4. RF2: Alertas Inteligentes
+4. RF2: Creatividades desde el rendimiento
    - 4.1. Historias de Usuario  
    - 4.2. Casos de Uso  
    - - 4.2.1 Diagrama de Casos de Uso  
    - - 4.2.2 Formatos Bicolumnares  
 
-5. RF3: Inteligencia Creativa
+5. RF3: Creatividades desde el rendimiento
    - 5.1. Historias de Usuario  
    - 5.2. Casos de Uso  
    - - 5.2.1 Diagrama de Casos de Uso  
@@ -111,7 +111,7 @@ Actualmente, ROAX integra múltiples fuentes de datos provenientes de plataforma
 
 El objetivo de este proyecto es rediseñar la plataforma para convertir la inteligencia artificial en el núcleo operativo del sistema, permitiendo no solo visualizar datos, sino también analizar comportamientos, generar recomendaciones, contextualizar alertas, sugerir acciones concretas y fortalecer progresivamente la confianza del usuario en las decisiones automatizadas.
 
-La solución propuesta se divide en cuatro subsistemas principales: Datos y Decisiones, Alertas Inteligentes, Inteligencia Creativa y Confianza Progresiva. Cada uno de estos componentes busca abordar distintos retos relacionados con automatización, interpretación de datos, generación de recomendaciones y aprendizaje continuo del comportamiento del negocio.
+La solución propuesta se divide en cuatro subsistemas principales: Datos y Decisiones, Alertas Inteligentes, Creatividades desde el rendimiento y Confianza Progresiva. Cada uno de estos componentes busca abordar distintos retos relacionados con automatización, interpretación de datos, generación de recomendaciones y aprendizaje continuo del comportamiento del negocio.
 
 El sistema está orientado a usuarios de e-commerce que requieren herramientas más inteligentes, proactivas y accionables para optimizar sus campañas publicitarias, mejorar su rentabilidad y facilitar la toma de decisiones basada en datos.
 
@@ -618,7 +618,7 @@ Subsistema E — Integración de APIs Externas
 
 ### Tabla de Asignación a Subsistemas - RF1 y RF2
 
-| Requerimiento | Motor de Datos y Análisis | Motor de Alertas Inteligentes | Motor de Inteligencia Creativa | Motor de Confianza y Aprendizaje | Integraciones y APIs | Sistema Conversacional | Monitor de Rendimiento y Riesgos |
+| Requerimiento | Motor de Datos y Análisis | Motor de Alertas Inteligentes | Motor de Creatividades desde el rendimiento | Motor de Confianza y Aprendizaje | Integraciones y APIs | Sistema Conversacional | Monitor de Rendimiento y Riesgos |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | RF1 | X |  |  |  | X |  |  |
 | RF1.1 | X |  |  |  | X |  |  |
@@ -660,7 +660,7 @@ Subsistema E — Integración de APIs Externas
 
 ### Tabla de Asignación a Subsistemas - RF3 y RF4
 
-| Requerimiento | Motor de Datos y Análisis | Motor de Alertas Inteligentes | Motor de Inteligencia Creativa | Motor de Confianza y Aprendizaje | Integraciones y APIs | Sistema Conversacional | Monitor de Rendimiento y Riesgos |
+| Requerimiento | Motor de Datos y Análisis | Motor de Alertas Inteligentes | Motor de Creatividades desde el rendimiento | Motor de Confianza y Aprendizaje | Integraciones y APIs | Sistema Conversacional | Monitor de Rendimiento y Riesgos |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | RF3 |  |  | X |  | X | X |  |
 | RF3.1 |  |  | X |  | X | X |  |
@@ -1188,7 +1188,7 @@ Escenario RF1.1.2
 
 ---
 
-## 4. RF2: Alertas Inteligentes
+## 4. RF2: Creatividades desde el rendimiento
 
 ## 4.1 Historias de Usuario
 
@@ -1500,7 +1500,7 @@ Dependencias: Servicio de inteligencia artificial e integración con base de dat
 ---
 
 
-## 5. RF3: Inteligencia Creativa
+## 5. RF3: Creatividades desde el rendimiento
    
 ### 5.1 Historias de Usuario
 
