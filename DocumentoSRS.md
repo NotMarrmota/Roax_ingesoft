@@ -203,6 +203,16 @@ HU3.1.2 — Asignación de rol organizacional
 
 ---
 
+### 3.2 Casos de uso
+
+---
+
+3.2.1 Diagrama de casos de uso
+
+<img width="1421" height="762" alt="image" src="https://github.com/user-attachments/assets/ca2a671d-0f5e-49b3-af80-97151619465c" />
+
+---
+
 ## 4. RF2: Subsistema B — Perfilamiento del Cliente
 
 ### 4.1 Historias de usuario
@@ -222,6 +232,16 @@ HU4.1.2 — Consolidación automática de datos del consumidor
 | **Título**                  | Consolidación automática de datos del consumidor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | **Historia**                | Yo, como analista de datos, quiero que el sistema consolide automáticamente datos del consumidor desde varias fuentes, para evitar duplicidad y mejorar el análisis.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | **Criterios de aceptación** | **Scenario 1: Consolidación exitosa con coincidencia de identificador**<br>**Given** el consumidor existe en dos fuentes conectadas<br>**And** ambas fuentes coinciden en el correo del consumidor<br>**When** el sistema ejecuta el proceso de consolidación<br>**Then** el sistema fusiona la información en un único perfil y registra las fuentes.<br><br>**Scenario 2: Consolidación fallida por falta de coincidencia**<br>**Given** existen consumidores en dos fuentes conectadas<br>**But** no existe coincidencia en correo o identificador<br>**When** el sistema intenta consolidar la información<br>**Then** el sistema mantiene los perfiles separados y marca el caso como "Sin coincidencia". |
+
+---
+
+### 4.2 Casos de uso
+
+---
+
+4.2.1 Diagrama de casos de uso 
+
+<img width="821" height="359" alt="Subsistema B jpg" src="https://github.com/user-attachments/assets/7c595e39-cebd-4d50-b581-4ec1412d05ea" />
 
 ---
 
@@ -250,6 +270,16 @@ HU5.1.2 — Alerta por inventario bajo en producto promocionado
 | **Título**                  | Alerta por inventario bajo en producto promocionado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | **Historia**                | Yo, como dueño del e-commerce, quiero recibir alertas cuando un producto promocionado tenga inventario bajo, para evitar gastar presupuesto en campañas sin stock.                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | **Criterios de aceptación** | **Scenario 1: Alerta enviada por inventario bajo**<br>**Given** un producto tiene una campaña activa asociada<br>**And** el inventario baja del umbral configurado<br>**When** el sistema detecta la reducción de stock<br>**Then** el sistema envía una notificación con el producto afectado y recomendación.<br><br>**Scenario 2: No se genera alerta si no hay campaña activa**<br>**Given** un producto tiene inventario bajo<br>**But** no está asociado a ninguna campaña activa<br>**When** el sistema analiza el inventario<br>**Then** el sistema no envía alertas relacionadas con pauta publicitaria. |
+
+---
+
+### 5.2 Casos de uso
+
+---
+
+5.2.1 Diagrama de casos de uso 
+
+<img width="884" height="669" alt="Roax-3 jpg (2)" src="https://github.com/user-attachments/assets/b548cb96-d1f8-4e89-a34b-1a0067843135" />
 
 ---
 
@@ -286,6 +316,16 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 | **Título**                  | Conexión con plataforma externa mediante API                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | **Historia**                | Yo, como usuario de ROAX, quiero conectar mi cuenta con plataformas externas como Meta Ads, Shopify o Dropi, para que el sistema obtenga automáticamente datos de campañas y ventas reales.                                                                                                                                                                                                                                                                                                                                                                                       |
 | **Criterios de aceptación** | **Scenario 1: Conexión exitosa con plataforma externa**<br>**Given** el usuario se encuentra en el módulo de integraciones<br>**When** autoriza el acceso mediante credenciales válidas (OAuth)<br>**Then** el sistema confirma la conexión y comienza la sincronización automática.<br><br>**Scenario 2: Conexión fallida por autorización denegada**<br>**Given** el usuario se encuentra en el módulo de integraciones<br>**When** rechaza permisos o la plataforma externa retorna error de autenticación<br>**Then** el sistema muestra "No fue posible conectar la cuenta". |
+
+---
+
+### 7.2 Casos de uso
+
+---
+
+7.2.1 Diagramas de casos de uso
+
+<img width="981" height="589" alt="Use Case Diagram2" src="https://github.com/user-attachments/assets/f059d78f-2bbd-4fb7-92ab-675903f04064" />
 
 ---
 
