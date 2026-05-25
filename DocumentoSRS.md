@@ -822,8 +822,13 @@ Subsistema E — Integración de APIs Externas
 
    
 ---
+
+# Historias de usuario y Casos de uso
+
+## 3. RF1: Datos y Decisiones
+
+## 3.1 Historias de Usuario
    
-**Historias de usuario**
 
 **RF1: Motor de Rentabilidad**
 
@@ -1501,8 +1506,6 @@ Dependencias: Servicio de inteligencia artificial e integración con base de dat
 
 ## 3. RF1: Subsistema A — Gestión de Usuarios
 
-### 3.1 Historias de usuario
-
 HU3.1.1 — Registro de usuario en ROAX
 
 | Campo                       | Contenido                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -1523,9 +1526,25 @@ HU3.1.2 — Asignación de rol organizacional
 
 ---
 
+### 5.2 Casos de uso
+
+---
+
+3.2.1 Diagrama de casos de uso
+
+<img width="1421" height="762" alt="image" src="https://github.com/user-attachments/assets/ca2a671d-0f5e-49b3-af80-97151619465c" />
+
+---
+
+3.2.2 Formato bicolumanr
+
+[Formato Bicolumnar Diagrama A_ID CU-A-0_CU-A-02.pdf](https://github.com/user-attachments/files/28204607/Formato.Bicolumnar.Diagrama.A_ID.CU-A-0_CU-A-02.pdf)
+
+---
+
 ## 4. RF2: Subsistema B — Perfilamiento del Cliente
 
-### 4.1 Historias de usuario
+### 5.1 Historias de usuario
 
 HU4.1.1 — Consulta de perfil 360° del consumidor
 | Campo                       | Contenido                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -1545,15 +1564,27 @@ HU4.1.2 — Consolidación automática de datos del consumidor
 
 ---
 
+### 5.2 Casos de uso
+
+---
+
+4.2.1 Diagrama de casos de uso 
+
+<img width="821" height="359" alt="Subsistema B jpg" src="https://github.com/user-attachments/assets/7c595e39-cebd-4d50-b581-4ec1412d05ea" />
+
+---
+4.2.2 Formato bicolumnar
+
+[Formato Bicolumnar Diagrama B_CU-B-0_CU-B-02.pdf](https://github.com/user-attachments/files/28204612/Formato.Bicolumnar.Diagrama.B_CU-B-0_CU-B-02.pdf)
+
+---
+
 ## 5. RF3: Subsistema C — Reportes de Inteligencia de Negocio
 
 ### 5.1 Historias de usuario
 
 ---
 
-## 5. RF3: Subsistema C <<Nombre el Subsistema>>
-
-### 5.1 Historias de usuario
 
 HU5.1.1 — Generación de reporte financiero y operativo
 | Campo                       | Contenido                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -1573,9 +1604,25 @@ HU5.1.2 — Alerta por inventario bajo en producto promocionado
 
 ---
 
+### 5.2 Casos de uso
+
+---
+
+5.2.1 Diagrama de casos de uso 
+
+<img width="884" height="669" alt="Roax-3 jpg (2)" src="https://github.com/user-attachments/assets/b548cb96-d1f8-4e89-a34b-1a0067843135" />
+
+---
+
+5.2.2 Formato bicolumnar
+
+[Formato Bicolumnar Diagrama C_ID CU-C-01_CU-C-02.pdf](https://github.com/user-attachments/files/28204618/Formato.Bicolumnar.Diagrama.C_ID.CU-C-01_CU-C-02.pdf)
+
+---
+
 ## 6. RF4: Subsistema D — Optimización de Campañas con IA
 
-### 6.1 Historias de usuario
+### 5.1 Historias de usuario
 
 HU6.1.1 — Análisis de rendimiento de creatividades
 | Campo                       | Contenido                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -1598,7 +1645,7 @@ HU6.1.2 — Propuesta automática de creatividad mejorada
 
 ## 7. Subsistema E — Integración de APIs Externas
 
-### 7.1 Historias de usuario
+### 5.1 Historias de usuario
 
 HU7.1.1 — Conexión con plataforma externa mediante API
 | Campo                       | Contenido                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -1607,14 +1654,23 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 | **Historia**                | Yo, como usuario de ROAX, quiero conectar mi cuenta con plataformas externas como Meta Ads, Shopify o Dropi, para que el sistema obtenga automáticamente datos de campañas y ventas reales.                                                                                                                                                                                                                                                                                                                                                                                       |
 | **Criterios de aceptación** | **Scenario 1: Conexión exitosa con plataforma externa**<br>**Given** el usuario se encuentra en el módulo de integraciones<br>**When** autoriza el acceso mediante credenciales válidas (OAuth)<br>**Then** el sistema confirma la conexión y comienza la sincronización automática.<br><br>**Scenario 2: Conexión fallida por autorización denegada**<br>**Given** el usuario se encuentra en el módulo de integraciones<br>**When** rechaza permisos o la plataforma externa retorna error de autenticación<br>**Then** el sistema muestra "No fue posible conectar la cuenta". |
 
-   
 ---
 
-### 5.2 Casos de Uso (Aún no solicitado)
+### 5.2 Casos de uso
 
-#### 5.2.1 Diagrama de Casos de Uso
+---
 
-#### 5.2.2 Formatos Bicolumnares
+7.2.1 Diagramas de casos de uso
+
+<img width="981" height="589" alt="Use Case Diagram2" src="https://github.com/user-attachments/assets/f059d78f-2bbd-4fb7-92ab-675903f04064" />
+
+---
+
+7.2.2 Formatos bicolumnares
+
+[Formato Bicolumnar v1.0_Subsitema E_ID UC7.2.3.pdf](https://github.com/user-attachments/files/28204154/Formato.Bicolumnar.v1.0_Subsitema.E_ID.UC7.2.3.pdf)
+
+[Formato Bicolumnar v1.0_Subsistema E_ID UC7.2.4.pdf](https://github.com/user-attachments/files/28204158/Formato.Bicolumnar.v1.0_Subsistema.E_ID.UC7.2.4.pdf)
 
 ---
 
