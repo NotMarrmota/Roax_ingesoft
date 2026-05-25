@@ -213,6 +213,12 @@ HU3.1.2 — Asignación de rol organizacional
 
 ---
 
+3.2.2 Formato bicolumanr
+
+[Formato Bicolumnar Diagrama A_ID CU-A-0_CU-A-02.pdf](https://github.com/user-attachments/files/28204607/Formato.Bicolumnar.Diagrama.A_ID.CU-A-0_CU-A-02.pdf)
+
+---
+
 ## 4. RF2: Subsistema B — Perfilamiento del Cliente
 
 ### 4.1 Historias de usuario
@@ -242,6 +248,11 @@ HU4.1.2 — Consolidación automática de datos del consumidor
 4.2.1 Diagrama de casos de uso 
 
 <img width="821" height="359" alt="Subsistema B jpg" src="https://github.com/user-attachments/assets/7c595e39-cebd-4d50-b581-4ec1412d05ea" />
+
+---
+4.2.2 Formato bicolumnar
+
+[Formato Bicolumnar Diagrama B_CU-B-0_CU-B-02.pdf](https://github.com/user-attachments/files/28204612/Formato.Bicolumnar.Diagrama.B_CU-B-0_CU-B-02.pdf)
 
 ---
 
@@ -280,6 +291,12 @@ HU5.1.2 — Alerta por inventario bajo en producto promocionado
 5.2.1 Diagrama de casos de uso 
 
 <img width="884" height="669" alt="Roax-3 jpg (2)" src="https://github.com/user-attachments/assets/b548cb96-d1f8-4e89-a34b-1a0067843135" />
+
+---
+
+5.2.2 Formato bicolumnar
+
+[Formato Bicolumnar Diagrama C_ID CU-C-01_CU-C-02.pdf](https://github.com/user-attachments/files/28204618/Formato.Bicolumnar.Diagrama.C_ID.CU-C-01_CU-C-02.pdf)
 
 ---
 
@@ -326,6 +343,14 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 7.2.1 Diagramas de casos de uso
 
 <img width="981" height="589" alt="Use Case Diagram2" src="https://github.com/user-attachments/assets/f059d78f-2bbd-4fb7-92ab-675903f04064" />
+
+---
+
+7.2.2 Formatos bicolumnares
+
+[Formato Bicolumnar v1.0_Subsitema E_ID UC7.2.3.pdf](https://github.com/user-attachments/files/28204154/Formato.Bicolumnar.v1.0_Subsitema.E_ID.UC7.2.3.pdf)
+
+[Formato Bicolumnar v1.0_Subsistema E_ID UC7.2.4.pdf](https://github.com/user-attachments/files/28204158/Formato.Bicolumnar.v1.0_Subsistema.E_ID.UC7.2.4.pdf)
 
 ---
 
