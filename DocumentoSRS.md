@@ -1392,11 +1392,11 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 
 ## Caso de uso 01-RF13
 
-![Caso de uso 01-RF13](Imagenes/RF4-ConfianzaProgresivaCaso%20de%20uso%2001.jpeg)
+![Caso de uso 01-RF13](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2001.jpeg)
 
 ## Caso de uso 2 -RF13
 
-![Caso de uso 02-RF13](Imagenes/RF4-ConfianzaProgresivaCaso%20de%20uso%2002.jpeg)
+![Caso de uso 02-RF13](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2002.jpeg)
 
 
 ## 3.3 Formatos Bicolumnares 
@@ -1453,12 +1453,12 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 
 ## Caso de uso 01-RF14:
 
-![Caso de uso 01-RF14](Imagenes/RF4-ConfianzaProgresivaCaso%20de%20uso%2003.jpeg)
+![Caso de uso 01-RF14](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2003.jpeg)
 
 
 ## Caso de uso 02-RF14:
 
-![Caso de uso 02-RF14](Imagenes/RF4-ConfianzaProgresivaCaso%20de%20uso%2004.jpeg)
+![Caso de uso 02-RF14](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2004.jpeg)
 
 
 
@@ -1519,12 +1519,12 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 
 ## Caso de uso 01-RF15:
 
-![Caso de uso 01-RF15](Imagenes/RF4-ConfianzaProgresivaCaso%20de%20uso%2005.jpeg)
+![Caso de uso 01-RF15](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2005.jpeg)
 
 
 ## Caso de uso 02-RF15_
 
-![Caso de uso 02-RF15](Imagenes/RF4-ConfianzaProgresivaCaso%20de%20uso%2006.jpeg)
+![Caso de uso 02-RF15](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2006.jpeg)
 
 
 
@@ -1579,7 +1579,7 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 ## 6.2 Caso de uso 
 
 
-![Caso de uso 02-RF16](Imagenes/RF4-ConfianzaProgresivaCaso%20de%20uso%2007.jpeg)
+![Caso de uso 02-RF16](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2007.jpeg)
 
 ## 6.3 Formatos Bicolumnares 
 
