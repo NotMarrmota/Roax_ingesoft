@@ -1177,9 +1177,35 @@ Escenario RF1.1.2
 
 ### 3.2.1 Diagrama de Casos de Uso
 
+#### CU1
+
+![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%201_page-0001.jpg)
+
+#### CU2
+
+![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%202_page-0001.jpg)
+
+#### CU3
+
+![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%203_page-0001.jpg)
+
+#### CU4
+
+![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%204_page-0001.jpg)
+
+#### CU5
+
 ![Caso de uso]()
 
 > Pendiente por integración de diagramas de casos de uso entregados por el equipo correspondiente.
+
+#### CU6
+
+![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%206_page-0001.jpg)
+
+#### CU7
+
+![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%207_page-0001.jpg)
 
 
 ### 3.2.2 Formatos Bicolumnares 
