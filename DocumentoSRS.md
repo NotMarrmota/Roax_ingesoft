@@ -1179,19 +1179,19 @@ Escenario RF1.1.2
 
 #### CU1
 
-![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%201.pdf)
+![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%201_page-0001.jpg)
 
 #### CU2
 
-![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%202.pdf)
+![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%202_page-0001.jpg)
 
 #### CU3
 
-![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%203.pdf)
+![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%203_page-0001.jpg)
 
 #### CU4
 
-![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%204.pdf)
+![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%204_page-0001.jpg)
 
 #### CU5
 
@@ -1201,11 +1201,11 @@ Escenario RF1.1.2
 
 #### CU6
 
-![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%206.pdf)
+![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%206_page-0001.jpg)
 
 #### CU7
 
-![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%207.pdf)
+![Caso de uso](Imagenes/RF1%20Datos%20y%20Decisiones/CU%207_page-0001.jpg)
 
 
 ### 3.2.2 Formatos Bicolumnares 
