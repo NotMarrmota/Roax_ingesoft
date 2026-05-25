@@ -957,7 +957,7 @@ Subsistema E — Integración de APIs Externas
 
 ## 4. RF2: Alertas Inteligentes
 
-### 4.1 Historias de Usuario
+## 4.1 Historias de Usuario
 
 # Historia de Usuario 1
 
@@ -1178,7 +1178,7 @@ Como usuario de la plataforma, quiero aplicar automáticamente las recomendacion
 **Dependencias:**
 
 ---
-Historia de Usuario 2
+### Historia de Usuario 2
 
 ID: HU2
 ##Titulo## Recomendación automática de inversión publicitaria
@@ -1214,16 +1214,58 @@ Prioridad: Alta
 
 Dependencias: Servicio de inteligencia artificial e integración con base de datos de campañas
 
+## 4.2 Caso de uso (RF1)
+
+### 4.2.1 Diagrama de Casos de Uso
+
+![Caso de uso](Imagenes/RF2%20Alertas%20Inteligentes/CU1.jpg)
+
+
+### 4.2.2 Formatos Bicolumnares 
+
+[Formato Bicolumnar](https://docs.google.com/document/d/1I5PSUtAMPhLh_innqdz-A928Sz32RkF9yD_Muy9xxfQ/edit?usp=sharing)
 
 ---
 
-### 4.2 Casos de Uso (Aún no solicitado)
+## 4.2 Caso de uso (RF2)
 
-#### 4.2.1 Diagrama de Casos de Uso
+### 4.2.1 Diagrama de Casos de Uso
 
-#### 4.2.2 Formatos Bicolumnares
+![Caso de uso](Imagenes/RF2%20Alertas%20Inteligentes/CU2.jpg)
+
+
+### 4.2.2 Formatos Bicolumnares 
+
+[Formato Bicolumnar](https://docs.google.com/document/d/1kVJW99QKqUjJ05fXVkuUhwnXC7O3ZaBO1HmUkGof8d8/edit?usp=sharing)
 
 ---
+
+## 4.2 Caso de uso (RF3)
+
+### 4.2.1 Diagrama de Casos de Uso
+
+![Caso de uso](Imagenes/RF2%20Alertas%20Inteligentes/CU3.jpg)
+
+
+### 4.2.2 Formatos Bicolumnares 
+
+[Formato Bicolumnar](https://docs.google.com/document/d/1WLJjKFNwn3YCgUH8YzMMTfWK1elJ8eaHyZ5qe-wIuTU/edit?usp=sharing)
+
+---
+
+## 4.2 Caso de uso (RF4)
+
+### 4.2.1 Diagrama de Casos de Uso
+
+![Caso de uso](Imagenes/RF2%20Alertas%20Inteligentes/CU4.jpg)
+
+
+### 4.2.2 Formatos Bicolumnares 
+
+[Formato Bicolumnar](https://docs.google.com/document/d/1rLeiiLk7PSYA9xlqEuBpiSFBjkFmd7_GfpwAof3BpNo/edit?usp=sharing)
+
+---
+
 
 ## 5. RF3: Inteligencia Creativa
    
@@ -1354,7 +1396,6 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 
 # 3. RF13 — Agente Conversacional Visual (ACV)
 
-## 3.1 Historias de Usuario
 
 | **Campo** | **Descripción** |
 | --- | --- |
@@ -1388,24 +1429,22 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 | **When** | hace clic en el botón de configuración |
 | **Then** | el agente continúa respondiendo solo con texto sin perder funcionalidad |
 
-## 3.2 Caso de uso 
+### 6.2 Caso de uso
 
-## Caso de uso 01-RF13
+## 6.2.1 Diagrama de Casos de Uso - 01-RF13
 
 ![Caso de uso 01-RF13](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2001.jpeg)
 
-## Caso de uso 2 -RF13
+## 6.2.1 Diagrama de Casos de Uso - RF13
 
 ![Caso de uso 02-RF13](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2002.jpeg)
 
 
-## 3.3 Formatos Bicolumnares 
-
-## Formato Bicolumnar-01-RF13
+## 6.2.2 Formatos Bicolumnares -01-RF13
 
 [Formato Bicolumnar-01-RF13](https://docs.google.com/document/d/1TDo1TTdEj_wKEtHp9ctVsHX_yG9c6Bq6nMTPyKIl7fE/edit?usp=sharing)
 
-## Formato Bicolumnar-02-RF13
+## 6.2.2 Formatos Bicolumnares - 02-RF13
 
 [Formato Bicolumnar-02-RF13](https://docs.google.com/document/d/1W9J1i2ecVRGP5G9hOKJs7YT8tL1P38t-gC1fvb_BG3k/edit?usp=sharing)
 
@@ -1413,9 +1452,9 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 
 ---
 
-# 4. RF14 — Recomendaciones Inteligentes (REC)
+## 6.1 Historias de Usuario
 
-## 4.1 Historias de Usuario
+# 4. RF14 — Recomendaciones Inteligentes (REC)
 
 | **Campo** | **Descripción** |
 | --- | --- |
@@ -1449,27 +1488,23 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 | **Then** | el sistema registra el rechazo, ajusta el enfoque y continúa generando recomendaciones |
 
 
-## 4.2 Caso de uso 
+## 6.2 Caso de uso 
 
-## Caso de uso 01-RF14:
+## 6.2.1 Diagrama de Casos de Uso  01-RF14:
 
 ![Caso de uso 01-RF14](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2003.jpeg)
 
 
-## Caso de uso 02-RF14:
+## 6.2.1 Diagrama de Casos de Uso  02-RF14:
 
 ![Caso de uso 02-RF14](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2004.jpeg)
 
 
-
-
-## 4.3 Formatos Bicolumnares 
-
-## Formato Bicolumnar-01-RF14:
+## 6.2.2 Formatos Bicolumnares-01-RF14:
 
 [Formato Bicolumnar-01-RF14](https://docs.google.com/document/d/1XEnIszNS_L7ecwf0LtUeyBp6_ZerAuZBfnwhDKyjlcs/edit?usp=sharing)
 
-## Formato Bicolumnar-02-RF14:
+## 6.2.2 Formatos Bicolumnares-02-RF14:
 
 [Formato Bicolumnar-02-RF14](https://docs.google.com/document/d/1-K1FWEDIBLcpTYH0QG6UmPqgaPHUBNcKKdLmWMUeu2A/edit?usp=sharing)
 
@@ -1479,9 +1514,9 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 
 ---
 
-# 5. RF15 — Gestión de Alertas (ALR)
+## 6.1 Historias de Usuario
 
-## 5.1 Historias de Usuario
+# 5. RF15 — Gestión de Alertas (ALR)
 
 | **Campo** | **Descripción** |
 | --- | --- |
@@ -1515,34 +1550,31 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 | **When** | accede a la sección de alertas |
 | **Then** | puede definir canales (in-app, correo, WhatsApp, push), horarios y nivel mínimo de criticidad |
 
-## 5.2 Caso de uso 
+## 6.2 Caso de uso 
 
-## Caso de uso 01-RF15:
+## 6.2.1 Diagrama de Casos de Uso  01-RF15:
 
 ![Caso de uso 01-RF15](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2005.jpeg)
 
 
-## Caso de uso 02-RF15_
+## 6.2.1 Diagrama de Casos de Uso 02-RF15_
 
 ![Caso de uso 02-RF15](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2006.jpeg)
 
 
-
-## 5.3 Formatos Bicolumnares 
-
-## Formato Bicolumnar-01-RF15
+## 6.2.2 Formatos Bicolumnares-01-RF15
 
 [Formato Bicolumnar-01-RF15](https://docs.google.com/document/d/1tnP73K3gOLi3lbml82Woqx60uFBn9MJfaYvp_luhMEg/edit?usp=sharing)
 
-## Formato Bicolumnar-02-RF15
+## 6.2.2 Formatos Bicolumnares-02-RF15
 
 [Formato Bicolumnar-02-RF15](https://docs.google.com/document/d/1JD7duImYBW1lOvTrh6khlGdWskXr-8m9sPR6lQ6Sl3E/edit?usp=sharing)
 
 ---
 
-# 6. RF16 — Retroalimentación y Aprendizaje (RFA)
-
 ## 6.1 Historias de Usuario
+
+# 6. RF16 — Retroalimentación y Aprendizaje (RFA)
 
 | **Campo** | **Descripción** |
 | --- | --- |
@@ -1578,16 +1610,15 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 
 ## 6.2 Caso de uso 
 
+### 6.2.1 Diagrama de Casos de Uso
 
 ![Caso de uso 02-RF16](Imagenes/RF4-ConfianzaProgresiva/Caso%20de%20uso%2007.jpeg)
 
-## 6.3 Formatos Bicolumnares 
-
-## Formato Bicolumnar-01-RF16
+## 6.2.2 Formatos Bicolumnares-01-RF16
 
 [Formato Bicolumnar-01-RF16](https://docs.google.com/document/d/1iAuLzWd_MS7xk6nPBQ9Vc4ATOAfWvXaoF6ExM6D663c/edit?usp=sharing)
 
-## Formato Bicolumnar-02-RF16
+## 6.2.2 Formatos Bicolumnares-02-RF16
 
 [Formato Bicolumnar-02-RF16](https://docs.google.com/document/d/1XDNQ0x9D_c9VJY83ohNyv0WCq8bmWZJhL6SQxBMDttM/edit?usp=sharing)
 
