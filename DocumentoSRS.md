@@ -323,6 +323,22 @@ HU6.1.2 — Propuesta automática de creatividad mejorada
 
 ---
 
+### 6.2 Casos de uso
+
+---
+
+6.2.1 Diagrama de casos de uso 
+
+<img width="964" height="759" alt="Diagrama de caso de uso_Subsistema D" src="https://github.com/user-attachments/assets/2efc7d59-5bb4-4c51-84aa-ef01654792c1" />
+
+---
+
+6.2.2 Formato bicolumnar
+
+[Formato Bicolumnar v1.0_Subsistema D_UC6.2.1 - UC6.2.2.pdf](https://github.com/user-attachments/files/28780109/Formato.Bicolumnar.v1.0_Subsistema.D_UC6.2.1.-.UC6.2.2.pdf)
+
+---
+
 ## 7. Subsistema E — Integración de APIs Externas
 
 ### 7.1 Historias de usuario
@@ -354,7 +370,7 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 
 ---
 
-## 6. Backlog
+## 8. Backlog
 
 | ID | Historia de Usuario | Prioridad |
 |----|--------------------|----------|
@@ -362,12 +378,12 @@ HU7.1.1 — Conexión con plataforma externa mediante API
 
 ---
 
-## 7. MockUp
+## 9. MockUp
 
-### 7.1 Descripción general
+### 9.1 Descripción general
 
 Se presenta el MVP que cumple con todas las funcionalidades propuestas. Estas no se referencian en los formatos bicolumnares debido a la extensión del proyecto.
 
-### 7.2 Enlace MockUp
+### 9.2 Enlace MockUp
 
 <<Enlace MockUp>>
